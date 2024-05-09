@@ -1,8 +1,12 @@
 ---
 # Metadata comes from _data/metadata.js
 permalink: /feed/feed.xml
+eleventyNavigation:
+  key: Feed
+  order: 3
 ---
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/feed/pretty-atom-feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.language }}">
 	<title>{{ metadata.title }}</title>
 	<subtitle>{{ metadata.description }}</subtitle>
@@ -15,7 +19,7 @@ permalink: /feed/feed.xml
 		<email>{{ metadata.author.email }}</email>
 	</author>
 	{%- for post in collections.posts | reverse %}
-	{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
+	{%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>
