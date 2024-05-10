@@ -47,10 +47,12 @@ export default async function(eleventyConfig) {
 		// Output formats for each image.
 		formats: ["avif", "webp", "auto"],
 		widths: [320,640,960,1280,1920],
+
 		defaultAttributes: {
 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 			loading: "lazy",
 			decoding: "async",
+			sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw',
 		}
 	});
 
