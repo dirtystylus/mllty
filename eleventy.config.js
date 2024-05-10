@@ -45,14 +45,23 @@ export default async function(eleventyConfig) {
 		// File extensions to process in _site folder
 		extensions: "html",
 		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+		formats: ["auto"],
 		widths: [320,640,960,1280,1920],
+		// urlFormat: function ({
+		// 	hash, // not included for `statsOnly` images
+		// 	src,
+		// 	width,
+		// 	format,
+		// }) {
+		// 	let netlifyPath = src.replace("content", "");
+		// 	return `/.netlify/images?url=${encodeURIComponent(src)}?w=${width}&fit=contain`;
+		// },
 
 		defaultAttributes: {
 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 			loading: "lazy",
 			decoding: "async",
-			sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw',
+			sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw'
 		}
 	});
 
