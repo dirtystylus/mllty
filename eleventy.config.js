@@ -1,4 +1,5 @@
 import markdownItAnchor from "markdown-it-anchor";
+import markdownItAttrs from 'markdown-it-attrs';
 
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import pluginRss from "@11ty/eleventy-plugin-rss";
@@ -18,7 +19,8 @@ export default async function(eleventyConfig) {
 			"./public/": "/",
 			"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
+		.addPassthroughCopy("content/blog/**/*.jpg");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -48,15 +50,15 @@ export default async function(eleventyConfig) {
 		// Output formats for each image.
 		formats: ["auto"],
 		widths: [320,640,960,1280,1920],
-		transformOnRequest: false,
-		// urlFormat: function ({
-		// 	hash, // not included for `statsOnly` images
-		// 	src,
-		// 	width,
-		// 	format,
-		// }) {
-		// 	return `/.netlify/images?url=/${src}?w=${width}&fit=contain`;
-		// },
+		transformOnRequest: true,
+		urlFormat: function ({
+			hash, // not included for `statsOnly` images
+			src,
+			width,
+			format,
+		}) {
+			return `/.netlify/images?url=${src.replace("content","")}?w=${width}&fit=contain`;
+		},
 
 		defaultAttributes: {
 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
@@ -64,10 +66,10 @@ export default async function(eleventyConfig) {
 			decoding: "async",
 			sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw'
 		},
-		filenameFormat: function (id, src, width, format) {
-				let filename = path.basename(src, path.extname(src));
-				return `${filename}-${width}.${format}`;
-		},
+		// filenameFormat: function (id, src, width, format) {
+		// 		let filename = path.basename(src, path.extname(src));
+		// 		return `${filename}.${format}`;
+		// },
 	});
 
 	// Filters
@@ -85,6 +87,7 @@ export default async function(eleventyConfig) {
 			level: [1,2,3,4],
 			slugify: eleventyConfig.getFilter("slugify")
 		});
+		mdLib.use(markdownItAttrs);
 	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
