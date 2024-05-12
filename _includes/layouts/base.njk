@@ -50,7 +50,7 @@
 			</nav>
 		</header>
 
-		<main id="skip">
+		<main id="skip" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
 			{{ content | safe }}
 		</main>
 
