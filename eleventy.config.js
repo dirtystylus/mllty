@@ -55,7 +55,7 @@ export default async function(eleventyConfig) {
 		// 	width,
 		// 	format,
 		// }) {
-		// 	return `/.netlify/images?url=${encodeURIComponent(src)}?w=${width}&fit=contain`;
+		// 	return `/.netlify/images?url=/${src}?w=${width}&fit=contain`;
 		// },
 
 		defaultAttributes: {
