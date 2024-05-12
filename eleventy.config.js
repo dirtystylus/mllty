@@ -1,5 +1,6 @@
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from 'markdown-it-attrs';
+import markdownIt from 'markdown-it';
 
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import pluginRss from "@11ty/eleventy-plugin-rss";
@@ -20,7 +21,8 @@ export default async function(eleventyConfig) {
 			"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
-		.addPassthroughCopy("content/blog/**/*.jpg");
+		.addPassthroughCopy("content/blog/**/*.jpg")
+		.addPassthroughCopy("content/blog/**/*.mp4");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -75,6 +77,15 @@ export default async function(eleventyConfig) {
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
+	const mdLib = markdownIt({
+		html: true,
+		breaks: true,
+		linkify: false,
+		typographer: true
+	});
+
+	eleventyConfig.setLibrary("md", mdLib);
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {
@@ -93,6 +104,33 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
+
+	eleventyConfig.addPairedShortcode(
+		"markdown",
+		(data) => {
+			if (data) {
+				return mdLib.renderInline(data);
+			} else {
+				return "";
+			}
+		}
+	);
+
+	eleventyConfig.addPairedShortcode(
+		"gallery", (data) => {
+			const galleryContent = mdLib.render(data);
+			return `<div class="gallery">${galleryContent}</div>`;
+		}
+	);
+
+	eleventyConfig.addPairedShortcode(
+		"videoloop", (content, data, alt) => {
+			const videoURL = mdLib.renderInline(data.trim());
+			const altText = mdLib.renderInline(alt.trim());
+			const divContent = mdLib.renderInline(content.trim());
+			return `<div class="video"><video controls loop autoplay muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+		}
+	);
 
 	// Features to make your build faster (when you need them)
 
