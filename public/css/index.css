@@ -277,6 +277,7 @@ figure {
 img {
 	max-width: 100%;
 	max-height: 95vh;
+	height: auto;
 }
 
 figcaption {
@@ -660,6 +661,15 @@ body {
 		grid-column: content-start / content-end;
 	}
 }
+
+.tmpl-post p:has(> img.cinemascope) {
+	grid-column: 1;
+	justify-self: center;
+	@media (min-width: 45em) {
+		grid-column: content-bleed-start / content-bleed-end;
+	}
+}
+
 
 .tmpl-post .cinemascope {
 	grid-column: 1;

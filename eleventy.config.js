@@ -11,6 +11,12 @@ import path from "path";
 
 import pluginFilters from "./_config/filters.js";
 
+import * as cheerio from 'cheerio';
+
+import debug from "debug";
+const dbg = debug("mllty");
+
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
@@ -117,11 +123,33 @@ export default async function(eleventyConfig) {
 	);
 
 	eleventyConfig.addPairedShortcode(
-		"gallery", (data) => {
+		"gallery", function (data) {
 			const galleryContent = mdLib.render(data);
-			return `<div class="gallery">${galleryContent}</div>`;
+			const $ = cheerio.load(galleryContent);
+			const dirPath = this.page.filePathStem.slice(0, this.page.filePathStem.length-5);
+			$('img').each((i, el) => {
+				const imgUrl = $(el).attr('src');
+				$(el).wrap('<a></a>');
+				const parent = $(el).parent();
+				parent.attr('href', `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
+				dbg("parent", parent.attr('href'));
+			});
+
+			// for (const image of images) {
+			// 	image.wrap("<a href='`${image.attribs.src}`'></a>");
+			// 	dbg("galleryContent", image.attribs.src, path.basename(image.attribs.src, path.extname(image.attribs.src)));
+			// }
+			return `<div class="gallery">${$.html()}</div>`;
 		}
 	);
+
+	// eleventyConfig.addPairedShortcode(
+	// 	"gallery", function (data) {
+	// 		dbg("path", this.page);
+	// 		const galleryContent = mdLib.render(data);
+	// 		return `<div class="gallery">${galleryContent}</div>`;
+	// 	}
+	// );
 
 	eleventyConfig.addPairedShortcode(
 		"videoloop", (content, data, alt) => {
