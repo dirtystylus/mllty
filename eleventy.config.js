@@ -1,5 +1,6 @@
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from 'markdown-it-attrs';
+import markdownItImageFigures from 'markdown-it-image-figures';
 import markdownIt from 'markdown-it';
 
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
@@ -105,6 +106,7 @@ export default async function(eleventyConfig) {
 			slugify: eleventyConfig.getFilter("slugify")
 		});
 		mdLib.use(markdownItAttrs);
+		mdLib.use(markdownItImageFigures, {figcaption: true});
 	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
@@ -132,7 +134,7 @@ export default async function(eleventyConfig) {
 				$(el).wrap('<a></a>');
 				const parent = $(el).parent();
 				parent.attr('href', `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
-				dbg("parent", parent.attr('href'));
+				$(parent).parent().wrapInner("<figure></figure>");
 			});
 
 			// for (const image of images) {
