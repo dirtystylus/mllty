@@ -13,24 +13,8 @@ templateClass: tmpl-post
 	{% endif %}
 </div>
 {{ content | safe }}
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<div class="post--next-previous-link">
-<nav class="pagination--inner" aria-label="Pagination links">
-	{%- if previousPost %}<p class="left">
-		<strong>Previous</strong>:
-		<a class="previous" href="{{ previousPost.url }}">{{ previousPost.data.display_title or previousPost.data.title }}</a>
-	</p>{% endif %}
-	{%- if nextPost %}<p class="right">
-		<strong>Next</strong>:
-		<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.display_title or nextPost.data.title }}</a>
-	</p>{% endif %}
-</nav>
-</div>
-{%- endif %}
-{%- endif %}
+{% set postslist = collections.posts %}
+{% include "partials/single-pagination.njk" %}
 </div>
 <script src="{{ '/js/glightbox.js' }}" defer></script>
 <script src="{{ '/js/videoloop.js' }}" defer></script>

@@ -1,6 +1,6 @@
 ---
 title: 'Philippines & Japan 2023, Part Seven: Tokyo'
-display_title: 'Philippines & Japan 2023, Part Seven: Tokyo'
+display_title: 'Philippines & Japan 2023, *Part* Seven: Tokyo'
 description: A taste of Tokyo.
 date: 2023-12-30T16:02:16.050-05:00
 layout: layouts/post-gallery

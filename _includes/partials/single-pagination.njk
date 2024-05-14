@@ -1,3 +1,7 @@
+{%- if postslist %}
+{%- set previousPost = postslist | getPreviousCollectionItem %}
+{%- set nextPost = postslist | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
 <div class="post--next-previous-link">
 <nav class="pagination--inner" aria-label="Pagination links">
 	{%- if previousPost %}<p class="left">
@@ -10,3 +14,5 @@
 	</p>{% endif %}
 </nav>
 </div>
+{%- endif %}
+{%- endif %}
