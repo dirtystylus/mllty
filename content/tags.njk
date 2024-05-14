@@ -1,8 +1,16 @@
-<h1>Tags</h1>
-
-<ul>
+---
+title: Tag List
+description: Tags used on posts.
+layout: layouts/base.njk
+templateClass: tmpl-tags-list
+---
+<div class="content-main container">
+<h1>Tag Archives</h1>
+<ul class="postlist">
 {% for tag in collections | getKeys | filterTagList %}
 	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+	<li class="postlist-item">
+		<a href="{{ tagUrl }}" class="postlist-link">{{ tag }}</a> ({{ collections[tag].length }})
+	</li>
 {% endfor %}
 </ul>

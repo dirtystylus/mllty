@@ -12,12 +12,14 @@ const eleventyComputed = {
 	title: "Tagged '{{ tag }}'",
 	permalink: function(data) {
 		return `/tags/${this.slugify(data.tag)}/`;
-	}
+	},
+	templateClass: "tmpl-tag-detail"
 };
 ---
+<div class="content-main container">
 <h1>Tagged “{{ tag }}”</h1>
+<div class="post--meta">Browse all <a href="tags.njk">tags</a>.</div>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
-
-<p>See <a href="tags.njk">all tags</a>.</p>
+</div>
