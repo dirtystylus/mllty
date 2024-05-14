@@ -109,6 +109,14 @@ export default async function(eleventyConfig) {
 		mdLib.use(markdownItImageFigures, {figcaption: true});
 	});
 
+	// Filters
+
+	// this does not seem to work within njk files!
+	eleventyConfig.addFilter("markdown", function (data) {
+		return mdLib.renderInline(data);
+	});
+
+	// Shortcodes
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
@@ -131,7 +139,6 @@ export default async function(eleventyConfig) {
 			const dirPath = this.page.filePathStem.slice(0, this.page.filePathStem.length-5);
 			$('img').each((i, el) => {
 				const imgUrl = $(el).attr('src');
-				dbg("next html", $(el).next().length);
 				let imgCaption = "";
 				if ($(el).next().length > 0 && $(el).next().prop("tagName").toLowerCase() == 'figcaption') {
 					imgCaption = $(el).next().html();
@@ -149,14 +156,6 @@ export default async function(eleventyConfig) {
 			return `<div class="gallery">${$.html()}</div>`;
 		}
 	);
-
-	// eleventyConfig.addPairedShortcode(
-	// 	"gallery", function (data) {
-	// 		dbg("path", this.page);
-	// 		const galleryContent = mdLib.render(data);
-	// 		return `<div class="gallery">${galleryContent}</div>`;
-	// 	}
-	// );
 
 	eleventyConfig.addPairedShortcode(
 		"videoloop", (content, data, alt) => {

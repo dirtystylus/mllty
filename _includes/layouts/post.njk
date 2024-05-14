@@ -6,7 +6,7 @@ templateClass: tmpl-post
 {# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <div class="content-main container">
-<h1>{{ title }}</h1>
+<h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -17,22 +17,6 @@ templateClass: tmpl-post
 </ul>
 
 {{ content | safe }}
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<div class="post--next-previous-link">
-<nav class="pagination--inner" aria-label="Pagination links">
-	{%- if previousPost %}<p class="left">
-		<strong>Previous</strong>:
-		<a class="previous" href="{{ previousPost.url }}">{{ previousPost.data.display_title or previousPost.data.title }}</a>
-	</p>{% endif %}
-	{%- if nextPost %}<p class="right">
-		<strong>Next</strong>:
-		<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.display_title or nextPost.data.title }}</a>
-	</p>{% endif %}
-</nav>
-</div>
-{%- endif %}
-{%- endif %}
+{% set postslist = collections.posts %}
+{% include "partials/single-pagination.njk" %}
 </div>
