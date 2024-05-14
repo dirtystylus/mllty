@@ -1,0 +1,35 @@
+{
+	"items": [
+		{
+			"title": "Posts",
+			"url": "/posts"
+		},
+		{
+			"title": "Reading",
+			"url": "/reading"
+		},
+		{
+			"title": "Watching",
+			"url": "/watching"
+		}
+	],
+	"footer_items": [
+		{
+			"title": "RSS (Everything)",
+			"url": "/feed/feed.xml"
+		},
+		{
+			"title": "RSS (Reading)",
+			"url": "/feed/reading.xml"
+		},
+		{
+			"title": "Mastodon",
+			"url": "https://mastodon.social/@markllobrera",
+			"rel": "me"
+		},
+		{
+			"text": "Twitter",
+			"url": "https://twitter.com/dirtystylus"
+		}
+	]
+}
