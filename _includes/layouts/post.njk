@@ -17,15 +17,22 @@ templateClass: tmpl-post
 </ul>
 
 {{ content | safe }}
-
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
+<div class="post--next-previous-link">
+<nav class="pagination--inner" aria-label="Pagination links">
+	{%- if previousPost %}<p class="left">
+		<strong>Previous</strong>:
+		<a class="previous" href="{{ previousPost.url }}">{{ previousPost.data.display_title or previousPost.data.title }}</a>
+	</p>{% endif %}
+	{%- if nextPost %}<p class="right">
+		<strong>Next</strong>:
+		<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.display_title or nextPost.data.title }}</a>
+	</p>{% endif %}
+</nav>
+</div>
 {%- endif %}
 {%- endif %}
 </div>
