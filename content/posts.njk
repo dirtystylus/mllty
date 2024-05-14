@@ -2,11 +2,19 @@
 eleventyNavigation:
   key: Archive
   order: 2
-	templateClass: tmpl-posts-list
+templateClass: tmpl-posts-list
+permalink: 'posts{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+paginationPrevText: 'Newer posts'
+paginationNextText: 'Older posts'
+paginationAnchor: '#post-list'
+pagination:
+  data: collections.posts
+  size: 8
+  alias: postslist
 ---
 <div class="content-main container">
 <h1>Posts</h1>
 
-{% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+{% include "partials/list-pagination.njk" %}
 </div>
