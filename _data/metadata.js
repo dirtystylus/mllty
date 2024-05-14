@@ -1,11 +1,27 @@
 export default {
-	title: "Eleventy Base Blog v9",
-	url: "https://example.com/",
-	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
-	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+	"title": "Mark Llobrera",
+	"url": "https://www.markllobrera.com/",
+	"domain": "markllobrera.com",
+	"language": "en",
+	"description": "This is the online home for Mark Llobrera, housing his blog and reading log.",
+	"profile_image": "https://www.markllobrera.com/img/meta/mark-llobrera-thumb.jpg",
+	"feed": {
+		"subtitle": "This is the online home for Mark Llobrera, housing his blog and reading log.",
+		"filename": "feed.xml",
+		"path": "/feed/feed.xml",
+		"url": "https://www.markllobrera.com/feed/feed.xml",
+		"id": "https://www.markllobrera.com/"
+	},
+	"feed_reading": {
+		"subtitle": "This is the online home for Mark Llobrera, housing his blog and reading log.",
+		"filename": "reading.xml",
+		"path": "/feed/reading.xml",
+		"url": "https://www.markllobrera.com/feed/reading.xml",
+		"img_base_url": "https://www.markllobrera.com",
+		"id": "https://www.markllobrera.com/"
+	},
+	"author": {
+		"name": "Mark Llobrera",
+		"email": "mark@dirtystylus.com"
 	}
 }

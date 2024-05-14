@@ -37,17 +37,14 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
+			<span class="home"><a href="home.njk" class="home-link">{{ metadata.title }}</a></span>
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
+			<h2 class="visually-hidden">Top level navigation menu</h2>
+			<ul class="nav">
+			{%- for entry in navigation.items %}
+				<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+			{%- endfor %}
+			</ul>
 		</header>
 
 		<main id="skip" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
@@ -55,7 +52,13 @@
 		</main>
 
 		<footer>
-			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
+			<div class="footer--copyright">Copyright © {{ site.buildTime | readableDate("yyyy") }} Mark Llobrera.
+			<ul class="nav">
+			{%- for item in navigation.footer_items %}
+				<li class="nav-item"><a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+			{%- endfor %}
+			</ul>
+			</div>
 		</footer>
 
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
