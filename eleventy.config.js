@@ -1,5 +1,7 @@
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from 'markdown-it-attrs';
+import markdownItImageFigures from 'markdown-it-image-figures';
+import markdownIt from 'markdown-it';
 
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import pluginRss from "@11ty/eleventy-plugin-rss";
@@ -9,6 +11,12 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import path from "path";
 
 import pluginFilters from "./_config/filters.js";
+
+import * as cheerio from 'cheerio';
+
+import debug from "debug";
+const dbg = debug("mllty");
+
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -20,7 +28,8 @@ export default async function(eleventyConfig) {
 			"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
-		.addPassthroughCopy("content/blog/**/*.jpg");
+		.addPassthroughCopy("content/blog/**/*.jpg")
+		.addPassthroughCopy("content/blog/**/*.mp4");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -75,6 +84,15 @@ export default async function(eleventyConfig) {
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
+	const mdLib = markdownIt({
+		html: true,
+		breaks: true,
+		linkify: false,
+		typographer: true
+	});
+
+	eleventyConfig.setLibrary("md", mdLib);
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {
@@ -88,11 +106,66 @@ export default async function(eleventyConfig) {
 			slugify: eleventyConfig.getFilter("slugify")
 		});
 		mdLib.use(markdownItAttrs);
+		mdLib.use(markdownItImageFigures, {figcaption: true});
 	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
+
+	eleventyConfig.addPairedShortcode(
+		"markdown",
+		(data) => {
+			if (data) {
+				return mdLib.renderInline(data);
+			} else {
+				return "";
+			}
+		}
+	);
+
+	eleventyConfig.addPairedShortcode(
+		"gallery", function (data) {
+			const galleryContent = mdLib.render(data);
+			const $ = cheerio.load(galleryContent);
+			const dirPath = this.page.filePathStem.slice(0, this.page.filePathStem.length-5);
+			$('img').each((i, el) => {
+				const imgUrl = $(el).attr('src');
+				dbg("next html", $(el).next().length);
+				let imgCaption = "";
+				if ($(el).next().length > 0 && $(el).next().prop("tagName").toLowerCase() == 'figcaption') {
+					imgCaption = $(el).next().html();
+					$(el).next().addClass("visually-hidden");
+				}
+				$(el).wrap('<a></a>');
+				const parent = $(el).parent();
+				parent.attr("href", `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
+				if (imgCaption !== "") {
+					parent.attr("data-title", imgCaption);
+				}
+
+				$(parent).parent().wrapInner("<figure></figure>");
+			});
+			return `<div class="gallery">${$.html()}</div>`;
+		}
+	);
+
+	// eleventyConfig.addPairedShortcode(
+	// 	"gallery", function (data) {
+	// 		dbg("path", this.page);
+	// 		const galleryContent = mdLib.render(data);
+	// 		return `<div class="gallery">${galleryContent}</div>`;
+	// 	}
+	// );
+
+	eleventyConfig.addPairedShortcode(
+		"videoloop", (content, data, alt) => {
+			const videoURL = mdLib.renderInline(data.trim());
+			const altText = mdLib.renderInline(alt.trim());
+			const divContent = mdLib.renderInline(content.trim());
+			return `<div class="video"><video controls loop autoplay muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+		}
+	);
 
 	// Features to make your build faster (when you need them)
 

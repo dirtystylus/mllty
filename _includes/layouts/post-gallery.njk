@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<link rel="stylesheet" href="/css/glightbox.css">
+<div class="content-main container">
+<h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
+<div class="post--meta">Published <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+	{% if tags.length > 0 %} in
+	{% for tag in tags -%}
+		<a class="tag" href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+	{% endfor -%}
+	{% endif %}
+</div>
+{{ content | safe }}
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<ul class="links-nextprev">
+	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+</ul>
+{%- endif %}
+{%- endif %}
+</article>
+<script src="{{ '/js/glightbox.js' }}" defer></script>
+<script src="{{ '/js/videoloop.js' }}" defer></script>
+<script type="module">
+const lightbox = GLightbox({
+		touchNavigation: true,
+		loop: true,
+		keyboardNavigation: true,
+		selector: 'a:has(> .glightbox)'
+});
+lightbox.init();
+console.log('lightbox init');
+</script>
