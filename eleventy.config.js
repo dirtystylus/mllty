@@ -131,16 +131,21 @@ export default async function(eleventyConfig) {
 			const dirPath = this.page.filePathStem.slice(0, this.page.filePathStem.length-5);
 			$('img').each((i, el) => {
 				const imgUrl = $(el).attr('src');
+				dbg("next html", $(el).next().length);
+				let imgCaption = "";
+				if ($(el).next().length > 0 && $(el).next().prop("tagName").toLowerCase() == 'figcaption') {
+					imgCaption = $(el).next().html();
+					$(el).next().addClass("visually-hidden");
+				}
 				$(el).wrap('<a></a>');
 				const parent = $(el).parent();
-				parent.attr('href', `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
+				parent.attr("href", `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
+				if (imgCaption !== "") {
+					parent.attr("data-title", imgCaption);
+				}
+
 				$(parent).parent().wrapInner("<figure></figure>");
 			});
-
-			// for (const image of images) {
-			// 	image.wrap("<a href='`${image.attribs.src}`'></a>");
-			// 	dbg("galleryContent", image.attribs.src, path.basename(image.attribs.src, path.extname(image.attribs.src)));
-			// }
 			return `<div class="gallery">${$.html()}</div>`;
 		}
 	);
