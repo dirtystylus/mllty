@@ -2,8 +2,11 @@
 eleventyNavigation:
   key: Archive
   order: 2
+	templateClass: tmpl-posts-list
 ---
-<h1>Archive</h1>
+<div class="content-main container">
+<h1>Posts</h1>
 
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+</div>

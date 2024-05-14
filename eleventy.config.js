@@ -1,5 +1,6 @@
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from 'markdown-it-attrs';
+import markdownItFootnote from 'markdown-it-footnote';
 import markdownItImageFigures from 'markdown-it-image-figures';
 import markdownIt from 'markdown-it';
 
@@ -104,9 +105,10 @@ export default async function(eleventyConfig) {
 			}),
 			level: [1,2,3,4],
 			slugify: eleventyConfig.getFilter("slugify")
-		});
-		mdLib.use(markdownItAttrs);
-		mdLib.use(markdownItImageFigures, {figcaption: true});
+		})
+		.use(markdownItAttrs)
+		.use(markdownItFootnote)
+		.use(markdownItImageFigures, {figcaption: true});
 	});
 
 	// Filters

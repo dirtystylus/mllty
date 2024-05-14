@@ -450,6 +450,8 @@ figcaption {
 	display: inline-block;
 	padding: 0;
 	color: var(--red);
+	font-family: var(--font--sans);
+	font-weight: 600;
 }
 
 a[href].postlist-link:visited {
