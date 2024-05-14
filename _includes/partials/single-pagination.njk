@@ -1,0 +1,12 @@
+<div class="post--next-previous-link">
+<nav class="pagination--inner" aria-label="Pagination links">
+	{%- if previousPost %}<p class="left">
+		<strong>Previous</strong>:
+		<a class="previous" href="{{ previousPost.url }}">{{ previousPost.data.display_title or previousPost.data.title }}</a>
+	</p>{% endif %}
+	{%- if nextPost %}<p class="right">
+		<strong>Next</strong>:
+		<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.display_title or nextPost.data.title }}</a>
+	</p>{% endif %}
+</nav>
+</div>

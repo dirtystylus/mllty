@@ -28,8 +28,8 @@ export default async function(eleventyConfig) {
 			"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
-		.addPassthroughCopy("content/blog/**/*.jpg")
-		.addPassthroughCopy("content/blog/**/*.mp4");
+		.addPassthroughCopy("content/posts/**/*.jpg")
+		.addPassthroughCopy("content/posts/**/*.mp4");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets

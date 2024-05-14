@@ -2,7 +2,7 @@
 title: 'Philippines & Japan 2023, Part Two: El Nido'
 display_title: 'Philippines & Japan 2023, Part Two: El Nido'
 description: Kayaks and phenomenal sunsets.
-date: '2023-09-17T15:05:27.982-04:00'
+date: 2023-09-17T15:05:27.982-04:00
 layout: layouts/post-gallery
 tags:
   - cameras
@@ -103,12 +103,6 @@ We wrapped up the evening on the pool/observation deck at our hotel, watching th
 ![Purple clouds in a fading sunset.](phl-jpn-elnido-12.jpg){data-responsiver=cinemascope}
 
 Some other shots from this leg (click to enlarge):
-
-<a href="phl-jpn-elnido-1.jpg">![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?")</a>
-
-[This post](index.md)
-[Image link](phl-jpn-elnido-1.jpg)
-<a href="index.md">Self-linking</a>
 
 {% gallery %}
 
