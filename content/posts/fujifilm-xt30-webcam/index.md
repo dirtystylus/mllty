@@ -10,7 +10,7 @@ tags:
   - tech
 ---
 
-![Fujifilm X-T30 on a mounting rod.](xt30-webcam.jpg "New webcam setup."){data-responsiver=cinemascope}
+![Fujifilm X-T30 on a mounting rod.](xt30-webcam.jpg "New webcam setup."){.cinemascope}
 
 Last year Fujifilm released software that allowed people to use some of their cameras as webcams. My X-T30 was absent from that initial support, but this month Fuji added support via a [firmware update](https://fujifilm-x.com/global/support/download/firmware/cameras/x-t30/).[^1] The [Fujifilm Webcam X program](https://fujifilm-x.com/global/support/download/software/x-webcam/) acts as a bridge between your camera and videoconferencing apps on your computer.
 

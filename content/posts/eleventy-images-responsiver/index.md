@@ -106,7 +106,7 @@ This allowed me to use [Netlify Large Media](https://www.netlify.com/products/la
 If I want to use a **cinemascope** preset that I’ve defined in **images-responsiver-config.js**, I can use **markdown-it-attrs** to pass in a `data-responsiver` attribute:
 
 ```md
-![Trees bathed in fog](/img/DSCF1431.jpg "Testing *Markdown* **captions**"){data-responsiver=cinemascope}
+![Trees bathed in fog](/img/DSCF1431.jpg "Testing *Markdown* **captions**"){.cinemascope}
 ```
 
 Which generates this markup:

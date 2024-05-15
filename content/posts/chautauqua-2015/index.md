@@ -8,7 +8,7 @@ tags:
   - photos
   - travel
 ---
-![Swing in the foreground of a house.](porch-swing.jpg "Porch Swing"){data-responsiver=cinemascope}
+![Swing in the foreground of a house.](porch-swing.jpg "Porch Swing"){.cinemascope}
 
 Last month we spent a week at Chautauqua, NY, as guests of my parents-in-law Mike and Debbie. Amelia and Sophie took part in camp; I worked all week but took time out to attend a few lectures. It’s hard to describe Chautauqua, this [NY Times article](http://www.nytimes.com/2014/07/20/travel/an-edification-vacation.html) does a pretty good job.
 

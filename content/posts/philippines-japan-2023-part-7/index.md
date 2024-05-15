@@ -66,7 +66,7 @@ We crammed into the tiny dining room and had a decent meal, then passed out in a
 
 It had been 18 years since my last visit to Japan, and I had forgotten that the train system is a mix of Tokyo subway and JR-operated lines, so that made for some confusion—especially since we didn’t opt to get Suica or Pasmo transit cards for such a short trip.[^2] As efficient as the Tokyo transit system is, the UX of its vending machines could really use an update.
 
-![A row of vending machines under a map of the Tokyo rail system.](phl-jpn-tokyo-10.jpg "Dad and me trying to figure out child/adult tickets to get to Asakusa. Photo © Joseph Llobrera."){data-responsiver=cinemascope}
+![A row of vending machines under a map of the Tokyo rail system.](phl-jpn-tokyo-10.jpg "Dad and me trying to figure out child/adult tickets to get to Asakusa. Photo © Joseph Llobrera."){.cinemascope}
 
 {% gallery %}
 
@@ -77,7 +77,7 @@ It had been 18 years since my last visit to Japan, and I had forgotten that the 
 {% endgallery %}
 
 
-![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-17.jpg){data-responsiver=cinemascope}
+![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-17.jpg){.cinemascope}
 
 {% videoloop "./phl-jpn-tokyo-15.mp4", "A set of toys in clear packaging: waving lucky cat toys, and a man eating ramen." %}
 
@@ -85,7 +85,7 @@ Hypnotic (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppp1sA).
 
 {% endvideoloop %}
 
-![Women in ornate kimonos queue up in front of a shop along Nakamise Shopping Street.](phl-jpn-tokyo-25.jpg "Beautiful kimonos everywhere"){data-responsiver=cinemascope}
+![Women in ornate kimonos queue up in front of a shop along Nakamise Shopping Street.](phl-jpn-tokyo-25.jpg "Beautiful kimonos everywhere"){.cinemascope}
 
 {% gallery %}
 
@@ -122,7 +122,7 @@ For lunch we found a small udon shop off Nakamise Shopping Street.
 
 While some of us decided to go back to the shops my brother, my dad, and I went to the Asakusa Culture Tourist Information Center, which has an observation deck a few stories high.
 
-![A man and a woman in a rickshaw chat with their driver.](phl-jpn-tokyo-24.jpg){data-responsiver=cinemascope}
+![A man and a woman in a rickshaw chat with their driver.](phl-jpn-tokyo-24.jpg){.cinemascope}
 
 {% gallery %}
 
@@ -138,7 +138,7 @@ While some of us decided to go back to the shops my brother, my dad, and I went 
 
 After lunch we boarded a [hop-on/hop-off bus](https://skyhopbus.tokyo/en/) route bound for the Imperial Palace.
 
-![Seimon Ishibashi bridge in front of Tokyo’s Imperial Palace.](phl-jpn-tokyo-47.jpg "Seimon Ishibashi bridge"){data-responsiver=cinemascope}
+![Seimon Ishibashi bridge in front of Tokyo’s Imperial Palace.](phl-jpn-tokyo-47.jpg "Seimon Ishibashi bridge"){.cinemascope}
 
 {% gallery %}
 
@@ -150,7 +150,7 @@ After lunch we boarded a [hop-on/hop-off bus](https://skyhopbus.tokyo/en/) route
 
 On the way back from the palace we happened upon a couple taking some wedding photos. At one point the photographer instructed the man to carry his bride and I was afraid he was going to drop her and ruin her dress.
 
-![A man and a woman in wedding attire take photos on the street near Tokyo’s Imperial Palace. The photographer is arranging the woman’s dress.](phl-jpn-tokyo-50.jpg){data-responsiver=cinemascope}
+![A man and a woman in wedding attire take photos on the street near Tokyo’s Imperial Palace. The photographer is arranging the woman’s dress.](phl-jpn-tokyo-50.jpg){.cinemascope}
 
 The palace area was also great for fun signs:
 
@@ -230,7 +230,7 @@ Conveyor belt sushi (no audio). [*Full version on Flickr*](https://flic.kr/p/2pp
 
 We capped the night off by observing the famous Shibuya scramble, incredibly busy even on a weeknight:
 
-![Lit-up skyscrapers ring the famous Shibuya Crossing.](phl-jpn-tokyo-74.jpg){data-responsiver=cinemascope}
+![Lit-up skyscrapers ring the famous Shibuya Crossing.](phl-jpn-tokyo-74.jpg){.cinemascope}
 
 ![Streams of pedestrians in the center of the Shibuya Crossing.](phl-jpn-tokyo-75.jpg "Inside the Shibuya scramble")
 
@@ -248,7 +248,7 @@ Shibuya Scramble (no audio). [*Full version on Flickr*](https://flic.kr/p/2pphDf
 
 The anchor of our second day was a visit to the [Shin-Yokohama Ramen Museum](https://www.raumen.co.jp/english/). We elected to take the Shinkansen so the kids could say they experienced it, even though Shin-Yokohama is only about twenty miles away and the Shinkansen wouldn’t reach anywhere close to its top speed.
 
-![Elongated nose of a Shinkansen train pulling into the station.](phl-jpn-tokyo-80.jpg){data-responsiver=cinemascope}
+![Elongated nose of a Shinkansen train pulling into the station.](phl-jpn-tokyo-80.jpg){.cinemascope}
 
 {% videoloop "./phl-jpn-tokyo-92.mp4", "A shinkansen train passes through a rail stop" %}
 
@@ -281,7 +281,7 @@ The museum occupies two main areas—the first floor has an exhibition on the hi
 
 The basement housed a two-story area filled with recreations of ramen stalls from various eras of Japan’s history. Each stall served a different variety of ramen tied to that era. It’s all very reminiscent of a Disney theme park but despite the kitsch I really enjoyed the experience.
 
-![A series of ramen shops whose facades recreate different historical eras of Japan.](phl-jpn-tokyo-86.jpg){data-responsiver=cinemascope}  
+![A series of ramen shops whose facades recreate different historical eras of Japan.](phl-jpn-tokyo-86.jpg){.cinemascope}  
 
 {% gallery %}
 
@@ -306,7 +306,7 @@ So: my brother and his family went with my parents, and my family and I set off 
 
 The views are really something. We could *juuuust* barely make out Mount Fuji in the distance:
 
-![Mt Fuji, covered with cloud.](phl-jpn-tokyo-100.jpg "Mt. Fuji is there, under the clouds"){data-responsiver=cinemascope}
+![Mt Fuji, covered with cloud.](phl-jpn-tokyo-100.jpg "Mt. Fuji is there, under the clouds"){.cinemascope}
 
 {% gallery %}
 

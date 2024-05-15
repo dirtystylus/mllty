@@ -40,20 +40,20 @@ Mall train (no audio). [*Full version on Flickr*](https://flic.kr/p/2p6LUfe).
 
 The hotel itself was…ok. It was right on the water but there wasn’t really much of a beach to speak of. Nice view, though:
 
-![A palm tree extends over the water at the edge of a beach](phl-jpn-puertoprincesa-iloilo-8.jpg){data-responsiver=cinemascope}
+![A palm tree extends over the water at the edge of a beach](phl-jpn-puertoprincesa-iloilo-8.jpg){.cinemascope}
 
 The rest of the time we hung out in the pool. On our last night we ordered the hotel’s special boodle fight for dinner, but even though it was quite pretty to look at it was pretty underwhelming for a party of 9.
 
-![A boodle fight spread with shrimp, crabs, barbecued chicken, and fried rice](phl-jpn-puertoprincesa-iloilo-9.jpg "Boodle fight(let)"){data-responsiver=cinemascope}
+![A boodle fight spread with shrimp, crabs, barbecued chicken, and fried rice](phl-jpn-puertoprincesa-iloilo-9.jpg "Boodle fight(let)"){.cinemascope}
 
 A few more from Puerto Princesa:
 
 {% gallery %}
 
-- ![Side of a van with a decal reading “Soy Car”](phl-jpn-puertoprincesa-iloilo-1.jpg "Our ride. I like to think that this was just declaring it was, indeed, a car"){data-responsiver=gallery_4x3}
-- ![A bag of sugary treats](phl-jpn-puertoprincesa-iloilo-4.jpg "My daughter noticed this typo"){data-responsiver=gallery_3x2}
-- ![PotDog, a potato-themed food stand in a mall](phl-jpn-puertoprincesa-iloilo-5.jpg "Just a wonderful name for this food stand"){data-responsiver=gallery_3x2}
-- ![Mister Donut, a donut stand in a mall](phl-jpn-puertoprincesa-iloilo-6.jpg "Tickled by the @tbp sign, which stands for “at iba pa” (et cetera.)"){data-responsiver=gallery_3x2}
+- ![Side of a van with a decal reading “Soy Car”](phl-jpn-puertoprincesa-iloilo-1.jpg "Our ride. I like to think that this was just declaring it was, indeed, a car")
+- ![A bag of sugary treats](phl-jpn-puertoprincesa-iloilo-4.jpg "My daughter noticed this typo")
+- ![PotDog, a potato-themed food stand in a mall](phl-jpn-puertoprincesa-iloilo-5.jpg "Just a wonderful name for this food stand")
+- ![Mister Donut, a donut stand in a mall](phl-jpn-puertoprincesa-iloilo-6.jpg "Tickled by the @tbp sign, which stands for “at iba pa” (et cetera.)")
 
 {% endgallery %}
 
@@ -81,7 +81,7 @@ With each new place on this trip we added to our taxonomy of tricycle styles. Ea
 
 We stopped in at Miagao church—my dad kept repeating that it was designated as a UNESCO heritage site. I don’t ever remember visiting it as a child.
 
-![A Catholic church from the 1700s. In the center of a small rotunda in front is a statue of Christ atop a pillar.](phl-jpn-puertoprincesa-iloilo-17.jpg "Miagao Church"){data-responsiver=cinemascope}
+![A Catholic church from the 1700s. In the center of a small rotunda in front is a statue of Christ atop a pillar.](phl-jpn-puertoprincesa-iloilo-17.jpg "Miagao Church"){.cinemascope}
 
 ### SEAFDEC
 
@@ -97,7 +97,7 @@ Our elementary school was still there! Albeit renamed from West Visayas State Un
 
 We eventually made our way back to Iloilo city, stopping for lunch at a batchoy restaurant. Batchoy is a pork offal noodle soup that I’ve missed so much, it got its own bullet point on our itinerary.
 
-![Closeup of a bowl of soup with noodles.](phl-jpn-puertoprincesa-iloilo-35.jpg "Batchoy"){data-responsiver=cinemascope}
+![Closeup of a bowl of soup with noodles.](phl-jpn-puertoprincesa-iloilo-35.jpg "Batchoy"){.cinemascope}
 
 It was cool to see jeepneys on the streets, even though there’s apparently an ongoing effort to phase them out in favor of more fuel-efficient minibuses. I get the reasons, but I will miss their colorful decorations and character.
 
@@ -105,7 +105,7 @@ It was cool to see jeepneys on the streets, even though there’s apparently an 
 
 The scale of Iloilo City baffled me. This was a city that had terrible roads, maybe one intersection with a stoplight, and now it’s a bustling metropolis with a self-proclaimed goal to be the third-biggest city in the Philippines by 2028. You could tell a ton of money had been poured into infrastructure and development, in a surprisingly coherent fashion (unlike more chaotic development in other Philippine cities). The road from the airport was a wide, multi-lane road with different lanes for slower vehicles like tricycles, something that seems so obvious in retrospect. A great impression for our reintroduction.
 
-![A massive canopy over an outdoor shopping mall patio. In the distance is an elevated crosswalk connecting it to another mall.](phl-jpn-puertoprincesa-iloilo-40.jpg "Megaworld Iloilo. Pinoys *love* a mall."){data-responsiver=cinemascope}
+![A massive canopy over an outdoor shopping mall patio. In the distance is an elevated crosswalk connecting it to another mall.](phl-jpn-puertoprincesa-iloilo-40.jpg "Megaworld Iloilo. Pinoys *love* a mall."){.cinemascope}
 
 Finally, this. If there’s one thing that Filipinos can’t resist, it’s a punny business name. But I still have no idea what they were going for with this one:
 
@@ -113,12 +113,12 @@ Finally, this. If there’s one thing that Filipinos can’t resist, it’s a pu
 
 {% gallery %}
 
-* ![A sign in front of a large tree, marking the spot of Guimbal Vanishing Mansion.](phl-jpn-puertoprincesa-iloilo-16.jpg "I assume the dwende live here"){data-responsiver=gallery_2x3}
-* ![Interior of a church, with the statues housed in an altar decorated in gold.](phl-jpn-puertoprincesa-iloilo-18.jpg "Inside Miagao church"){data-responsiver=gallery_4x3}
-* ![A bundle of bags of kropek hung from a market stall.](phl-jpn-puertoprincesa-iloilo-19.jpg "Kropek!"){data-responsiver=gallery_2x3}
-* ![Rows of mangoes for sale at a roadside stall.](phl-jpn-puertoprincesa-iloilo-26.jpg "My mom made us do a u-turn on the main road to check out the mangoes"){data-responsiver=gallery_2x3}
-* ![Flatbed truck loaded with crates full of San Miguel beer and soft drinks.](phl-jpn-puertoprincesa-iloilo-30.jpg "Beverage truck"){data-responsiver=gallery_3x2}
-* ![Loaf of white bread branded Tasty Bread.](phl-jpn-puertoprincesa-iloilo-39.jpg "As opposed to the other kind"){data-responsiver=gallery_3x2}
+* ![A sign in front of a large tree, marking the spot of Guimbal Vanishing Mansion.](phl-jpn-puertoprincesa-iloilo-16.jpg "I assume the dwende live here")
+* ![Interior of a church, with the statues housed in an altar decorated in gold.](phl-jpn-puertoprincesa-iloilo-18.jpg "Inside Miagao church")
+* ![A bundle of bags of kropek hung from a market stall.](phl-jpn-puertoprincesa-iloilo-19.jpg "Kropek!")
+* ![Rows of mangoes for sale at a roadside stall.](phl-jpn-puertoprincesa-iloilo-26.jpg "My mom made us do a u-turn on the main road to check out the mangoes")
+* ![Flatbed truck loaded with crates full of San Miguel beer and soft drinks.](phl-jpn-puertoprincesa-iloilo-30.jpg "Beverage truck")
+* ![Loaf of white bread branded Tasty Bread.](phl-jpn-puertoprincesa-iloilo-39.jpg "As opposed to the other kind")
 
 
 {% endgallery %}

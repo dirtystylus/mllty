@@ -22,4 +22,4 @@ You can view the modified code from my site [here](https://github.com/dirtystylu
 
 Here’s what it looks like on a [recent post](/posts/shogun-visual-style/):
 
-!["A screenshot of a blog post which features sidenotes. The sidenote is highlighted with a pale pink color."](sidenotes.png){data-responsiver=cinemascope}
+!["A screenshot of a blog post which features sidenotes. The sidenote is highlighted with a pale pink color."](sidenotes.png){.cinemascope}

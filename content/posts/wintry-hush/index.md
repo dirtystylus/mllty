@@ -6,7 +6,7 @@ date: '2018-03-07T21:33:37-05:00'
 tags:
   - photos
 ---
-![Snow-covered trees, shot from between two houses.](wintry-hush-1.jpg "White blanket"){data-responsiver=cinemascope}
+![Snow-covered trees, shot from between two houses.](wintry-hush-1.jpg "White blanket"){.cinemascope}
 
 I’m fighting off a cold, but took some photos before shoveling the walk.
 

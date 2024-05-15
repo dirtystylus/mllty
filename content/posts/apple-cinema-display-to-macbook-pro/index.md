@@ -8,7 +8,7 @@ tags:
   - technologys-betrayal
 ---
 
-![ADC to HDMI to USB-C adapter chain](adc-hdmi-usbc.jpg "Daisy-chaining"){data-responsiver=cinemascope}
+![ADC to HDMI to USB-C adapter chain](adc-hdmi-usbc.jpg "Daisy-chaining"){.cinemascope}
 
 Last year I finally upgraded my work laptop to a 13" Macbook Pro. I rarely bring that machine home; when I did, I realized that I couldn't easily hook it up to my vintage 20" Apple Cinema Display (matte screens forever!). That monitor uses a DVI connector, which I currently have hooked up to my home machine using a [DVI-to-Mini DisplayPort adapter](https://www.apple.com/shop/product/MB570LL/B/mini-displayport-to-dvi-adapter).
 

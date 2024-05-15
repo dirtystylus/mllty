@@ -9,7 +9,7 @@ tags:
   - photos
   - technologys-betrayal
 ---
-![Vintage metal type on building exterior](stuck-in-manual-1.jpg "*Superior*. Flatiron district, New York."){data-responsiver=cinemascope}
+![Vintage metal type on building exterior](stuck-in-manual-1.jpg "*Superior*. Flatiron district, New York."){.cinemascope}
 
 
 I’ve been shooting my Fuji X100S for [almost a year now](/posts/fuji-x100s/), and I’m at the point where I’ve settled in with it and am better able to evaluate it. In most regards not much has changed, but there is one *big* difference to how I’m shooting it these days: for about the last eight months I’ve shot it primarily using manual focus.

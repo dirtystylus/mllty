@@ -11,7 +11,7 @@ tags:
 
 Back for a summer in Maine after 2020’s visit got canceled by Covid.
 
-![Two girls on a beach.](seaglass-hunting-1.jpg "Em and Soph combing the beach"){data-responsiver=cinemascope}
+![Two girls on a beach.](seaglass-hunting-1.jpg "Em and Soph combing the beach"){.cinemascope}
 
 ![A girl holding up a piece of blue seaglass.](seaglass-hunting-2.jpg "Blue is always rare")
 

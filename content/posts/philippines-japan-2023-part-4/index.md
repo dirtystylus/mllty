@@ -36,7 +36,7 @@ We were back to a smaller propeller plane for our flight from Iloilo.
 
 We first stopped in at the Alegre Guitar factory to get a tour of their operation. All of their guitars are handmade, and we got to take a peek at some of the craftspeople working on guitars and ukeleles at varying stages of the process. 
 
-![A man assembles a guitar.](phl-jpn-cebu-3.jpg){data-responsiver=cinemascope}
+![A man assembles a guitar.](phl-jpn-cebu-3.jpg){.cinemascope}
 
 ![A closeup of assembled guitars hanging in a row.](phl-jpn-cebu-4.jpg)
 

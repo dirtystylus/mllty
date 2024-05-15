@@ -13,7 +13,7 @@ Enter the [Keychron Q2](https://www.keychron.com/collections/custom-keyboards/pr
 
 I got the Q2 in a barebone configuration, since I didn’t really care for any of the switch/keycap options, and I also got the variant without the knob, since I route audio through my [Schiit Valhalla](https://www.schiit.com/products/valhalla-1) amp that has a nice volume knob.
 
-![A top-down shot of a grey 65% keyboard with no keycaps or switches.](keychron-q2-1.jpg "The bare board"){data-responsiver=cinemascope}
+![A top-down shot of a grey 65% keyboard with no keycaps or switches.](keychron-q2-1.jpg "The bare board"){.cinemascope}
 
 A few months ago my friend Max sent me some five-pin Gazzew Boba U4 Silent tactile switches that I couldn’t plug straight into my three-pin Alt. The Q2 PCB is five-pin, though, so I dropped the Bobas in:[^2]
 
@@ -25,7 +25,7 @@ For keycaps I decided to go with my [Polycaps Octopus](/posts/polycaps-octopus-k
 
 The final result:
 
-![A top-down shot of a grey 65% keyboard white keyswitches.](keychron-q2-4.jpg "Fully built"){data-responsiver=cinemascope}
+![A top-down shot of a grey 65% keyboard white keyswitches.](keychron-q2-4.jpg "Fully built"){.cinemascope}
 
 So far I’m finding it to be a pretty good alternative to my Alt. A few notes after a week of use:
 

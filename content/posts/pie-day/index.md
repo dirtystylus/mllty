@@ -9,11 +9,11 @@ tags:
 ---
 The annual Bluecadet Pie Day challenge—not a bad showing, with over a dozen folks bringing in savory and sweet pies.
 
-![Blueberry and blackberry crumb pie.](pie-day-1.jpg "Team Llobrera’s entry: a blueberry/blackberry crumb pie"){data-responsiver=cinemascope}
+![Blueberry and blackberry crumb pie.](pie-day-1.jpg "Team Llobrera’s entry: a blueberry/blackberry crumb pie"){.cinemascope}
 
 ![A blood orange curd pie with the pi symbol in the center.](pie-day-2.jpg "Maya’s blood orange curd pie")
 
-![Various pies lined up on a table.](pie-day-3.jpg "View from above"){data-responsiver=cinemascope}
+![Various pies lined up on a table.](pie-day-3.jpg "View from above"){.cinemascope}
 
 ![A key lime pie with lavender and toasted coconut flakes.](pie-day-4.jpg "The eventual winner, Brad’s key lime pie with lavender and toasted coconut flakes")
 

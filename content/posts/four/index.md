@@ -7,4 +7,4 @@ tags:
   - family
   - photos
 ---
-![Girl holding up four fingers](s-four.jpg "Soph turns four"){data-responsiver=cinemascope}
+![Girl holding up four fingers](s-four.jpg "Soph turns four"){.cinemascope}

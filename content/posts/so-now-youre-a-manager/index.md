@@ -8,7 +8,7 @@ tags:
   - management
 ---
 
-![Sketchnotes from Plucky’s two-day manager training.](so-now-youre-a-manager-1.png "This stuff won’t make much sense to non-attendees, but it helps me remember."){data-responsiver=cinemascope}
+![Sketchnotes from Plucky’s two-day manager training.](so-now-youre-a-manager-1.png "This stuff won’t make much sense to non-attendees, but it helps me remember."){.cinemascope}
 
 Last week I attended [“So Now You’re a Manager”](https://www.beplucky.com/manager/), a two-day experience/conference organized and led by [Jennifer Dary](https://twitter.com/jenniferdary)[^1]. I’ve been the Technology Director for Bluecadet Philadelphia for the last three years, and most of what I know about managing people I’ve learned on the fly—I’ve never had any formal training beyond a few coaching sessions. I’ve assembled most of my managing skills from lessons absorbed from former mentors (both good and bad), blog posts, Twitter rants, and conversations with some colleagues. So now was as good a time as any to go through some formal curriculum, and get some feedback from my peers.
 

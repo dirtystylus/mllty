@@ -57,7 +57,7 @@ To automate the process further I added an entry in my **`package.json`** file t
 
 I was able to reuse most of the templates I had in place for my [reading log](/posts/book-grid-iterations/). I’m still pretty happy with that CSS Grid code, although for movies the detail pages probably need a bit of rethinking, since my Letterboxd diary entries tend to be pretty short.
 
-![A grid of thumbnails for movies](watching-grid.jpg "My film viewing log"){data-responsiver=cinemascope}
+![A grid of thumbnails for movies](watching-grid.jpg "My film viewing log"){.cinemascope}
 
 While building this I kept thinking back to the early 2000s and how I would pull stuff from Twitter and Flickr into my site. Not much has changed in technical approach, I guess, but now I’m a lot more wary about the longevity (and use) of my data on other platforms. (Yesterday’s news about [DPReview shutting down](/posts/amazon-dpreview/) certainly didn’t help.)
 

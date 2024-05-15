@@ -10,7 +10,7 @@ tags:
 ---
 Some scenes from our annual trip to Maine. For the last few years we’ve stayed on a peninsula just outside of Freeport, near the Wolfe’s Neck state park. This year we got some pretty good weather for the majority of our stay.
 
-![Osprey Island viewed from the dock](cloud-patterns.jpg "Cloud patterns"){data-responsiver=cinemascope}
+![Osprey Island viewed from the dock](cloud-patterns.jpg "Cloud patterns"){.cinemascope}
 
 There was, as usual, plenty of seafood.
 
@@ -30,7 +30,7 @@ There was also fun with sparklers.
 
 We got to visit the Portland Children’s Museum, too.
 
-![Color wheel blurred by motion behind a young girl.](color-wheel.jpg "Color wheel"){data-responsiver=cinemascope}
+![Color wheel blurred by motion behind a young girl.](color-wheel.jpg "Color wheel"){.cinemascope}
 
 Also, the beach. I grew up around tropical beaches, so I stay out of cold New England water as much as possible. The kids love it though.
 
@@ -38,6 +38,6 @@ Also, the beach. I grew up around tropical beaches, so I stay out of cold New En
 
 Until next year.
 
-![Purple-pink sunset viewed through the trees](sunset.jpg "Purple sunset"){data-responsiver=cinemascope}
+![Purple-pink sunset viewed through the trees](sunset.jpg "Purple sunset"){.cinemascope}
 
 The entire set can be [viewed on Flickr](https://www.flickr.com/photos/dirtystylus/sets/72157652650825514/).

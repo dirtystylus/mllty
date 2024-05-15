@@ -16,7 +16,7 @@ As their birthday gift to me Em and Soph performed a finger-puppet rendition of 
 
 The palace also transformed into Jabba’s barge—lifting the top reveals two paper sails that unfurl. A plastic Solo™ cup was the Sarlacc pit (yes, they did the scene where Boba Fett’s jetpack sends him into the pit).
 
-![A lineup of paper puppet versions of Star Wars characters.](forty-2.jpg "Papercraft Star Wars cast"){data-responsiver=cinemascope}
+![A lineup of paper puppet versions of Star Wars characters.](forty-2.jpg "Papercraft Star Wars cast"){.cinemascope}
 
 We also made it to the beach on Long Beach Island.
 
@@ -24,4 +24,4 @@ We also made it to the beach on Long Beach Island.
 
 Finally, this:
 
-![Sunset in Manahawkin, NJ.](forty-4.jpg "Sunset from the deck"){data-responsiver=cinemascope}
+![Sunset in Manahawkin, NJ.](forty-4.jpg "Sunset from the deck"){.cinemascope}
