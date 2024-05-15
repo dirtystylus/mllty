@@ -1,6 +1,6 @@
 ---
 title: Mawn Noodle House
-display_title: Mawn *Noodle* House
+display_title: Mawn Noodle House
 description: A new Cambodian restaurant in Philadelphia.
 date: '2024-04-30T09:17:10.217-04:00'
 tags:
@@ -15,7 +15,7 @@ My daughter started a printmaking class at [Fleisher’s Saturday Young Artists 
 
 ![Diners share a meal. In the wall behind them is an arrangement of several framed prints of illustrated chickens, and an elaborate printed cloth stretched across the top of several of the frames.](mawn-3.jpg)
 
-![A bowl of beef noodle soup with an egg yolk delicately perched above beef and greens.](mawn-4.jpg "Beef noodle soup. This felt like a very close sibling to Vietnamese pho"){.cinemascope}
+![A bowl of beef noodle soup with an egg yolk delicately perched above beef and greens.](mawn-4.jpg "Beef noodle soup. This felt like a very close sibling to Vietnamese pho"){data-responsiver=cinemascope}
 
 ![A tofu bowl topped with artfully shredded carrots and peanuts.](mawn-5.jpg "Night market noodles")
 

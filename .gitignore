@@ -2,6 +2,7 @@ _site/
 node_modules/
 package-lock.json
 .cache
+**/.DS_Store
 
 # Local Netlify folder
 .netlify
