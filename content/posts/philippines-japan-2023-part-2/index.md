@@ -2,7 +2,7 @@
 title: 'Philippines & Japan 2023, Part Two: El Nido'
 display_title: 'Philippines & Japan 2023, Part Two: El Nido'
 description: Kayaks and phenomenal sunsets.
-date: 2023-09-17T15:05:27.982-04:00
+date: '2023-09-17T15:05:27.982-04:00'
 layout: layouts/post-gallery
 tags:
   - cameras
@@ -28,7 +28,7 @@ We flew from Coron in the early evening—which was good, in that it allowed us 
 
 We had originally intended to see what tour packages the hotel offered but the markup was so high that my dad ended up searching around for a better provider, and the next morning we booked a custom tour via [El Bacuit Travel and Tours](http://elbacuit.weebly.com). Because there were nine of us so we could get a whole boat to ourselves—if we had been a smaller party we would likely have to share a boat with other groups.
 
-![An ocean view with multiple islands on the horizon line, with a small boat in the distance. In the foreground is a silhouette of a tree.](phl-jpn-elnido-2.jpg "Looking out from Lime Resort to the ocean"){.cinemascope}
+![An ocean view with multiple islands on the horizon line, with a small boat in the distance. In the foreground is a silhouette of a tree.](phl-jpn-elnido-2.jpg "Looking out from Lime Resort to the ocean"){data-responsiver=cinemascope}
 
 ## Big Lagoon
 
@@ -40,11 +40,11 @@ Entering Big Lagoon (no audio). [*Full version on Flickr*](https://flic.kr/p/2p3
 
 {% endvideoloop %}
 
-The water was extremely clear and in the shallower parts it sometimes looked like the kayaks were levitating above the water, because you could see the kayaks’ shadows on the bottom of the lagoon.
+The water was extremely clear and in the shallower parts it sometimes looked like the kayaks were levitating above the water, because you could see the kayaks’ shadows on the bottom of the lagoon. 
 
 ![Four kayaks in a lagoon with clear teal water.](phl-jpn-elnido-5.jpg "Kayaking on the Big Lagoon"){data-responsiver=cinemascope}
 
-The island cliffs were very interesting—apparently they’re limestone, and you could see the erosion at the water line as we paddled past.
+The island cliffs were very interesting—apparently they’re limestone, and you could see the erosion at the water line as we paddled past. 
 
 ![Four kayaks lined up in line with the horizon, with island cliffs in the background.](phl-jpn-elnido-16.jpg "It took a minute to get us all lined up for this shot"){data-responsiver=cinemascope}
 
@@ -54,7 +54,7 @@ Eventually our guides took us to a shallower end and tied up the kayaks, and we 
 
 ## Entalula Island
 
-After the Big Lagoon we hopped back on the boat and went to a beach on Entalula Island. There were small beachside bars where you could get fresh buko (young coconut) juice—they slice up the top and drop in a straw for you, or you can do like my daughter and sip straight from the top.
+After the Big Lagoon we hopped back on the boat and went to a beach on Entalula Island. There were small beachside bars where you could get fresh buko (young coconut) juice—they slice up the top and drop in a straw for you, or you can do like my daughter and sip straight from the top. 
 
 ![A woman sips from a young coconut.](phl-jpn-elnido-7.jpg)
 
@@ -106,16 +106,15 @@ Some other shots from this leg (click to enlarge):
 
 {% gallery %}
 
-* ![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?"){.glightbox}
-* ![A man and a woman in sunglasses and hats, on a boat, smile with islands in the distance.](phl-jpn-elnido-3.jpg "Mom and Dad on the way to the Big Lagoon"){.glightbox}
-* ![A family on an outrigger boat.](phl-jpn-elnido-19.jpg "Aboard the Lenard 4. Photo © Joseph Llobrera."){.glightbox}
-* ![Two men in a yellow kayak.](phl-jpn-elnido-20.jpg "Dad and me"){.glightbox}
-* ![Two women in a kayak with an island cliffside in the background.](phl-jpn-elnido-4.jpg "Jordan and Em at the Big Lagoon"){.glightbox}
-* ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){.glightbox}
-* ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){.glightbox}
-* ![An ice cream cart with a color wheel umbrella stops in the middle of a dirt road lined with shops.](phl-jpn-elnido-13.jpg "Ice cream cart"){.glightbox}
-* ![An Italian/Japanese restaurant named “Chef Mark Style”.](phl-jpn-elnido-14.jpg "I’m not sure I trust my namesake here given the food combination"){.glightbox}
-
+- ![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?"){data-responsiver=gallery_3x2}
+- ![A man and a woman in sunglasses and hats, on a boat, smile with islands in the distance.](phl-jpn-elnido-3.jpg "Mom and Dad on the way to the Big Lagoon"){data-responsiver=gallery_3x2}
+- ![A family on an outrigger boat.](phl-jpn-elnido-19.jpg "Aboard the Lenard 4. Photo © Joseph Llobrera."){data-responsiver=gallery_4x3}
+- ![Two men in a yellow kayak.](phl-jpn-elnido-20.jpg "Dad and me"){data-responsiver=gallery_4x3}
+- ![Two women in a kayak with an island cliffside in the background.](phl-jpn-elnido-4.jpg "Jordan and Em at the Big Lagoon"){data-responsiver=gallery_3x4}
+- ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){data-responsiver=gallery_2x3}
+- ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){data-responsiver=gallery_2x3}
+- ![An ice cream cart with a color wheel umbrella stops in the middle of a dirt road lined with shops.](phl-jpn-elnido-13.jpg "Ice cream cart"){data-responsiver=gallery_2x3}
+- ![An Italian/Japanese restaurant named “Chef Mark Style”.](phl-jpn-elnido-14.jpg "I’m not sure I trust my namesake here given the food combination"){data-responsiver=gallery_2x3} 
 {% endgallery %}
 
 [More photos on Flickr](https://flic.kr/s/aHBqjAV99V).

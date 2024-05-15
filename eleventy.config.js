@@ -44,6 +44,20 @@ export default async function(eleventyConfig) {
 	// Do you want a {% js %} bundle shortcode too?
 	// eleventyConfig.addBundle("js");
 
+	// Collections
+	eleventyConfig.addCollection("posts", function (collection) {
+		const coll = collection
+			.getAll()
+			.filter(function (item) {
+				return item.data.content_type == "post";
+			})
+			.sort(function (a, b) {
+				return a.date - b.date;
+			});
+
+		return [...coll].reverse();
+	});
+
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
@@ -109,7 +123,6 @@ export default async function(eleventyConfig) {
 		.use(markdownItImageFigures, {figcaption: true});
 
 		mdLib.renderer.rules.footnote_ref = (tokens, idx, options, env, slf) => {
-			dbg("rendering footnote");
 			const id = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf)
 			const caption = slf.rules.footnote_caption(tokens, idx, options, env, slf)
 			let refid = id
@@ -142,9 +155,18 @@ export default async function(eleventyConfig) {
 	});
 
 	// Shortcodes
-	eleventyConfig.addShortcode("currentBuildDate", () => {
-		return (new Date()).toISOString();
+	eleventyConfig.addFilter("currentBuildDate", (data) => {
+		return (new Date());
 	});
+
+	eleventyConfig.addPairedShortcode(
+		"aside", (content, aside, alignment) => {
+			const asideText = mdLib.render(aside.trim());
+			const alignmentClass = alignment == 'left' ? 'aside-left-wrap': 'aside-right-wrap';
+			const divContent = mdLib.render(content.trim());
+			return `<div class="${alignmentClass}"><div class="aside-content">${divContent}</div><aside>${asideText}</aside></div>`;
+		}
+	);
 
 	eleventyConfig.addPairedShortcode(
 		"markdown",
@@ -188,6 +210,13 @@ export default async function(eleventyConfig) {
 			const altText = mdLib.renderInline(alt.trim());
 			const divContent = mdLib.renderInline(content.trim());
 			return `<div class="video"><video controls loop autoplay muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+		}
+	);
+
+	eleventyConfig.addPairedShortcode(
+		"vimeo", (data) => {
+			const videoURL = mdLib.renderInline(data.trim());
+			return `<figure class="cinemascope video"><div class="video-embed"><div><iframe src="${videoURL}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></figure>`;
 		}
 	);
 

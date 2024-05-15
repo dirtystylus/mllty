@@ -1,8 +1,8 @@
 ---
 title: 'Philippines & Japan 2023, Part Seven: Tokyo'
-display_title: 'Philippines & Japan 2023, *Part* Seven: Tokyo'
+display_title: 'Philippines & Japan 2023, Part Seven: Tokyo'
 description: A taste of Tokyo.
-date: 2023-12-30T16:02:16.050-05:00
+date: '2023-12-30T16:02:16.050-05:00'
 layout: layouts/post-gallery
 tags:
   - cameras
@@ -47,10 +47,10 @@ Our Airbnb was located in Shinjuku, not too far from the Shin-Ōkubo JR station.
 
 {% gallery %}
 
-* ![A pair of sports cars in a small garage: a blue one on the left, a red one on the right.](phl-jpn-tokyo-6.jpg "Sports car duo"){.glightbox data-gallery=gallery3}
-* ![A cat perches on the fender of a red sports car.](phl-jpn-tokyo-96.jpg "Cat calling shotgun"){.glightbox data-gallery=gallery3}
-* ![A bar called “Hangover”.](phl-jpn-tokyo-7.jpg "Truth in advertising"){.glightbox data-gallery=gallery3}
-* ![A banner hanging from a lamppost featuring a cartoon angel bearing a small Philippine flag. The angel has a speech bubble above it reading “Mabuhay”.](phl-jpn-tokyo-8.jpg "Kabayan!"){.glightbox data-gallery=gallery3}
+* ![A pair of sports cars in a small garage: a blue one on the left, a red one on the right.](phl-jpn-tokyo-6.jpg "Sports car duo"){data-responsiver=gallery_4x3}
+* ![A cat perches on the fender of a red sports car.](phl-jpn-tokyo-96.jpg "Cat calling shotgun"){data-responsiver=gallery_4x3}
+* ![A bar called “Hangover”.](phl-jpn-tokyo-7.jpg "Truth in advertising"){data-responsiver=gallery_3x4}
+* ![A banner hanging from a lamppost featuring a cartoon angel bearing a small Philippine flag. The angel has a speech bubble above it reading “Mabuhay”.](phl-jpn-tokyo-8.jpg "Kabayan!"){data-responsiver=gallery_2x3}
 
 {% endgallery %}
 
@@ -70,9 +70,9 @@ It had been 18 years since my last visit to Japan, and I had forgotten that the 
 
 {% gallery %}
 
-* ![A family waits on a JR rail platform.](phl-jpn-tokyo-11.jpg "Photo © Joseph Llobrera"){.glightbox data-gallery=gallery4}
-* ![A man reloads a vending machine on a rail platform.](phl-jpn-tokyo-12.jpg){.glightbox data-gallery=gallery4}
-* ![Shot from inside a subway car: a girl wearing a mask looks up at the signs along the car’s roof.](phl-jpn-tokyo-13.jpg){.glightbox data-gallery=gallery4}
+* ![A family waits on a JR rail platform.](phl-jpn-tokyo-11.jpg "Photo © Joseph Llobrera"){data-responsiver=gallery_4x3}
+* ![A man reloads a vending machine on a rail platform.](phl-jpn-tokyo-12.jpg){data-responsiver=gallery_3x4}
+* ![Shot from inside a subway car: a girl wearing a mask looks up at the signs along the car’s roof.](phl-jpn-tokyo-13.jpg){data-responsiver=gallery_3x4}
 
 {% endgallery %}
 
@@ -89,19 +89,19 @@ Hypnotic (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppp1sA).
 
 {% gallery %}
 
-* ![View of the Nakamise Shopping Street leading to Sensōji temple in Asakusa. Tourists shop at various stalls along the street.](phl-jpn-tokyo-14.jpg){.glightbox data-gallery=gallery1}
-* ![A man in a mask stands in front of a store with a decorative metal sliding door.](phl-jpn-tokyo-26.jpg "Dad taking a breather from the crush"){.glightbox data-gallery=gallery1}
-* ![A family dressed in colorful kimonos.](phl-jpn-tokyo-27.jpg){.glightbox data-gallery=gallery1}
-* ![Side street off the main Nakamise Shopping Street. Two women wearing kimonos walk under a decorative sign.](phl-jpn-tokyo-28.jpg){.glightbox data-gallery=gallery1}
-* ![A girl in a green shirt holds up an ice cream sandwice.](phl-jpn-tokyo-29.jpg "S with a sesame ice cream treat"){.glightbox data-gallery=gallery1}
-* ![Closeup of a girl biting into an ice cream sandwich.](phl-jpn-tokyo-30.jpg){.glightbox data-gallery=gallery1}
-* ![A girl unwraps a delicate glass figurine of a koi.](phl-jpn-tokyo-31.jpg "E with a glass koi figurine"){.glightbox data-gallery=gallery1}
-* ![A girl smiles in front of Hōzōmon gate.](phl-jpn-tokyo-16.jpg "S in front of Hōzōmon gate"){.glightbox data-gallery=gallery1}
-* ![A large red lantern suspended from the ceiling of Hōzōmon.](phl-jpn-tokyo-18.jpg "Lanterns of Hōzōmon gate"){.glightbox data-gallery=gallery1}
-* ![A large Niō statue. Its skin is painted red, and it has a long trail of blue hair looping above it before resting on its left shoulder.](phl-jpn-tokyo-32.jpg "Niō statue in Hōzōmon gate"){.glightbox data-gallery=gallery1}
-* ![View of the Sensōji temple.](phl-jpn-tokyo-19.jpg "Sensōji"){.glightbox data-gallery=gallery1}
-* ![Large red lantern at the entrance to Sensōji temple.](phl-jpn-tokyo-33.jpg){.glightbox data-gallery=gallery1}
-* ![A pagoda topped with an intricate golden spire.](phl-jpn-tokyo-34.jpg "Sensōji pagoda"){.glightbox data-gallery=gallery1}
+* ![View of the Nakamise Shopping Street leading to Sensōji temple in Asakusa. Tourists shop at various stalls along the street.](phl-jpn-tokyo-14.jpg){data-responsiver=gallery_3x4}
+* ![A man in a mask stands in front of a store with a decorative metal sliding door.](phl-jpn-tokyo-26.jpg "Dad taking a breather from the crush"){data-responsiver=gallery_3x2}
+* ![A family dressed in colorful kimonos.](phl-jpn-tokyo-27.jpg){data-responsiver=gallery_2x3}
+* ![Side street off the main Nakamise Shopping Street. Two women wearing kimonos walk under a decorative sign.](phl-jpn-tokyo-28.jpg){data-responsiver=gallery_2x3}
+* ![A girl in a green shirt holds up an ice cream sandwice.](phl-jpn-tokyo-29.jpg "S with a sesame ice cream treat"){data-responsiver=gallery_2x3}
+* ![Closeup of a girl biting into an ice cream sandwich.](phl-jpn-tokyo-30.jpg){data-responsiver=gallery_3x2}
+* ![A girl unwraps a delicate glass figurine of a koi.](phl-jpn-tokyo-31.jpg "E with a glass koi figurine"){data-responsiver=gallery_3x2}
+* ![A girl smiles in front of Hōzōmon gate.](phl-jpn-tokyo-16.jpg "S in front of Hōzōmon gate"){data-responsiver=gallery_3x4}
+* ![A large red lantern suspended from the ceiling of Hōzōmon.](phl-jpn-tokyo-18.jpg "Lanterns of Hōzōmon gate"){data-responsiver=gallery_3x4}
+* ![A large Niō statue. Its skin is painted red, and it has a long trail of blue hair looping above it before resting on its left shoulder.](phl-jpn-tokyo-32.jpg "Niō statue in Hōzōmon gate"){data-responsiver=gallery_2x3}
+* ![View of the Sensōji temple.](phl-jpn-tokyo-19.jpg "Sensōji"){data-responsiver=gallery_4x3}
+* ![Large red lantern at the entrance to Sensōji temple.](phl-jpn-tokyo-33.jpg){data-responsiver=gallery_2x3}
+* ![A pagoda topped with an intricate golden spire.](phl-jpn-tokyo-34.jpg "Sensōji pagoda"){data-responsiver=gallery_2x3}
 
 
 {% endgallery %}
@@ -112,11 +112,11 @@ For lunch we found a small udon shop off Nakamise Shopping Street.
 
 {% gallery %}
 
-* ![A man at a kitchen counter takes an order from a woman.](phl-jpn-tokyo-35.jpg){.glightbox data-gallery=gallery2}
-* ![A bowl of udon topped with a fried egg, nori, and chopped green onion.](phl-jpn-tokyo-36.jpg){.glightbox data-gallery=gallery2}
-* ![A girl in a green shirt uses chopsticks to hold up an udon noodle with a knot in it.](phl-jpn-tokyo-37.jpg "Udon knot"){.glightbox data-gallery=gallery2}
-* ![An entryway to a small bar, decorated with a woven bamboo covering. The sign says “Not Suspicious Bar”.](phl-jpn-tokyo-22.jpg "“Not Suspicious” makes me instantly that"){.glightbox data-gallery=gallery2}
-* ![A sign for “Not Suspicious Bar” with a price list for beer, sake, and cocktails.](phl-jpn-tokyo-23.jpg " Suspicious Foreigner Friendly Bar reads many different ways depending on your emphasis"){.glightbox data-gallery=gallery2}
+* ![A man at a kitchen counter takes an order from a woman.](phl-jpn-tokyo-35.jpg){data-responsiver=gallery_3x2}
+* ![A bowl of udon topped with a fried egg, nori, and chopped green onion.](phl-jpn-tokyo-36.jpg){data-responsiver=gallery_3x2}
+* ![A girl in a green shirt uses chopsticks to hold up an udon noodle with a knot in it.](phl-jpn-tokyo-37.jpg "Udon knot"){data-responsiver=gallery_3x4}
+* ![An entryway to a small bar, decorated with a woven bamboo covering. The sign says “Not Suspicious Bar”.](phl-jpn-tokyo-22.jpg "“Not Suspicious” makes me instantly that"){data-responsiver=gallery_3x4}
+* ![A sign for “Not Suspicious Bar” with a price list for beer, sake, and cocktails.](phl-jpn-tokyo-23.jpg " Suspicious Foreigner Friendly Bar reads many different ways depending on your emphasis"){data-responsiver=gallery_3x4}
 
 {% endgallery %}
 
@@ -126,10 +126,10 @@ While some of us decided to go back to the shops my brother, my dad, and I went 
 
 {% gallery %}
 
-* ![The Asahi Beer Hall with its trademark golden flame, aka The Golden Turd](phl-jpn-tokyo-39.jpg "Asahi golden turd"){.glightbox data-gallery=gallery5}
-* ![Tokyo Skytree.](phl-jpn-tokyo-40.jpg "Tokyo Skytree"){.glightbox data-gallery=gallery5}
-* ![A 3D relief map of the Asakusa area, with a scale model of Tokyo Skytree and pins denoting points of interest.](phl-jpn-tokyo-42.jpg "Tourist map"){.glightbox data-gallery=gallery5}
-* ![View of the Nakamise Shopping Street from above.](phl-jpn-tokyo-41.jpg "Nakamise Shopping Street and Sensōji, from above"){.glightbox data-gallery=gallery5}
+* ![The Asahi Beer Hall with its trademark golden flame, aka The Golden Turd](phl-jpn-tokyo-39.jpg "Asahi golden turd"){data-responsiver=gallery_3x4}
+* ![Tokyo Skytree.](phl-jpn-tokyo-40.jpg "Tokyo Skytree"){data-responsiver=gallery_3x4}
+* ![A 3D relief map of the Asakusa area, with a scale model of Tokyo Skytree and pins denoting points of interest.](phl-jpn-tokyo-42.jpg "Tourist map"){data-responsiver=gallery_3x4}
+* ![View of the Nakamise Shopping Street from above.](phl-jpn-tokyo-41.jpg "Nakamise Shopping Street and Sensōji, from above"){data-responsiver=gallery_3x2}
 
 
 {% endgallery %}
@@ -142,9 +142,9 @@ After lunch we boarded a [hop-on/hop-off bus](https://skyhopbus.tokyo/en/) route
 
 {% gallery %}
 
-* ![A moat in front of a stone wall around Tokyo’s Imperial Palace.](phl-jpn-tokyo-45.jpg "Palace moat"){.glightbox data-gallery=gallery6}
-* ![Trees sway in the wind in front of high walls surrounding Tokyo’s Imperial Palace.](phl-jpn-tokyo-46.jpg){.glightbox data-gallery=gallery6}
-* ![Japanese black pine trees in Kokyo Gaien National Garden.](phl-jpn-tokyo-48.jpg "Kokyo Gaien National Garden’s Japanese black pine trees"){.glightbox data-gallery=gallery6}
+* ![A moat in front of a stone wall around Tokyo’s Imperial Palace.](phl-jpn-tokyo-45.jpg "Palace moat"){data-responsiver=gallery_4x3}
+* ![Trees sway in the wind in front of high walls surrounding Tokyo’s Imperial Palace.](phl-jpn-tokyo-46.jpg){data-responsiver=gallery_3x2}
+* ![Japanese black pine trees in Kokyo Gaien National Garden.](phl-jpn-tokyo-48.jpg "Kokyo Gaien National Garden’s Japanese black pine trees"){data-responsiver=gallery_3x2}
 
 {% endgallery %}
 
@@ -156,10 +156,10 @@ The palace area was also great for fun signs:
 
 {% gallery %}
 
-* ![Yellow crossing sign with silhouttes of children in school clothes.](phl-jpn-tokyo-51.jpg){.glightbox data-gallery=gallery7}
-* ![Red-bordered crosswalk sign with an illustrated blue silhouette of a person wearing a hat.](phl-jpn-tokyo-52.jpg "I loved the hat on the figure in this crosswalk sign"){.glightbox data-gallery=gallery7}
-* ![Signage in front of a urinal urging people to step closer.](phl-jpn-tokyo-53.jpg "I found Japan’s bathroom signage to be very prescriptive"){.glightbox data-gallery=gallery7}
-* ![Signs in Kokyo Gaien National Garden prohibiting the playing of soccer, and skateboarding.](phl-jpn-tokyo-54.jpg "[giggles]"){.glightbox data-gallery=gallery7}
+* ![Yellow crossing sign with silhouttes of children in school clothes.](phl-jpn-tokyo-51.jpg){data-responsiver=gallery_2x3}
+* ![Red-bordered crosswalk sign with an illustrated blue silhouette of a person wearing a hat.](phl-jpn-tokyo-52.jpg "I loved the hat on the figure in this crosswalk sign"){data-responsiver=gallery_3x2}
+* ![Signage in front of a urinal urging people to step closer.](phl-jpn-tokyo-53.jpg "I found Japan’s bathroom signage to be very prescriptive"){data-responsiver=gallery_3x2}
+* ![Signs in Kokyo Gaien National Garden prohibiting the playing of soccer, and skateboarding.](phl-jpn-tokyo-54.jpg "[giggles]"){data-responsiver=gallery_2x3}
 
 {% endgallery %}
 
@@ -182,13 +182,13 @@ Some sights from the bus:
 
 {% gallery %}
 
-* ![A plane flying high above a row of skyscrapers.](phl-jpn-tokyo-57.jpg){.glightbox}
+* ![A plane flying high above a row of skyscrapers.](phl-jpn-tokyo-57.jpg){data-responsiver=gallery_3x4}
 * ![Cars in a busy intersection.](phl-jpn-tokyo-58.jpg){data-responsiver= gallery_3x4}
 * ![A tall building topped with an advertisement for Tano, featuring a cartoon dog with Tano-kun written across its neck like a collar.](phl-jpn-tokyo-59.jpg){data-responsiver= gallery_3x4}
-* ![Green sign atop Ueno rail station.](phl-jpn-tokyo-60.jpg){.glightbox}
-* ![Cafe sign reading “HARBS”.](phl-jpn-tokyo-61.jpg "Harbo-loading"){.glightbox}
-* ![Advertisement  in a window for a cat cafe.](phl-jpn-tokyo-62.jpg "Cat cafe"){.glightbox}
-* ![Colorful mural of a turtle climbing the outside of a vibrant yellow building.](phl-jpn-tokyo-64.jpg){.glightbox}
+* ![Green sign atop Ueno rail station.](phl-jpn-tokyo-60.jpg){data-responsiver=gallery_3x2}
+* ![Cafe sign reading “HARBS”.](phl-jpn-tokyo-61.jpg "Harbo-loading"){data-responsiver=gallery_3x2}
+* ![Advertisement  in a window for a cat cafe.](phl-jpn-tokyo-62.jpg "Cat cafe"){data-responsiver=gallery_2x3}
+* ![Colorful mural of a turtle climbing the outside of a vibrant yellow building.](phl-jpn-tokyo-64.jpg){data-responsiver=gallery_3x4}
 
 {% endgallery %}
 
@@ -272,25 +272,25 @@ The museum occupies two main areas—the first floor has an exhibition on the hi
 
 {% gallery %}
 
-* ![A girl sits on a seat sculpted to look like a large ball of uncooked ramen noodles.](phl-jpn-tokyo-82.jpg "S on a ramen chair. Photo © Kristen Llobrera"){.glightbox}
-* ![Rows of different ramen bowls mounted on a wall.](phl-jpn-tokyo-84.jpg "Ramen bowl exhibition "){.glightbox}
-* ![Recreation of a wooden ramen cart.](phl-jpn-tokyo-111.jpg){.glightbox}
-* ![Outline map of japan with different ramen bowls affixed to different areas. In front is a touchscreen which visitors can use to explore the different ramen varieties from each region of the country.](phl-jpn-tokyo-112.jpg "Ramen map"){.glightbox}
+* ![A girl sits on a seat sculpted to look like a large ball of uncooked ramen noodles.](phl-jpn-tokyo-82.jpg "S on a ramen chair. Photo © Kristen Llobrera"){data-responsiver=gallery_3x4}
+* ![Rows of different ramen bowls mounted on a wall.](phl-jpn-tokyo-84.jpg "Ramen bowl exhibition "){data-responsiver=gallery_3x2}
+* ![Recreation of a wooden ramen cart.](phl-jpn-tokyo-111.jpg){data-responsiver=gallery_4x3}
+* ![Outline map of japan with different ramen bowls affixed to different areas. In front is a touchscreen which visitors can use to explore the different ramen varieties from each region of the country.](phl-jpn-tokyo-112.jpg "Ramen map"){data-responsiver=gallery_4x3}
 
 {% endgallery %}
 
 The basement housed a two-story area filled with recreations of ramen stalls from various eras of Japan’s history. Each stall served a different variety of ramen tied to that era. It’s all very reminiscent of a Disney theme park but despite the kitsch I really enjoyed the experience.
 
-![A series of ramen shops whose facades recreate different historical eras of Japan.](phl-jpn-tokyo-86.jpg){data-responsiver=cinemascope}
+![A series of ramen shops whose facades recreate different historical eras of Japan.](phl-jpn-tokyo-86.jpg){data-responsiver=cinemascope}  
 
 {% gallery %}
 
-* ![View of the basement of the Shin-Yokohama Ramen Museum, recreating various eras of Japanese ramen shops.](phl-jpn-tokyo-85.jpg){.glightbox}
-* ![Red neon sign saying “Flower Garden”.](phl-jpn-tokyo-87.jpg "Google translates this as “Flower Garden”"){.glightbox}
-* ![A girl holds chopsticks poised over a bowl of ramen.](phl-jpn-tokyo-88.jpg "E about to dive in"){.glightbox}
-* ![A directory of different ramen shops.](phl-jpn-tokyo-89.jpg){.glightbox}
-* ![A glass case holding models of different dessert options.](phl-jpn-tokyo-90.jpg "E about to dive in"){.glightbox}
-* ![A sign for a dessert shop named Kateko.](phl-jpn-tokyo-91.jpg "Dessert shop"){.glightbox}
+* ![View of the basement of the Shin-Yokohama Ramen Museum, recreating various eras of Japanese ramen shops.](phl-jpn-tokyo-85.jpg){data-responsiver=gallery_3x4}
+* ![Red neon sign saying “Flower Garden”.](phl-jpn-tokyo-87.jpg "Google translates this as “Flower Garden”"){data-responsiver=gallery_3x4}
+* ![A girl holds chopsticks poised over a bowl of ramen.](phl-jpn-tokyo-88.jpg "E about to dive in"){data-responsiver=gallery_3x2}
+* ![A directory of different ramen shops.](phl-jpn-tokyo-89.jpg){data-responsiver=gallery_2x3}
+* ![A glass case holding models of different dessert options.](phl-jpn-tokyo-90.jpg "E about to dive in"){data-responsiver=gallery_2x3}
+* ![A sign for a dessert shop named Kateko.](phl-jpn-tokyo-91.jpg "Dessert shop"){data-responsiver=gallery_2x3}
 
 {% endgallery %}
 
@@ -310,9 +310,9 @@ The views are really something. We could *juuuust* barely make out Mount Fuji in
 
 {% gallery %}
 
-* ![A view of a very green park, surrounded on all sides by buildings.](phl-jpn-tokyo-94.jpg){.glightbox}
-* ![Tourists shopping and sitting underneath a domed ceiling.](phl-jpn-tokyo-95.jpg){.glightbox}
-* ![Silhouette of two girls looking out on Tokyo through a floor-to-ceiling window.](phl-jpn-tokyo-99.jpg){.glightbox}
+* ![A view of a very green park, surrounded on all sides by buildings.](phl-jpn-tokyo-94.jpg){data-responsiver=gallery_4x3}
+* ![Tourists shopping and sitting underneath a domed ceiling.](phl-jpn-tokyo-95.jpg){data-responsiver=gallery_4x3}
+* ![Silhouette of two girls looking out on Tokyo through a floor-to-ceiling window.](phl-jpn-tokyo-99.jpg){data-responsiver=gallery_2x3}
 
 {% endgallery %}
 
@@ -332,11 +332,11 @@ The next morning we packed up. We were flying out of Haneda so we grabbed a quic
 
 {% gallery %}
 
-* ![A vending machine for sriracha hot sauce, shaped like a bottle of sriracha.](phl-jpn-tokyo-106.jpg "Sriracha vending machine. Photo © Joseph Llobrera."){.glightbox}
-* ![An egg decorated with a face and the words “Eat Me?”.](phl-jpn-tokyo-107.jpg){.glightbox}
-* ![Breakfast sandwich from a cafe called Egg On.](phl-jpn-tokyo-108.jpg "This feels like a cultural analog to a bodega breakfast sandwich"){.glightbox}
-* ![A row of colorful hard-sided rolling suitcases lined up outside an apartment building.](phl-jpn-tokyo-109.jpg "Waiting for the rideshare to Shinjuku station"){.glightbox}
-* ![Sign declaring Shinjuku Express Bus Terminal to be an alcohol-free zone.](phl-jpn-tokyo-110.jpg){.glightbox}
+* ![A vending machine for sriracha hot sauce, shaped like a bottle of sriracha.](phl-jpn-tokyo-106.jpg "Sriracha vending machine. Photo © Joseph Llobrera."){data-responsiver=gallery_3x4}
+* ![An egg decorated with a face and the words “Eat Me?”.](phl-jpn-tokyo-107.jpg){data-responsiver=gallery_3x4}
+* ![Breakfast sandwich from a cafe called Egg On.](phl-jpn-tokyo-108.jpg "This feels like a cultural analog to a bodega breakfast sandwich"){data-responsiver=gallery_3x4}
+* ![A row of colorful hard-sided rolling suitcases lined up outside an apartment building.](phl-jpn-tokyo-109.jpg "Waiting for the rideshare to Shinjuku station"){data-responsiver=gallery_3x4}
+* ![Sign declaring Shinjuku Express Bus Terminal to be an alcohol-free zone.](phl-jpn-tokyo-110.jpg){data-responsiver=gallery_3x4}
 
 {% endgallery %}
 

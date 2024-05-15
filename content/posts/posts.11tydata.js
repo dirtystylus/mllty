@@ -2,6 +2,7 @@ import { z } from "zod";
 import { fromZodError } from 'zod-validation-error';
 
 export default {
+	content_type: "post",
 	tags: [
 		"posts"
 	],
