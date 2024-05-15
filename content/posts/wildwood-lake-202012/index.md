@@ -18,14 +18,14 @@ Taken with a Fujifilm X-T30 + 35mm/f2, Acros-R film sim.[^1]
 
 {% gallery %}
 
-- ![Tree emerging from cracked ice](wildwood-lake-1.jpg "Frozen lightning")
-- ![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower")
-- ![Swirl frozen ripple.](wildwood-lake-4.jpg "Swirl")
-- ![Perfect frozen circle around tree base](wildwood-lake-5.jpg "Clean circle")
-- ![Small stump with a smooth frozen circle](wildwood-lake-6.jpg "Lonely stump")
-- ![Frozen ripples at water’s edge](wildwood-lake-7.jpg "Topographical map ice")
-- ![Susquehanna Spillway, viewed from the north](wildwood-lake-8.jpg "Susquehanna Spillway")
-- ![Susquehanna Spillway edge, with dangling icicles](wildwood-lake-9.jpg "Spillway icicles")
+- ![Tree emerging from cracked ice](wildwood-lake-1.jpg "Frozen lightning"){.glightbox}
+- ![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower"){.glightbox}
+- ![Swirl frozen ripple.](wildwood-lake-4.jpg "Swirl"){.glightbox}
+- ![Perfect frozen circle around tree base](wildwood-lake-5.jpg "Clean circle"){.glightbox}
+- ![Small stump with a smooth frozen circle](wildwood-lake-6.jpg "Lonely stump"){.glightbox}
+- ![Frozen ripples at water’s edge](wildwood-lake-7.jpg "Topographical map ice"){.glightbox}
+- ![Susquehanna Spillway, viewed from the north](wildwood-lake-8.jpg "Susquehanna Spillway"){.glightbox}
+- ![Susquehanna Spillway edge, with dangling icicles](wildwood-lake-9.jpg "Spillway icicles"){.glightbox}
 
 {% endgallery %}
 

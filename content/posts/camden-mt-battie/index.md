@@ -21,13 +21,13 @@ Yesterday we stopped in Camden for lunch and then drove up Mt. Battie (it was to
 
 {% gallery %}
 
-* ![Boats in a harbor.](camden-1.jpg "Camden Harbor")
-* ![Sign with a smiling cow.](camden-2.jpg)
-* ![Chalk sign of a dog with a lobster in its mouth.](camden-3.jpg "Even land dogs")
-* ![Metal sculpture of a figure holding up binoculars.](camden-4.jpg "I see you")
-* ![Brick house wrapping around a corner.](camden-5.jpg "Corner office")
-* ![Creek with a bridge.](camden-6.jpg)
-* ![Doll sitting on a wooden bench.](camden-7.jpg "We walked by this very rapidly")
+* ![Boats in a harbor.](camden-1.jpg "Camden Harbor"){.glightbox}
+* ![Sign with a smiling cow.](camden-2.jpg){.glightbox}
+* ![Chalk sign of a dog with a lobster in its mouth.](camden-3.jpg "Even land dogs"){.glightbox}
+* ![Metal sculpture of a figure holding up binoculars.](camden-4.jpg "I see you"){.glightbox}
+* ![Brick house wrapping around a corner.](camden-5.jpg "Corner office"){.glightbox}
+* ![Creek with a bridge.](camden-6.jpg){.glightbox}
+* ![Doll sitting on a wooden bench.](camden-7.jpg "We walked by this very rapidly"){.glightbox}
 
 {% endgallery %}
 

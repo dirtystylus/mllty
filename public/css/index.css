@@ -340,7 +340,7 @@ figcaption {
 	text-decoration: none;
 }
 
-.nav-item a[data-state="active"] {
+.nav-item a[aria-current="page"] {
 	text-decoration: underline;
 }
 
@@ -447,6 +447,7 @@ figcaption {
 	font-size: 0.9em;
 }
 
+.tmpl-tag-detail .postlist-link,
 .tmpl-posts-list .postlist-link {
 	font-weight: 600;
 }

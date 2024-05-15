@@ -4,6 +4,7 @@ templateClass: tmpl-post
 ---
 {# Only include the syntax highlighter CSS on blog posts #}
 {# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
+{%- css %}{% include "public/css/prism-a11y-dark.css" %}{%- endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <div class="content-main container">
 <h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>

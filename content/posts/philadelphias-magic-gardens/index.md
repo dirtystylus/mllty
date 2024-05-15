@@ -19,11 +19,11 @@ Our friend Stef had told us about [this place](https://www.phillymagicgardens.or
  
 There were two small, indoor galleries with some sculpture installations.
 
-![Sculpture mimicking a doorway with a doorknocker set in the wall.](philadelphias-magic-gardens-5.jpg "Knock knock")
+![Sculpture mimicking a doorway with a doorknocker set in the wall.](philadelphias-magic-gardens-5.jpg "Knock knock"){.glightbox}
 
-![Sculpture of a measuring tape and various bolts and screws.](philadelphias-magic-gardens-6.jpg)
+![Sculpture of a measuring tape and various bolts and screws.](philadelphias-magic-gardens-6.jpg){.glightbox}
 
-![Sculpted leaf suspended from the roof, casting two shadows on the wall behind it.](philadelphias-magic-gardens-7.jpg "Triple leaf")
+![Sculpted leaf suspended from the roof, casting two shadows on the wall behind it.](philadelphias-magic-gardens-7.jpg "Triple leaf"){.glightbox}
 
 We went through one more time before we had to go.
 

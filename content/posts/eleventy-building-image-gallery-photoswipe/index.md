@@ -91,7 +91,7 @@ This means that any image using the `gallery_3x2` attribute in Markdown will get
 So this Markdown:
 
 ```md
-![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower")
+![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower"){.glightbox}
 ```
 
 results in this markup:
@@ -374,11 +374,11 @@ The example gallery that closes out this post has this Markdown snippet to gener
 
 ```md
 {% raw %}{% gallery %}
-- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand")
-- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance")
-- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care")
-- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper")
-- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette")
+- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand"){.glightbox}
+- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance"){.glightbox}
+- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){.glightbox}
+- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper"){.glightbox}
+- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){.glightbox}
 {% endgallery %}
 {% endraw %}
 ```   
@@ -396,11 +396,11 @@ I hope this has been helpful. If you’re curious about anything here, my [Twitt
 What does this all look like put together? Here’s a small batch of photos taken around City Hall in downtown Philadelphia, just before Christmas Day:
 
 {% gallery %}
-- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand")
-- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance")
-- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care")
-- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper")
-- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette")
+- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand"){.glightbox}
+- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance"){.glightbox}
+- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){.glightbox}
+- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper"){.glightbox}
+- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){.glightbox}
 {% endgallery %}
 
 
