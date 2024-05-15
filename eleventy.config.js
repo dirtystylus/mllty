@@ -9,6 +9,7 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import Image from "@11ty/eleventy-img";
 import path from "path";
 
 import pluginFilters from "./_config/filters.js";
@@ -29,7 +30,8 @@ export default async function(eleventyConfig) {
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
 		.addPassthroughCopy("content/posts/**/*.jpg")
-		.addPassthroughCopy("content/posts/**/*.mp4");
+		.addPassthroughCopy("content/posts/**/*.mp4")
+		.addPassthroughCopy("content/watching/**/*.jpg");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -92,6 +94,18 @@ export default async function(eleventyConfig) {
 			});
 
 		return [...coll].reverse();
+	});
+
+	eleventyConfig.addCollection("films", function (collection) {
+		const films = collection
+			.getAll()
+			.filter(function (item) {
+				return item.data.content_type == "film";
+			})
+			.sort(function (a, b) {
+					return a.date - b.date;
+				});
+		return [...films].reverse();
 	});
 
 	// Official plugins
@@ -190,9 +204,41 @@ export default async function(eleventyConfig) {
 		return mdLib.renderInline(data);
 	});
 
-	// Shortcodes
+	eleventyConfig.addFilter("isRewatch", (data) => {
+		return data ? "Yes" : "No";
+	});
+
 	eleventyConfig.addFilter("currentBuildDate", (data) => {
 		return (new Date());
+	});
+
+	// Shortcodes
+
+	eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
+// 		let metadata = await Image(src, {
+// 			widths: [200, 300],
+// 			formats: ["avif", "jpeg"],
+// 			transformOnRequest: true,
+// 			urlFormat: function ({
+// 				hash, // not included for `statsOnly` images
+// 				src,
+// 				width,
+// 				format,
+// 			}) {
+// 				return `/.netlify/images?url=${src.replace("content","")}?w=${width}&fit=contain`;
+// 			},
+// 		});
+//
+// 		let imageAttributes = {
+// 			alt,
+// 			sizes: '(min-width: 45em) 200px,(min-width: 60em) 300px,100vw',
+// 			loading: "lazy",
+// 			decoding: "async",
+// 		};
+// 		// You bet we throw an error on a missing alt (alt="" works okay)
+// 		const imageMarkup = Image.generateHTML(metadata, imageAttributes);
+// 		dbg(imageMarkup);
+		return `<img src="${src}" alt="${alt}" />`;
 	});
 
 	eleventyConfig.addPairedShortcode(
