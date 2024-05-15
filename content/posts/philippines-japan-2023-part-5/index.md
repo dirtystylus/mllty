@@ -38,11 +38,11 @@ We had a late dinner and turned in, knowing that tomorrow we would take the day 
 
 {% gallery %}
 
-- ![A lifeguard chair looking out on the ocean.](phl-jpn-bohol-6.jpg)
-- ![A sign with a quarter-moon face logo reading “Moon Fools”.](phl-jpn-bohol-8.jpg)
-- ![A blue-painted tricycle decorated with the Virgin Mary on its side.](phl-jpn-bohol-11.jpg)
-- ![Two adjacent windows whose cutouts and shutters give the impression of forming a heart.](phl-jpn-bohol-9.jpg)
-- ![A door to a bathroom set in a blue wall. Next to the door is a sign reading “Caution. Beware of Coyotes.”](phl-jpn-bohol-10.jpg)
+- ![A lifeguard chair looking out on the ocean.](phl-jpn-bohol-6.jpg){.glightbox}
+- ![A sign with a quarter-moon face logo reading “Moon Fools”.](phl-jpn-bohol-8.jpg){.glightbox}
+- ![A blue-painted tricycle decorated with the Virgin Mary on its side.](phl-jpn-bohol-11.jpg){.glightbox}
+- ![Two adjacent windows whose cutouts and shutters give the impression of forming a heart.](phl-jpn-bohol-9.jpg){.glightbox}
+- ![A door to a bathroom set in a blue wall. Next to the door is a sign reading “Caution. Beware of Coyotes.”](phl-jpn-bohol-10.jpg){.glightbox}
 
 {% endgallery %}
 

@@ -7,7 +7,7 @@ templateClass: tmpl-tags-list
 <div class="content-main container">
 <h1>Tag Archives</h1>
 <ul class="postlist">
-{% for tag in collections | getKeys | filterTagList %}
+{% for tag in collections.sortedTags %}
 	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li class="postlist-item">
 		<a href="{{ tagUrl }}" class="postlist-link">{{ tag }}</a> ({{ collections[tag].length }})

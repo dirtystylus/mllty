@@ -2,15 +2,15 @@
 	"items": [
 		{
 			"title": "Posts",
-			"url": "/posts"
+			"url": "/posts/"
 		},
 		{
 			"title": "Reading",
-			"url": "/reading"
+			"url": "/reading/"
 		},
 		{
 			"title": "Watching",
-			"url": "/watching"
+			"url": "/watching/"
 		}
 	],
 	"footer_items": [

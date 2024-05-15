@@ -17,8 +17,8 @@ My friend [Max](https://maxfenton.com/) gave me an unexpected gift this week, a 
 
 {% gallery %}
 
-* ![Closeup of the left-hand side of a keyboard, with a teal escape key in focus.](bakeneko65-03.jpg)
-* ![Closeup of the right-hand side of a keyboard, with a yellow return key in focus.](bakeneko65-04.jpg)
+* ![Closeup of the left-hand side of a keyboard, with a teal escape key in focus.](bakeneko65-03.jpg){.glightbox}
+* ![Closeup of the right-hand side of a keyboard, with a yellow return key in focus.](bakeneko65-04.jpg){.glightbox}
 
 {% endgallery %}
 

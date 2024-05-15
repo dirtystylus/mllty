@@ -50,10 +50,10 @@ A few more from Puerto Princesa:
 
 {% gallery %}
 
-- ![Side of a van with a decal reading “Soy Car”](phl-jpn-puertoprincesa-iloilo-1.jpg "Our ride. I like to think that this was just declaring it was, indeed, a car")
-- ![A bag of sugary treats](phl-jpn-puertoprincesa-iloilo-4.jpg "My daughter noticed this typo")
-- ![PotDog, a potato-themed food stand in a mall](phl-jpn-puertoprincesa-iloilo-5.jpg "Just a wonderful name for this food stand")
-- ![Mister Donut, a donut stand in a mall](phl-jpn-puertoprincesa-iloilo-6.jpg "Tickled by the @tbp sign, which stands for “at iba pa” (et cetera.)")
+- ![Side of a van with a decal reading “Soy Car”](phl-jpn-puertoprincesa-iloilo-1.jpg "Our ride. I like to think that this was just declaring it was, indeed, a car"){.glightbox}
+- ![A bag of sugary treats](phl-jpn-puertoprincesa-iloilo-4.jpg "My daughter noticed this typo"){.glightbox}
+- ![PotDog, a potato-themed food stand in a mall](phl-jpn-puertoprincesa-iloilo-5.jpg "Just a wonderful name for this food stand"){.glightbox}
+- ![Mister Donut, a donut stand in a mall](phl-jpn-puertoprincesa-iloilo-6.jpg "Tickled by the @tbp sign, which stands for “at iba pa” (et cetera.)"){.glightbox}
 
 {% endgallery %}
 
@@ -113,12 +113,12 @@ Finally, this. If there’s one thing that Filipinos can’t resist, it’s a pu
 
 {% gallery %}
 
-* ![A sign in front of a large tree, marking the spot of Guimbal Vanishing Mansion.](phl-jpn-puertoprincesa-iloilo-16.jpg "I assume the dwende live here")
-* ![Interior of a church, with the statues housed in an altar decorated in gold.](phl-jpn-puertoprincesa-iloilo-18.jpg "Inside Miagao church")
-* ![A bundle of bags of kropek hung from a market stall.](phl-jpn-puertoprincesa-iloilo-19.jpg "Kropek!")
-* ![Rows of mangoes for sale at a roadside stall.](phl-jpn-puertoprincesa-iloilo-26.jpg "My mom made us do a u-turn on the main road to check out the mangoes")
-* ![Flatbed truck loaded with crates full of San Miguel beer and soft drinks.](phl-jpn-puertoprincesa-iloilo-30.jpg "Beverage truck")
-* ![Loaf of white bread branded Tasty Bread.](phl-jpn-puertoprincesa-iloilo-39.jpg "As opposed to the other kind")
+* ![A sign in front of a large tree, marking the spot of Guimbal Vanishing Mansion.](phl-jpn-puertoprincesa-iloilo-16.jpg "I assume the dwende live here"){.glightbox}
+* ![Interior of a church, with the statues housed in an altar decorated in gold.](phl-jpn-puertoprincesa-iloilo-18.jpg "Inside Miagao church"){.glightbox}
+* ![A bundle of bags of kropek hung from a market stall.](phl-jpn-puertoprincesa-iloilo-19.jpg "Kropek!"){.glightbox}
+* ![Rows of mangoes for sale at a roadside stall.](phl-jpn-puertoprincesa-iloilo-26.jpg "My mom made us do a u-turn on the main road to check out the mangoes"){.glightbox}
+* ![Flatbed truck loaded with crates full of San Miguel beer and soft drinks.](phl-jpn-puertoprincesa-iloilo-30.jpg "Beverage truck"){.glightbox}
+* ![Loaf of white bread branded Tasty Bread.](phl-jpn-puertoprincesa-iloilo-39.jpg "As opposed to the other kind"){.glightbox}
 
 
 {% endgallery %}

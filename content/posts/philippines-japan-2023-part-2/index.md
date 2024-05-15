@@ -106,15 +106,15 @@ Some other shots from this leg (click to enlarge):
 
 {% gallery %}
 
-- ![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?")
-- ![A man and a woman in sunglasses and hats, on a boat, smile with islands in the distance.](phl-jpn-elnido-3.jpg "Mom and Dad on the way to the Big Lagoon")
-- ![A family on an outrigger boat.](phl-jpn-elnido-19.jpg "Aboard the Lenard 4. Photo © Joseph Llobrera.")
-- ![Two men in a yellow kayak.](phl-jpn-elnido-20.jpg "Dad and me")
-- ![Two women in a kayak with an island cliffside in the background.](phl-jpn-elnido-4.jpg "Jordan and Em at the Big Lagoon")
-- ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island")
-- ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island")
-- ![An ice cream cart with a color wheel umbrella stops in the middle of a dirt road lined with shops.](phl-jpn-elnido-13.jpg "Ice cream cart")
-- ![An Italian/Japanese restaurant named “Chef Mark Style”.](phl-jpn-elnido-14.jpg "I’m not sure I trust my namesake here given the food combination") 
+- ![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?"){.glightbox}
+- ![A man and a woman in sunglasses and hats, on a boat, smile with islands in the distance.](phl-jpn-elnido-3.jpg "Mom and Dad on the way to the Big Lagoon"){.glightbox}
+- ![A family on an outrigger boat.](phl-jpn-elnido-19.jpg "Aboard the Lenard 4. Photo © Joseph Llobrera."){.glightbox}
+- ![Two men in a yellow kayak.](phl-jpn-elnido-20.jpg "Dad and me"){.glightbox}
+- ![Two women in a kayak with an island cliffside in the background.](phl-jpn-elnido-4.jpg "Jordan and Em at the Big Lagoon"){.glightbox}
+- ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){.glightbox}
+- ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){.glightbox}
+- ![An ice cream cart with a color wheel umbrella stops in the middle of a dirt road lined with shops.](phl-jpn-elnido-13.jpg "Ice cream cart"){.glightbox}
+- ![An Italian/Japanese restaurant named “Chef Mark Style”.](phl-jpn-elnido-14.jpg "I’m not sure I trust my namesake here given the food combination"){.glightbox} 
 {% endgallery %}
 
 [More photos on Flickr](https://flic.kr/s/aHBqjAV99V).

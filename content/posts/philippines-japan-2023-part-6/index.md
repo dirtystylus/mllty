@@ -62,12 +62,12 @@ When the Spanish colonized the Philippines they eventually settled in Manila due
 
 {% gallery %}
 
-- ![A multi-arched entrance to a stone church, with statues of Catholic saints mounted on pillars to the side of each arch.](phl-jpn-manila-19.jpg "Manila Cathedral")
-- ![A cobblestone street outside Casa Manila Museum, a historic house from the mid-1800s.](phl-jpn-manila-20.jpg "Cobblestone streets")
-- ![A mural containing a face framed by plants and columns, with a sign for Intramuros Night Market under the face.](phl-jpn-manila-21.jpg)
-- ![A young girl perches on a wall outside a police station. In her hands she is affixing a single flower to a straw hat.](phl-jpn-manila-22.jpg "S adding a flower to her hat")
-- ![A dog sleeps next to a narrow table.](phl-jpn-manila-23.jpg "Police station doggo")
-- ![A view of traffic, shot from within a van. Through the windshield a bus is in view, with wavy text stenciled on the rear windshield saying “Wherever you are…We are there…”](phl-jpn-manila-16.jpg "Sounds like a threat")
+- ![A multi-arched entrance to a stone church, with statues of Catholic saints mounted on pillars to the side of each arch.](phl-jpn-manila-19.jpg "Manila Cathedral"){.glightbox}
+- ![A cobblestone street outside Casa Manila Museum, a historic house from the mid-1800s.](phl-jpn-manila-20.jpg "Cobblestone streets"){.glightbox}
+- ![A mural containing a face framed by plants and columns, with a sign for Intramuros Night Market under the face.](phl-jpn-manila-21.jpg){.glightbox}
+- ![A young girl perches on a wall outside a police station. In her hands she is affixing a single flower to a straw hat.](phl-jpn-manila-22.jpg "S adding a flower to her hat"){.glightbox}
+- ![A dog sleeps next to a narrow table.](phl-jpn-manila-23.jpg "Police station doggo"){.glightbox}
+- ![A view of traffic, shot from within a van. Through the windshield a bus is in view, with wavy text stenciled on the rear windshield saying “Wherever you are…We are there…”](phl-jpn-manila-16.jpg "Sounds like a threat"){.glightbox}
 
 {% endgallery %}
 
@@ -83,11 +83,11 @@ We took some time to visit Fort Santiago, where Jose Rizal was imprisoned leadin
 
 {% gallery %}
 
-* ![A statue of Jose Rizal at a writing desk. He is dressed in the traditional formal <em>barong Tagalog</em> and holds a pen.](phl-jpn-manila-5.jpg "Rizal at his writing desk")
-* ![Two of Jose Rizal’s handwritten papers.](phl-jpn-manila-6.jpg)
-* ![A metal statue of Jose Rizal atop a pedestal, looking out on a large courtyard.](phl-jpn-manila-7.jpg)
-* ![A view across a river at multiple high-rise buildings, one of which is covered by scaffolding and topped by a construction crane. The river is dotted with floating weeds.](phl-jpn-manila-8.jpg "The notoriously polluted Pasig River")
-* ![A girl in a black shirt and jeans carries a folding fan while walking next to an older woman in a blue straw hat.](phl-jpn-manila-25.jpg "S and my mom")
+* ![A statue of Jose Rizal at a writing desk. He is dressed in the traditional formal <em>barong Tagalog</em> and holds a pen.](phl-jpn-manila-5.jpg "Rizal at his writing desk"){.glightbox}
+* ![Two of Jose Rizal’s handwritten papers.](phl-jpn-manila-6.jpg){.glightbox}
+* ![A metal statue of Jose Rizal atop a pedestal, looking out on a large courtyard.](phl-jpn-manila-7.jpg){.glightbox}
+* ![A view across a river at multiple high-rise buildings, one of which is covered by scaffolding and topped by a construction crane. The river is dotted with floating weeds.](phl-jpn-manila-8.jpg "The notoriously polluted Pasig River"){.glightbox}
+* ![A girl in a black shirt and jeans carries a folding fan while walking next to an older woman in a blue straw hat.](phl-jpn-manila-25.jpg "S and my mom"){.glightbox}
 
 {% endgallery %}
 
@@ -101,10 +101,10 @@ For lunch we drove a few miles over to Manila’s Chinatown, eventually stopping
 
 {% gallery %}
 
-* ![A small lunch stand advertises Shanghai fried siopao.](phl-jpn-manila-27.jpg)
-* ![A woman at a booth selling ice cream shaped to look like fried chicken.](phl-jpn-manila-28.jpg "I have so many questions")
-* ![Bundles of lychee at a street vendor stand.](phl-jpn-manila-9.jpg "Lychee")
-* ![A taxicab with a roof sign saying “Brown Race”.](phl-jpn-manila-29.jpg "A bit on the nose, but not wrong")
+* ![A small lunch stand advertises Shanghai fried siopao.](phl-jpn-manila-27.jpg){.glightbox}
+* ![A woman at a booth selling ice cream shaped to look like fried chicken.](phl-jpn-manila-28.jpg "I have so many questions"){.glightbox}
+* ![Bundles of lychee at a street vendor stand.](phl-jpn-manila-9.jpg "Lychee"){.glightbox}
+* ![A taxicab with a roof sign saying “Brown Race”.](phl-jpn-manila-29.jpg "A bit on the nose, but not wrong"){.glightbox}
 
 {% endgallery %}
 
