@@ -17,7 +17,7 @@ Took a quick trip with the family to New York City at the end of March, since Jo
 
 We stayed near Koreatown, and on our first morning starting in the Flatiron district, stopping in at Eataly and the Harry Potter store.
 
-![A man in a gray baseball cap and glasses prepares homemade pasta behind a glass partition.](nyc-march-2024-1.jpg "Homemade pasta station at Eataly"){data-responsiver=cinemascope}
+![A man in a gray baseball cap and glasses prepares homemade pasta behind a glass partition.](nyc-march-2024-1.jpg "Homemade pasta station at Eataly"){.cinemascope}
 
 ![A bar with a back wall arching over top. The wall is decorated with dozens of bottles, some lit up by lights.](nyc-march-2024-3.jpg "Butterbeer bar")
 
@@ -31,7 +31,7 @@ We walked downtown to Union Square for lunch and a stop at Strand bookstore.
 
 ![A cornmeal waffle with bananas and strawberries, dusted with powdered sugar.](nyc-march-2024-25.jpg "Cornmeal waffle")
 
-![Strand bookstore in New York City. At the checkout counter, a wall of bookshelves decorated with books organized by color extends behind the cashiers.](nyc-march-2024-28.jpg "Reading rainbow"){data-responsiver=cinemascope}
+![Strand bookstore in New York City. At the checkout counter, a wall of bookshelves decorated with books organized by color extends behind the cashiers.](nyc-march-2024-28.jpg "Reading rainbow"){.cinemascope}
 
 ![A building at a street corner is split by light and shadow.](nyc-march-2024-29.jpg)
 
@@ -44,7 +44,7 @@ We wrapped up the afternoon with a quick trip to Little Island, then had an earl
 
 ![A man and woman in a dim restaurant sit side by side, smiling.](nyc-march-2024-44.jpg "Dinner at Her Name is Han")
 
-![A bowl of bibimbap, with a single egg yolk perched perfectly in the center.](nyc-march-2024-45.jpg "That egg!"){data-responsiver=cinemascope}
+![A bowl of bibimbap, with a single egg yolk perched perfectly in the center.](nyc-march-2024-45.jpg "That egg!"){.cinemascope}
 
 ## Day Two
 
@@ -52,7 +52,7 @@ Breakfast at Sullivan Street Bakery, then a walk along the High Line up to Hudso
 
 ![A mural on a black wall, with Albert Einstein portrayed spray-painting a message “We ❤️ NY.”](nyc-march-2024-51.jpg "Chelsea mural")
 
-![A man inside a bakery kitchen works next to a modified street sign with a large capital K and the message “Be Nice. Kindness Zone.”](nyc-march-2024-58.jpg "Kindness zone in Sullivan St Bakery"){data-responsiver=cinemascope}
+![A man inside a bakery kitchen works next to a modified street sign with a large capital K and the message “Be Nice. Kindness Zone.”](nyc-march-2024-58.jpg "Kindness zone in Sullivan St Bakery"){.cinemascope}
 
 ![Train tracks in the foreground of a series of buildings on New York City’s elevated High Line.”](nyc-march-2024-70.jpg "Mixed materials on the High Line")
 
@@ -60,7 +60,7 @@ After the high line we stopped in at B&H, Moynihan Train Hall, and then rode up 
 
 ![Two men on a subway platform, shot from inside a subway car. The man on the left wears a red hoodie and a black and red Yankees cap. The man on the right wears a traditional blue and white Yankees cap.”](nyc-march-2024-89.jpg "Subway stare")
 
-![A woman in a fuzzy, multicolored bucket hat and pink shoes looks at her phone while riding the subway.”](nyc-march-2024-90.jpg "Think pink"){data-responsiver=cinemascope}
+![A woman in a fuzzy, multicolored bucket hat and pink shoes looks at her phone while riding the subway.”](nyc-march-2024-90.jpg "Think pink"){.cinemascope}
 
 {% videoloop "./nyc-subway-202403.mp4", "A New York City subway car shot via reflection in the window. A woman in a fuzzy, multicolored bucket hat and pink shoes looks at her phone." %}
 
@@ -74,7 +74,7 @@ Christopher Doyle/Wong Kar Wai NYC subway vibes (no audio).
 
 We capped things off with a late lunch near our hotel and then got back on the road to head home.
 
-![Two bowls of ramen, one of which contains a fiery red spicy broth .”](nyc-march-2024-104.jpg "Ajisen Ramen"){data-responsiver=cinemascope}
+![Two bowls of ramen, one of which contains a fiery red spicy broth .”](nyc-march-2024-104.jpg "Ajisen Ramen"){.cinemascope}
 
 See the rest [on Flickr](https://flic.kr/s/aHBqjBk6Uv).
 

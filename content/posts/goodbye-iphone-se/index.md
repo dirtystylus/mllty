@@ -11,7 +11,7 @@ I had hoped to [ride out one more year with my iPhone SE v1](https://twitter.com
 
 The SIM card was still working when I tested it in a backup phone, though, so I found a used iPhone 11 on Swappa and it arrived today.[^2]
 
-![Two mobile phones, side by side.](iphone-se-iphone-11.jpg "Little, Big"){data-responsiver=cinemascope}
+![Two mobile phones, side by side.](iphone-se-iphone-11.jpg "Little, Big"){.cinemascope}
 
 It’s…comically large, compared to the SE. It’s heavy, too, and slippery. I never used a case with my SE, but I feel like I’ll need one just for better grip…which will make this thing even larger.
 

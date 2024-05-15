@@ -13,7 +13,7 @@ Spent some time improving my audio setup at home. My dedicated USB headset (a [M
 
 So: a dedicated USB mic. I picked up this [Amazon Basics Desktop Mini Condenser Microphone](https://www.amazon.com/dp/B07TGQB7RK?ref=ppx_yo2ov_dt_b_product_details&th=1).
 
-![Side view of a white USB microphone, with a headphone amplifier in the background.](amazon-basics-mic.jpg "Amazon Basics Desktop Mini Condenser Microphone"){data-responsiver=cinemascope}
+![Side view of a white USB microphone, with a headphone amplifier in the background.](amazon-basics-mic.jpg "Amazon Basics Desktop Mini Condenser Microphone"){.cinemascope}
 
 It’s…completely fine. It’s small enough that I can park it on top of my headphone amp + DAC combo. It has an input volume dial, and a headphone volume dial if you choose to plug your headphones directly into the mic for monitoring. I prefer to route my audio output through my amp, so I’m not using that feature. It has two modes (Cardioid and Omnidirectional). I set it to Cardioid so that it’s just picking up sound from directly in front of the mic, like my voice.
 

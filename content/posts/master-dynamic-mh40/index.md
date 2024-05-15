@@ -6,7 +6,7 @@ date: '2016-05-05T14:58:38-04:00'
 tags:
   - headphones
 ---
-![White headphones](master-dynamic-mh40.jpg){data-responsiver=cinemascope}
+![White headphones](master-dynamic-mh40.jpg){.cinemascope}
 
 My pair of [Philips Cityscape Downtown](http://www.usa.philips.com/c-p/SHL5605GY_28/citiscape-downtown-headphones-with-mic) gave up the ghost earlier this year. After 3.5 years they were falling apart, with the [faux leather peeling and headband separating](https://www.flickr.com/photos/dirtystylus/24420101311/in/datetaken/), but I kept pushing them until one of the channels finally failed.
 

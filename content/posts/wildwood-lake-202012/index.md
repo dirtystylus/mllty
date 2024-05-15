@@ -8,7 +8,7 @@ tags:
   - photos
 ---
 
-![Heart-shaped frozen ripple](wildwood-lake-2.jpg "I heart you"){data-responsiver=cinemascope}
+![Heart-shaped frozen ripple](wildwood-lake-2.jpg "I heart you"){.cinemascope}
 
 The holidays were quiet; due to Covid-19 we elected not to visit family. Instead we celebrated at home, and scheduled an outdoor meeting at [Wildwood Lake](https://www.wildwoodlake.org) in Harrisburg, PA—which is roughly at the halfway point between our home and Jordan’s parents’. We took a walk around the lake, exchanged gifts, and drove back home.
 
@@ -18,14 +18,14 @@ Taken with a Fujifilm X-T30 + 35mm/f2, Acros-R film sim.[^1]
 
 {% gallery %}
 
-- ![Tree emerging from cracked ice](wildwood-lake-1.jpg "Frozen lightning"){data-responsiver=gallery_2x3}
-- ![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower"){data-responsiver=gallery_3x2}
-- ![Swirl frozen ripple.](wildwood-lake-4.jpg "Swirl"){data-responsiver=gallery_3x2}
-- ![Perfect frozen circle around tree base](wildwood-lake-5.jpg "Clean circle"){data-responsiver=gallery_2x3}
-- ![Small stump with a smooth frozen circle](wildwood-lake-6.jpg "Lonely stump"){data-responsiver=gallery_3x2}
-- ![Frozen ripples at water’s edge](wildwood-lake-7.jpg "Topographical map ice"){data-responsiver=gallery_3x2}
-- ![Susquehanna Spillway, viewed from the north](wildwood-lake-8.jpg "Susquehanna Spillway"){data-responsiver=gallery_3x2}
-- ![Susquehanna Spillway edge, with dangling icicles](wildwood-lake-9.jpg "Spillway icicles"){data-responsiver=gallery_3x2}
+- ![Tree emerging from cracked ice](wildwood-lake-1.jpg "Frozen lightning")
+- ![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower")
+- ![Swirl frozen ripple.](wildwood-lake-4.jpg "Swirl")
+- ![Perfect frozen circle around tree base](wildwood-lake-5.jpg "Clean circle")
+- ![Small stump with a smooth frozen circle](wildwood-lake-6.jpg "Lonely stump")
+- ![Frozen ripples at water’s edge](wildwood-lake-7.jpg "Topographical map ice")
+- ![Susquehanna Spillway, viewed from the north](wildwood-lake-8.jpg "Susquehanna Spillway")
+- ![Susquehanna Spillway edge, with dangling icicles](wildwood-lake-9.jpg "Spillway icicles")
 
 {% endgallery %}
 

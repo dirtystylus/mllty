@@ -12,7 +12,7 @@ tags:
   - web-development
 ---
 
-![Image lightbox modal with black and white photo of a stump in a frozen canal](lightbox.jpg "PhotoSwipe lightbox modal"){data-responsiver=cinemascope}
+![Image lightbox modal with black and white photo of a stump in a frozen canal](lightbox.jpg "PhotoSwipe lightbox modal"){.cinemascope}
 
 **TL;DR**: I’ve set up a [CodePen project](https://codepen.io/dirtystylus/project/full/ZgePbo) that you can dig through.
 
@@ -91,7 +91,7 @@ This means that any image using the `gallery_3x2` attribute in Markdown will get
 So this Markdown:
 
 ```md
-![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower"){data-responsiver=gallery_3x2}
+![Broken stump](wildwood-lake-3.jpg "This one looks like a ruined tower")
 ```
 
 results in this markup:
@@ -374,11 +374,11 @@ The example gallery that closes out this post has this Markdown snippet to gener
 
 ```md
 {% raw %}{% gallery %}
-- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand"){data-responsiver=gallery_2x3}
-- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance"){data-responsiver=gallery_3x2}
-- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){data-responsiver=gallery_2x3}
-- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper"){data-responsiver=gallery_2x3}
-- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){data-responsiver=gallery_3x2}
+- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand")
+- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance")
+- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care")
+- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper")
+- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette")
 {% endgallery %}
 {% endraw %}
 ```   
@@ -396,11 +396,11 @@ I hope this has been helpful. If you’re curious about anything here, my [Twitt
 What does this all look like put together? Here’s a small batch of photos taken around City Hall in downtown Philadelphia, just before Christmas Day:
 
 {% gallery %}
-- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand"){data-responsiver=gallery_2x3}
-- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance"){data-responsiver=gallery_3x2}
-- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){data-responsiver=gallery_2x3}
-- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper"){data-responsiver=gallery_2x3}
-- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){data-responsiver=gallery_3x2}
+- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand")
+- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance")
+- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care")
+- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper")
+- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette")
 {% endgallery %}
 
 

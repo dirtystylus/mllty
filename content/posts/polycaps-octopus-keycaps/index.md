@@ -9,9 +9,9 @@ tags:
 
 The white keys of my [SA Chalk keycaps](/posts/drop-alt-a-keyboard-makeover/) were getting a little bit muddy, so I picked up a set of [Polycaps Octopus keycaps](https://kineticlabs.store/keycaps/polycaps/octopus-pbt) via Kinetic Labs.
 
-![Closeup of the left side of a keyboard.](polycaps-octopus-1.jpg){data-responsiver=cinemascope}
+![Closeup of the left side of a keyboard.](polycaps-octopus-1.jpg){.cinemascope}
 
-![Closeup of the right side of a keyboard.](polycaps-octopus-2.jpg){data-responsiver=cinemascope}
+![Closeup of the right side of a keyboard.](polycaps-octopus-2.jpg){.cinemascope}
 
-![Top-down view of a keyboard.](polycaps-octopus-3.jpg){data-responsiver=cinemascope}
+![Top-down view of a keyboard.](polycaps-octopus-3.jpg){.cinemascope}
 

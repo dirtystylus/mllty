@@ -54,7 +54,7 @@ We also drove by the Philippine International Convention Center (PICC) where my 
 
 Intramuros was the old walled city where the Spanish lived while colonizing the country. Driving around Rizal Park and Intramuros we passed a fair number of kalesas (horse-drawn carriages).
 
-![A blue horse-drawn carriage carries a small family through the streets of Manila. Up front sits the driver with bare feet and a bored expression on his face.](phl-jpn-manila-18.jpg "Kalesa near Rizal Park"){data-responsiver=cinemascope}
+![A blue horse-drawn carriage carries a small family through the streets of Manila. Up front sits the driver with bare feet and a bored expression on his face.](phl-jpn-manila-18.jpg "Kalesa near Rizal Park"){.cinemascope}
 
 When the Spanish colonized the Philippines they eventually settled in Manila due to its existing trade infrastructure. They eventually built stone walls to enclose part of the city, many of which are still standing.
 
@@ -62,12 +62,12 @@ When the Spanish colonized the Philippines they eventually settled in Manila due
 
 {% gallery %}
 
-- ![A multi-arched entrance to a stone church, with statues of Catholic saints mounted on pillars to the side of each arch.](phl-jpn-manila-19.jpg "Manila Cathedral"){data-responsiver=gallery_2x3}
-- ![A cobblestone street outside Casa Manila Museum, a historic house from the mid-1800s.](phl-jpn-manila-20.jpg "Cobblestone streets"){data-responsiver=gallery_2x3}
-- ![A mural containing a face framed by plants and columns, with a sign for Intramuros Night Market under the face.](phl-jpn-manila-21.jpg){data-responsiver=gallery_3x2}
-- ![A young girl perches on a wall outside a police station. In her hands she is affixing a single flower to a straw hat.](phl-jpn-manila-22.jpg "S adding a flower to her hat"){data-responsiver=gallery_3x2}
-- ![A dog sleeps next to a narrow table.](phl-jpn-manila-23.jpg "Police station doggo"){data-responsiver=gallery_3x2}
-- ![A view of traffic, shot from within a van. Through the windshield a bus is in view, with wavy text stenciled on the rear windshield saying “Wherever you are…We are there…”](phl-jpn-manila-16.jpg "Sounds like a threat"){data-responsiver=gallery_3x2}
+- ![A multi-arched entrance to a stone church, with statues of Catholic saints mounted on pillars to the side of each arch.](phl-jpn-manila-19.jpg "Manila Cathedral")
+- ![A cobblestone street outside Casa Manila Museum, a historic house from the mid-1800s.](phl-jpn-manila-20.jpg "Cobblestone streets")
+- ![A mural containing a face framed by plants and columns, with a sign for Intramuros Night Market under the face.](phl-jpn-manila-21.jpg)
+- ![A young girl perches on a wall outside a police station. In her hands she is affixing a single flower to a straw hat.](phl-jpn-manila-22.jpg "S adding a flower to her hat")
+- ![A dog sleeps next to a narrow table.](phl-jpn-manila-23.jpg "Police station doggo")
+- ![A view of traffic, shot from within a van. Through the windshield a bus is in view, with wavy text stenciled on the rear windshield saying “Wherever you are…We are there…”](phl-jpn-manila-16.jpg "Sounds like a threat")
 
 {% endgallery %}
 
@@ -83,11 +83,11 @@ We took some time to visit Fort Santiago, where Jose Rizal was imprisoned leadin
 
 {% gallery %}
 
-* ![A statue of Jose Rizal at a writing desk. He is dressed in the traditional formal <em>barong Tagalog</em> and holds a pen.](phl-jpn-manila-5.jpg "Rizal at his writing desk"){data-responsiver=gallery_2x3}
-* ![Two of Jose Rizal’s handwritten papers.](phl-jpn-manila-6.jpg){data-responsiver=gallery_3x2}
-* ![A metal statue of Jose Rizal atop a pedestal, looking out on a large courtyard.](phl-jpn-manila-7.jpg){data-responsiver=gallery_2x3}
-* ![A view across a river at multiple high-rise buildings, one of which is covered by scaffolding and topped by a construction crane. The river is dotted with floating weeds.](phl-jpn-manila-8.jpg "The notoriously polluted Pasig River"){data-responsiver=gallery_3x2}
-* ![A girl in a black shirt and jeans carries a folding fan while walking next to an older woman in a blue straw hat.](phl-jpn-manila-25.jpg "S and my mom"){data-responsiver=gallery_3x2}
+* ![A statue of Jose Rizal at a writing desk. He is dressed in the traditional formal <em>barong Tagalog</em> and holds a pen.](phl-jpn-manila-5.jpg "Rizal at his writing desk")
+* ![Two of Jose Rizal’s handwritten papers.](phl-jpn-manila-6.jpg)
+* ![A metal statue of Jose Rizal atop a pedestal, looking out on a large courtyard.](phl-jpn-manila-7.jpg)
+* ![A view across a river at multiple high-rise buildings, one of which is covered by scaffolding and topped by a construction crane. The river is dotted with floating weeds.](phl-jpn-manila-8.jpg "The notoriously polluted Pasig River")
+* ![A girl in a black shirt and jeans carries a folding fan while walking next to an older woman in a blue straw hat.](phl-jpn-manila-25.jpg "S and my mom")
 
 {% endgallery %}
 
@@ -101,10 +101,10 @@ For lunch we drove a few miles over to Manila’s Chinatown, eventually stopping
 
 {% gallery %}
 
-* ![A small lunch stand advertises Shanghai fried siopao.](phl-jpn-manila-27.jpg){data-responsiver=gallery_3x2}
-* ![A woman at a booth selling ice cream shaped to look like fried chicken.](phl-jpn-manila-28.jpg "I have so many questions"){data-responsiver=gallery_3x2}
-* ![Bundles of lychee at a street vendor stand.](phl-jpn-manila-9.jpg "Lychee"){data-responsiver=gallery_3x2}
-* ![A taxicab with a roof sign saying “Brown Race”.](phl-jpn-manila-29.jpg "A bit on the nose, but not wrong"){data-responsiver=gallery_3x2}
+* ![A small lunch stand advertises Shanghai fried siopao.](phl-jpn-manila-27.jpg)
+* ![A woman at a booth selling ice cream shaped to look like fried chicken.](phl-jpn-manila-28.jpg "I have so many questions")
+* ![Bundles of lychee at a street vendor stand.](phl-jpn-manila-9.jpg "Lychee")
+* ![A taxicab with a roof sign saying “Brown Race”.](phl-jpn-manila-29.jpg "A bit on the nose, but not wrong")
 
 {% endgallery %}
 
@@ -114,7 +114,7 @@ In the afternoon we split up—some folks went shopping, while my brother and I 
 
 ![Three apartment buildings shot from a low angle.](phl-jpn-manila-11.jpg "Condominium buildings along Ayala Avenue")
 
-![A busy intersection. To the right is a hotel with a fountain surrounded by decorative steps, in the distance are skyscrapers and office buildings.](phl-jpn-manila-12.jpg "Corner of Ayala and Makati Avenues, with Paseo De Roxas in the distance. My mom’s old office is somewhere near the Lepanto building in the background."){data-responsiver=cinemascope}
+![A busy intersection. To the right is a hotel with a fountain surrounded by decorative steps, in the distance are skyscrapers and office buildings.](phl-jpn-manila-12.jpg "Corner of Ayala and Makati Avenues, with Paseo De Roxas in the distance. My mom’s old office is somewhere near the Lepanto building in the background."){.cinemascope}
 
 ![Colorful jeepneys queued up for passengers, viewed from an elevated walkway above.](phl-jpn-manila-13.jpg "Jeepney stop")
 

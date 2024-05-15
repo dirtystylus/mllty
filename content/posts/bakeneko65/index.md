@@ -9,7 +9,7 @@ tags:
   - photos
 ---
 
-![Top-down view of a keyboard with a lavender case and white keycaps.](bakeneko65-02.jpg "Bakeneko 65 with Gazzew Linear Thocks and DSS Easter keycaps"){data-responsiver=cinemascope}
+![Top-down view of a keyboard with a lavender case and white keycaps.](bakeneko65-02.jpg "Bakeneko 65 with Gazzew Linear Thocks and DSS Easter keycaps"){.cinemascope}
 
 My friend [Max](https://maxfenton.com/) gave me an unexpected gift this week, a [lavender Bakeneko 65](https://cannonkeys.com/products/bakeneko65?variant=40711853113455) with purple switches and a lovely [DSS Easter](https://novelkeys.com/collections/keycaps/products/dss-easter) keycap set. I wasn’t shopping for a new keyboard given that I only recently picked up the [Keychron Q2](/posts/keychron-q2/)—but I had mentioned offhand to Max that in the future I would really love a lavender case, and here we are.
 
@@ -17,8 +17,8 @@ My friend [Max](https://maxfenton.com/) gave me an unexpected gift this week, a 
 
 {% gallery %}
 
-* ![Closeup of the left-hand side of a keyboard, with a teal escape key in focus.](bakeneko65-03.jpg){data-responsiver=gallery_3x2}
-* ![Closeup of the right-hand side of a keyboard, with a yellow return key in focus.](bakeneko65-04.jpg){data-responsiver=gallery_3x2}
+* ![Closeup of the left-hand side of a keyboard, with a teal escape key in focus.](bakeneko65-03.jpg)
+* ![Closeup of the right-hand side of a keyboard, with a yellow return key in focus.](bakeneko65-04.jpg)
 
 {% endgallery %}
 

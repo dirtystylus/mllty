@@ -8,7 +8,7 @@ tags:
   - photography
   - photos
 ---
-![Four silver-and-black cameras shot from above.](black-and-chrome.jpg "Black and chrome: Pentax Spotmatic, Leica M4, Canonet QL17, Fuji X100S."){data-responsiver=cinemascope}
+![Four silver-and-black cameras shot from above.](black-and-chrome.jpg "Black and chrome: Pentax Spotmatic, Leica M4, Canonet QL17, Fuji X100S."){.cinemascope}
 
 For the last month or so I’ve been shooting with a Fuji X100S, a birthday present to myself. I’ve been eyeing the X100 series for about [four and a half years](/posts/fuji-x100/ "Fuji X100") now. When the original version came out I was definitely intrigued, but I was put off by the relatively high price and initial user reports of slow, quirky operation. I almost bought the S about a year ago, but then spent a large chunk of my camera fund on a [phenomenal dinner with friends](https://www.flickr.com/photos/dirtystylus/albums/72157645151592485 "Talula’s Table").
 
@@ -24,7 +24,7 @@ So I mostly shoot RAW+JPG these days, and for indoor shots I use Lightroom to ge
 
 The 23mm f/2 lens (35mm equivalent) is pretty good for being so compact. It distorts quite a bit, and I prefer the results out of the 25mm f/1.4 (50mm equivalent) Panaleica that I use on my Olympus/Panasonic cameras. But I’m finding the innate characteristics of lenses matter less and less these days when so much of an image rests on post-processing, whether that’s done in Lightroom or via a preset in VSCO Cam. Let’s just say that the lens is good enough. I’d say the X100S gives me about an extra stop to work with—it’s a stop slower on the lens front but gives me back two usable stops on the sensor end.
 
-![Girl in a cape lit by the sunset](superhero-sunset.jpg "Superhero sunset"){data-responsiver=cinemascope}
+![Girl in a cape lit by the sunset](superhero-sunset.jpg "Superhero sunset"){.cinemascope}
  
 ## Fun
 

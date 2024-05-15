@@ -9,7 +9,7 @@ tags:
   - travel
 ---
 
-![Sunset through multiple layers of clouds.](phl-jpn-sf-coron-9.jpg "One of my favorite shots, from Coron"){data-responsiver=cinemascope}
+![Sunset through multiple layers of clouds.](phl-jpn-sf-coron-9.jpg "One of my favorite shots, from Coron"){.cinemascope}
 
 ## Cameras
 

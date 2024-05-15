@@ -33,7 +33,7 @@ Sizing the book images is where I ended up spending the most time. I decided tha
 
 This is…ok. It’s what shipped with v1.0 of my site. Here’s a look:
 
-![Grid layout of books, with each book consistently-sized but with cropping on some items.](object-fit-cover.jpg "Using `object-fit: cover`"){data-responsiver=cinemascope}
+![Grid layout of books, with each book consistently-sized but with cropping on some items.](object-fit-cover.jpg "Using `object-fit: cover`"){.cinemascope}
 
 Note that while this keeps all the books nicely aligned on the baseline, it also has a side effect. Look at the way the covers are cropped for *The Warmth of Other Suns* and *They Called Us Enemy*, in particular. Bits of the cover have gotten sliced off the left and right edges, and in the latter case the cover is cropped to the point that the title is getting cut off.
 
@@ -53,7 +53,7 @@ Clearly I wouldn’t leave this alone, so after I launched the site I went back 
 
 The result is…better? I still have the baseline consistency, and I’m not bothered by the variable heights—that’s kind of what you see on a physical bookshelf, anyway. Best of all, I’m no longer cropping parts of the book covers:
 
-![Grid layout of books, with each book scaled to fit within a set pixel value for height.](object-fit-contain.jpg "Using `object-fit: contain`"){data-responsiver=cinemascope}
+![Grid layout of books, with each book scaled to fit within a set pixel value for height.](object-fit-contain.jpg "Using `object-fit: contain`"){.cinemascope}
 
 ## Sizing up the covers
 
@@ -71,11 +71,11 @@ I switched that to a more expansive minimum size of `160px`:
 
 This brought the number of books per row down to five, but the covers feel a bit larger and more balanced relative to the text details below.
 
-![Grid layout of books, with five books per row.](books-grid-wide-1.jpg "Books List Grid, 160px per cell"){data-responsiver=cinemascope}
+![Grid layout of books, with five books per row.](books-grid-wide-1.jpg "Books List Grid, 160px per cell"){.cinemascope}
 
 Just for kicks I tried a grid that results in four books per row:
 
-![Grid layout of books, with five books per row.](books-grid-wide-2.jpg "Books List Grid, 180px per cell"){data-responsiver=cinemascope}
+![Grid layout of books, with five books per row.](books-grid-wide-2.jpg "Books List Grid, 180px per cell"){.cinemascope}
 
 I like the presence this gives the covers, but on a smaller laptop screen you can really only see one full row of books, and the visual rhythm starts to feel too short—when scanning a row it feels like the eye runs of out books too quickly, which makes it seem like you’re viewing the grid on a more cramped viewport. This is all highly subjective, and I feel like if I were a trained designer I might be able to better articulate why bigger isn’t necessarily better.
 

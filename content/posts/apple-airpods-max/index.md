@@ -8,7 +8,7 @@ tags:
   - headphones
 ---
 
-![Apple Airpods Max in Green.](airpods-max-green.jpg "Image © Apple"){data-responsiver=cinemascope}
+![Apple Airpods Max in Green.](airpods-max-green.jpg "Image © Apple"){.cinemascope}
 
 Apple announced their over-ear, noise-canceling [Airpods Max](http://apple.com/airpods-max/)[^1] headphones yesterday. It feels like these have been rumored for the last two-odd years, contributing enough uncertainty that I held off buying any of the currently-available noise-canceling options out there. If I were still commuting into the office I’d be interested in trying out a pair. As it is, though, I’m at home—with access to five different pairs of on-ear/over-ear headphones[^2]. Most days I use a [Grado RS2e](https://gradolabs.com/headphones/reference-series/item/7-rs2e), unless I’m going to be talking a lot during a video call.
 

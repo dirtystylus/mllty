@@ -13,7 +13,7 @@ Nitpicking about the plot aside, though — I loved some of these shots from a 
 
 ![Two characters float in water, their heads appearing to touch.](the-half-of-it-01.jpg "Image © Netflix.")
 
-![Layered shot with reflection in the water seeming to touch the foreground character’s face.](the-half-of-it-02.jpg "The layers here! Blurred out foreground, touching a reflection from the in-focus background, like an upside-down kiss. Image © Netflix."){data-responsiver=cinemascope}
+![Layered shot with reflection in the water seeming to touch the foreground character’s face.](the-half-of-it-02.jpg "The layers here! Blurred out foreground, touching a reflection from the in-focus background, like an upside-down kiss. Image © Netflix."){.cinemascope}
 
 ![Mirroring faces, almost like a landscape.](the-half-of-it-03.jpg "Image © Netflix.")
 
@@ -21,6 +21,6 @@ I like the way that Wu uses perspective and the reflection from the water to fra
 
 ![Black and white version of the first image.](the-half-of-it-01-bw.jpg "Image © Netflix.")
 
-![Black and white version of the second image.](the-half-of-it-02-bw.jpg "Image © Netflix."){data-responsiver=cinemascope}
+![Black and white version of the second image.](the-half-of-it-02-bw.jpg "Image © Netflix."){.cinemascope}
 
 ![Black and white version of the third image.](the-half-of-it-03-bw.jpg "Image © Netflix.")

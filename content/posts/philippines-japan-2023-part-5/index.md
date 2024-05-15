@@ -30,7 +30,7 @@ We arrived in Bohol in the early evening, the express ferry docking at the port 
 
 We were picked up by a van and crossed over the bridge from Tagbilaran to Panglao right as the sun was setting:
 
-![A view into a sunset with outrigger boats silhouetted against the sun.](phl-jpn-bohol-3.jpg){data-responsiver=cinemascope}
+![A view into a sunset with outrigger boats silhouetted against the sun.](phl-jpn-bohol-3.jpg){.cinemascope}
 
 We had a late dinner and turned in, knowing that tomorrow we would take the day to recover. In the morning we took some time to check out the town around the hotel, stopping for lunch and ducking in and out of shops before cooling off in the hotel pool.
 
@@ -38,11 +38,11 @@ We had a late dinner and turned in, knowing that tomorrow we would take the day 
 
 {% gallery %}
 
-- ![A lifeguard chair looking out on the ocean.](phl-jpn-bohol-6.jpg){data-responsiver=gallery_2x3}
-- ![A sign with a quarter-moon face logo reading “Moon Fools”.](phl-jpn-bohol-8.jpg){data-responsiver=gallery_2x3}
-- ![A blue-painted tricycle decorated with the Virgin Mary on its side.](phl-jpn-bohol-11.jpg){data-responsiver=gallery_3x2}
-- ![Two adjacent windows whose cutouts and shutters give the impression of forming a heart.](phl-jpn-bohol-9.jpg){data-responsiver=gallery_2x3}
-- ![A door to a bathroom set in a blue wall. Next to the door is a sign reading “Caution. Beware of Coyotes.”](phl-jpn-bohol-10.jpg){data-responsiver=gallery_2x3}
+- ![A lifeguard chair looking out on the ocean.](phl-jpn-bohol-6.jpg)
+- ![A sign with a quarter-moon face logo reading “Moon Fools”.](phl-jpn-bohol-8.jpg)
+- ![A blue-painted tricycle decorated with the Virgin Mary on its side.](phl-jpn-bohol-11.jpg)
+- ![Two adjacent windows whose cutouts and shutters give the impression of forming a heart.](phl-jpn-bohol-9.jpg)
+- ![A door to a bathroom set in a blue wall. Next to the door is a sign reading “Caution. Beware of Coyotes.”](phl-jpn-bohol-10.jpg)
 
 {% endgallery %}
 
@@ -60,7 +60,7 @@ The Chocolate Hills are one of the most famous landmarks in the Philippines, so 
 
 ![A series of small brown hills recedes into the horizon.](phl-jpn-bohol-16.jpg)
 
-![A series of small brown hills recedes into the horizon.](phl-jpn-bohol-17.jpg){data-responsiver=cinemascope}
+![A series of small brown hills recedes into the horizon.](phl-jpn-bohol-17.jpg){.cinemascope}
 
 It was a *hot* day, and we didn’t last too long up at the observation deck. We did squeeze in a family photo at the base of the hill, though:
 
@@ -98,7 +98,7 @@ Here’s me with the shed skin of a giant python:
 
 ![A series of small brown hills recedes into the horizon.](PXL_20230629_044741567.jpg "Photo © Kristen Llobrera")
 
-![Three girls pat a large, sleeping python.](phl-jpn-bohol-21.jpg "The girls make a sleepy new friend"){data-responsiver=cinemascope}
+![Three girls pat a large, sleeping python.](phl-jpn-bohol-21.jpg "The girls make a sleepy new friend"){.cinemascope}
 
 ![A butterfly perches atop a flower held by a woman.](phl-jpn-bohol-22.jpg)
 
@@ -128,7 +128,7 @@ We walked into a small town square and happened upon a performance by a troupe o
 
 ![A woman on stage twirls fire, creating two intersecting arcs in front of her.](phl-jpn-bohol-26.jpg) 
 
-![A man twirls fire, creating a pillar of fire several feet above his head.](phl-jpn-bohol-27.jpg){data-responsiver=cinemascope}
+![A man twirls fire, creating a pillar of fire several feet above his head.](phl-jpn-bohol-27.jpg){.cinemascope}
 
 ## Balicasag Island
 
@@ -146,7 +146,7 @@ Admiring the water (no audio). [*Full version on Flickr*](https://flic.kr/p/2pfB
 
 When we got to Balicasag Island it was a bit of a rush—we picked out a table for lunch after we got back from snorkeling and ordered some food, then were quickly led away to a set of three boats. We split our group up and our guides started taking us to different spots around the island.
 
-![Looking over the port side of an outrigger boat at two other boats carrying people on the way to snorkeling spots. The occupants of the boats wear orange life vests, on one of them is a bible chapter and verse number written in Sharpie™ pen.](PXL_20230630_021939816~2.jpg "Photo © Joseph Llobrera"){data-responsiver=cinemascope}
+![Looking over the port side of an outrigger boat at two other boats carrying people on the way to snorkeling spots. The occupants of the boats wear orange life vests, on one of them is a bible chapter and verse number written in Sharpie™ pen.](PXL_20230630_021939816~2.jpg "Photo © Joseph Llobrera"){.cinemascope}
 
 {% videoloop "./phl-jpn-bohol-snorkeling.mp4", "A group of three canoes carrying snorkelers." %}
 

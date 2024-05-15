@@ -12,11 +12,11 @@ tags:
 
 For Jordan’s birthday last weekend we took a quick trip into the city and had dinner at [Sarvida](https://www.sarvidaphilly.com/), from the same folks behind [Perla](http://www.perlaphilly.com/) in Passyunk.
 
-![](sarvida-1.jpg "Early birds"){data-responsiver=cinemascope}
+![](sarvida-1.jpg "Early birds"){.cinemascope}
 
 ![](sarvida-2.jpg)
 
-![](sarvida-3.jpg "Lechon *manok* and *crispy pata*"){data-responsiver=cinemascope}
+![](sarvida-3.jpg "Lechon *manok* and *crispy pata*"){.cinemascope}
 
 ![](sarvida-4.jpg "*Halo-halo*")
 

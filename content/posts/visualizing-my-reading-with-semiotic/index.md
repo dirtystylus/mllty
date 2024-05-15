@@ -13,7 +13,7 @@ When I [tracked my reading during 2019](http://dirtystylus.com/2020/01/14/readin
 
 Semiotic provides a lot of common chart types out of the box, including what I was looking for: [a timeline](https://semiotic.nteract.io/examples/timeline). I used that as a jumping off for my visualization. Here’s the [in-progress result](https://laughing-ritchie-9d0f34.netlify.com/), if you want to skip ahead.
 
-![Timeline-style reading log for 2019.](reading-log-styled.png "A slice of time"){data-responsiver=cinemascope}
+![Timeline-style reading log for 2019.](reading-log-styled.png "A slice of time"){.cinemascope}
 
 ## Dates and Time Scales
 
@@ -54,7 +54,7 @@ Ultimately this is how I ended up storing the dates:
 
 Note the hour information — I don’t do this for all of my entries, just the books that I started and finished on the same day. When I ran the first charts I noticed that the same-day books wouldn’t get rendered at all, so I had these weird gaps in my chart. 
 
-![Timeline-style reading log, with blank spots for single-day books](reading-log-wip.png "Early chart with gapping for single-day books"){data-responsiver=cinemascope}
+![Timeline-style reading log, with blank spots for single-day books](reading-log-wip.png "Early chart with gapping for single-day books"){.cinemascope}
 
 I put out a quick query to the Semiotic Slack channel, and Elijah responded:
 
@@ -72,7 +72,7 @@ rAccessor: function (e) {
 
 When I first plugged in my data I put in expanded date information and … yikes. It was clear I needed to deal with axis labels:
 
-![Timeline-style reading log for 2019, early attempt with overlapping ticks in the horizontal axis labels.](semiotic-readinglog.png "Axis label soup"){data-responsiver=cinemascope}
+![Timeline-style reading log for 2019, early attempt with overlapping ticks in the horizontal axis labels.](semiotic-readinglog.png "Axis label soup"){.cinemascope}
 
 A little bit of digging revealed that D3 has some handy things: time scales, and time formats. Since Semiotic is pretty much glueing React and D3 together, it seemed like a good next step to figure out how to get time scales. Dozens of tabs later, this is where I ended up. Semiotic has an `rscaleType` property which can receive a time scale domain, which is the full set of values for the time scale. Here I’m restricting the time scale to a single year:
 

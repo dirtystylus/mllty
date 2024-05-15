@@ -42,29 +42,29 @@ After our long flight to Tokyo we transferred to an ANA flight to Manila.[^1] We
 
 We got in midday and were fairly tired, but Joseph and I decided to hike the 700 steps up Mt. Tapyas  to see the bay:
 
-![Sunset through multiple layers of clouds](phl-jpn-sf-coron-9.jpg "I like to think that’s a dog emerging from the clouds"){data-responsiver=cinemascope}
+![Sunset through multiple layers of clouds](phl-jpn-sf-coron-9.jpg "I like to think that’s a dog emerging from the clouds"){.cinemascope}
 
 The next day we got to squeeze in a tour that brought us to to a couple of island spots like Kayangan Lake and Twin Lagoon. Outrigger boats were our primary way of getting from island to island—it’s been a long time since I’ve ridden in a bangka. We had lunch cooked on the boat and served on the beach: grilled tuna, eggplant, seaweed, and veggies.
 
-![Outrigger boats tethered to a wooden walkway](phl-jpn-sf-coron-11.jpg "Bay leading to Kayangan Lake"){data-responsiver=cinemascope}
+![Outrigger boats tethered to a wooden walkway](phl-jpn-sf-coron-11.jpg "Bay leading to Kayangan Lake"){.cinemascope}
 
 Some other shots from this leg (click to enlarge):
 
 {% gallery %}
 
-- ![A tv in an airport waiting area. Onscreen a chyron identifies a man onscreen as Mayor Dr. Dennis Superficial](phl-jpn-sf-coron-3.jpg "The best name popped up while waiting for our flight from Manila to Coron"){data-responsiver=gallery_3x4}
-- ![Passengers line up to board a small propeller plane.](phl-jpn-sf-coron-16.jpg "Boarding a Cebu Pacific flight"){data-responsiver=gallery_4x3}
-- ![Close-up view of a mango shake in a tall glass.](phl-jpn-sf-coron-4.jpg "Mango shake"){data-responsiver=gallery_2x3}
-- ![Street vendors for ice cream with multicolored umbrellas for shade.](phl-jpn-sf-coron-5.jpg "Ice cream vendors in Coron"){data-responsiver=gallery_3x2}
-- ![Islands in a bay under sparse clouds and fading light](phl-jpn-sf-coron-6.jpg "Coron bay viewed from Mt. Tapyas"){data-responsiver=gallery_4x3}
-- ![Islands in a bay in the background of a sign spelling out CORON](phl-jpn-sf-coron-7.jpg "Panorama from behind the CORON sign on Mt. Tapyas"){data-responsiver=gallery_16x9}
-- ![Two men in the foreground of a sunset on an island bay](phl-jpn-sf-coron-8.jpg "Joseph and me in the fading light"){data-responsiver=gallery_4x3}
-- ![Sunset reflecting on a bay with a small boat in the foreground](phl-jpn-sf-coron-10.jpg){data-responsiver=gallery_2x3}
-- ![A man stands on the bow of an outrigger boat.](phl-jpn-sf-coron-17.jpg){data-responsiver=gallery_2x3}
-- ![Wooden walkway over clear turquoise water](phl-jpn-sf-coron-15.jpg "Walkway towards Kayangan Lake. Photo © Joseph Llobrera"){data-responsiver=gallery_4x3}
-- ![Swimmers in turquoise water of a secluded lake](phl-jpn-sf-coron-12.jpg "Kayangan Lake"){data-responsiver=gallery_4x3}
-- ![A grilled whole tuna fish on a wooden platter](phl-jpn-sf-coron-13.jpg "Tuna grilled on the boat"){data-responsiver=gallery_3x2}
-- ![A puppy with white and brown coloring](phl-jpn-sf-coron-14.jpg "Perrito"){data-responsiver=gallery_3x2}
+- ![A tv in an airport waiting area. Onscreen a chyron identifies a man onscreen as Mayor Dr. Dennis Superficial](phl-jpn-sf-coron-3.jpg "The best name popped up while waiting for our flight from Manila to Coron")
+- ![Passengers line up to board a small propeller plane.](phl-jpn-sf-coron-16.jpg "Boarding a Cebu Pacific flight")
+- ![Close-up view of a mango shake in a tall glass.](phl-jpn-sf-coron-4.jpg "Mango shake")
+- ![Street vendors for ice cream with multicolored umbrellas for shade.](phl-jpn-sf-coron-5.jpg "Ice cream vendors in Coron")
+- ![Islands in a bay under sparse clouds and fading light](phl-jpn-sf-coron-6.jpg "Coron bay viewed from Mt. Tapyas")
+- ![Islands in a bay in the background of a sign spelling out CORON](phl-jpn-sf-coron-7.jpg "Panorama from behind the CORON sign on Mt. Tapyas")
+- ![Two men in the foreground of a sunset on an island bay](phl-jpn-sf-coron-8.jpg "Joseph and me in the fading light")
+- ![Sunset reflecting on a bay with a small boat in the foreground](phl-jpn-sf-coron-10.jpg)
+- ![A man stands on the bow of an outrigger boat.](phl-jpn-sf-coron-17.jpg)
+- ![Wooden walkway over clear turquoise water](phl-jpn-sf-coron-15.jpg "Walkway towards Kayangan Lake. Photo © Joseph Llobrera")
+- ![Swimmers in turquoise water of a secluded lake](phl-jpn-sf-coron-12.jpg "Kayangan Lake")
+- ![A grilled whole tuna fish on a wooden platter](phl-jpn-sf-coron-13.jpg "Tuna grilled on the boat")
+- ![A puppy with white and brown coloring](phl-jpn-sf-coron-14.jpg "Perrito")
 
 {% endgallery %}
 
