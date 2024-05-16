@@ -31,7 +31,8 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
 		.addPassthroughCopy("content/posts/**/*.jpg")
 		.addPassthroughCopy("content/posts/**/*.mp4")
-		.addPassthroughCopy("content/watching/**/*.jpg");
+		.addPassthroughCopy("content/watching/**/*.jpg")
+		.addPassthroughCopy("content/reading/**/*.jpg");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -106,6 +107,18 @@ export default async function(eleventyConfig) {
 					return a.date - b.date;
 				});
 		return [...films].reverse();
+	});
+
+	eleventyConfig.addCollection("books", function (collection) {
+		const books = collection
+			.getAll()
+			.filter(function (item) {
+				return item.data.content_type == "book";
+			})
+			.sort(function (a, b) {
+					return a.date - b.date;
+				});
+		return [...books].reverse();
 	});
 
 	// Official plugins
