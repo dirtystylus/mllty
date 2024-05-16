@@ -212,38 +212,54 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
-	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// File extensions to process in _site folder
-		extensions: "html",
-		// Output formats for each image.
-		formats: ["auto"],
-		widths: [320,640,960,1280,1920],
-		transformOnRequest: true,
-		urlFormat: function ({
-			hash, // not included for `statsOnly` images
-			src,
-			width,
-			format,
-		}) {
-			// if (process.env.ELEVENTY_RUN_MODE === "serve") {
-			// 	return `<img src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
-			// } else {
+	let imgTransformSettings = {};
+	if (process.env.ELEVENTY_RUN_MODE === 'serve') {
+		imgTransformSettings = {
+			extensions: "html",
+			// Output formats for each image.
+			formats: ["auto"],
+			widths: [320,640,960,1280,1920],
+			transformOnRequest: false,
+			urlFormat: function ({
+				hash, // not included for `statsOnly` images
+				src,
+				width,
+				format,
+			}) {
+				return src.replace("content", "");
+			},
+			defaultAttributes: {
+				loading: "lazy",
+				decoding: "async",
+				sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw'
+			},
+		}
+	} else {
+		imgTransformSettings = {
+			extensions: "html",
+			// Output formats for each image.
+			formats: ["auto"],
+			widths: [320,640,960,1280,1920],
+			transformOnRequest: false,
+			urlFormat: function ({
+				hash, // not included for `statsOnly` images
+				src,
+				width,
+				format,
+			}) {
 				return `/.netlify/images?url=${src.replace("content","")}?w=${width}&fit=contain`;
-			// }
-		},
+			},
 
-		defaultAttributes: {
-			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-			loading: "lazy",
-			decoding: "async",
-			sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw'
-		},
-		// filenameFormat: function (id, src, width, format) {
-		// 		let filename = path.basename(src, path.extname(src));
-		// 		return `${filename}.${format}`;
-		// },
-	});
+			defaultAttributes: {
+				loading: "lazy",
+				decoding: "async",
+				sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw'
+			},
+		}
+	}
+
+	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, imgTransformSettings);
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
