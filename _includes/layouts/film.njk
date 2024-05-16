@@ -22,7 +22,6 @@ templateClass: tmpl-book
 <div class="book-body">
 {{ content | safe }}
 </div>
-{% set prevPost = prevFilm %}
-{% set nextPost = nextFilm %}
+{% set postslist = collections.films %}
 {% include "partials/single-pagination.njk" %}
 </article>

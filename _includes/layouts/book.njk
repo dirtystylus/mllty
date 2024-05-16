@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-book
+---
+<article class="content-main container">
+<div class="book-details">
+	<div class="book-cover book-shadow">
+	{% image cover_image, "Cover art for"+title %}
+	</div>
+	<div class="book-meta">
+		<h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
+		<h2>{{author}}</h2>
+		<dl>
+			<dt>Genre</dt>
+			<dd>{{ genre }}</dd>
+			<dt>Format</dt>
+			<dd>{{ format }}</dd>
+			{% if page_count %}
+			<dt>Pages</dt>
+			<dd>{{ page_count }}</dd>
+			{% endif %}
+			<dt>Started Reading</dt>
+			<dd>{{ start_date | readableDate }}</dd>
+			<dt>Finished Reading</dt>
+			<dd>{{ end_date | readableDate }}</dd>
+		</dl>
+	</div>
+</div>
+<div class="book-body">
+{{ content | safe }}
+</div>
+{% set postslist = collections.books %}
+{% include "partials/single-pagination.njk" %}
+</article>
