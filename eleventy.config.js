@@ -163,6 +163,20 @@ export default async function(eleventyConfig) {
 		return [...films].reverse();
 	});
 
+	// Collections by Year
+
+	eleventyConfig.addCollection("postsByYear", function (collection) {
+		const coll = collection
+			.getAll()
+			.filter(function (item) {
+				return item.data.content_type == "post";
+			})
+			.sort(function (a, b) {
+				return a.date - b.date;
+			});
+		return contentsByYear(coll);
+	});
+
 	eleventyConfig.addCollection("booksByYear", function (collection) {
 		const coll = collection
 			.getAll()
