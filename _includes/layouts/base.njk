@@ -11,7 +11,29 @@
 		<link rel="alternate" href="feed/json.njk" type="application/json" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+		<meta name="generator" content="{{ eleventy.generator }}">
+		<link rel="icon" href="/img/meta/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="/touchicon-196.png" sizes="196x196" />
+
+		<!-- Open Graph tags -->
+		{% set ogUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ ogUrl }}" />
+		<meta property="og:title" content="{{ title or metadata.title }}" />
+		{% if content_type == "book" %}
+		{% set bookThumbnail = metadata.feed_reading.img_base_url + cover_image %}
+		<meta property="og:image" content="{{ bookThumbnail }}" />
+		<meta property="og:description" content="by {{ author }}" />
+		{% else %}
+		<meta property="og:image" content="{{ metadata.profile_image }}" />
+		<meta property="og:description" content="{{ description or metadata.description }}" />
+		{% endif %}
+
+
+		<!-- Twitter Card tags-->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@dirtystylus">
 
 		{#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
