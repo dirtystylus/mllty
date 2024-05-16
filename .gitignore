@@ -7,3 +7,11 @@ package-lock.json
 
 # Local Netlify folder
 .netlify
+
+# Environment Vars
+.env
+
+# Text Editors
+.nova
+.vscode
+*/.obsidian
