@@ -1,3 +1,4 @@
+import { DateTime } from "luxon";
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItFootnote from 'markdown-it-footnote';
@@ -47,6 +48,47 @@ export default async function(eleventyConfig) {
 	// eleventyConfig.addBundle("js");
 
 	// Collections
+	function makeDateFormatter(dateFormat) {
+		return function (date) {
+			// return moment(date).format(datePattern);
+			return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(dateFormat);
+		};
+	}
+
+	function generateItemsDateSet(items, dateFormatter) {
+		const formattedDates = items.map((item) => {
+			return dateFormatter(item.data.page.date);
+		});
+		return [...new Set(formattedDates)];
+	}
+
+	function getItemsByDate(items, date, dateFormatter) {
+		return items.filter((item) => {
+			return dateFormatter(item.data.page.date) === date;
+		});
+	}
+
+	const contentByDateString = (items, dateFormatter) => {
+		return generateItemsDateSet(items, dateFormatter).reduce(function (
+			collected,
+			formattedDate
+		) {
+			return Object.assign({}, collected, {
+				// lowercase to match month directory page.url
+				[formattedDate.toLowerCase()]: getItemsByDate(
+					items,
+					formattedDate,
+					dateFormatter
+				),
+			});
+		},
+		{});
+	};
+
+	const contentsByYear = (collection) => {
+		return contentByDateString(collection, makeDateFormatter('yyyy'));
+	};
+
 	eleventyConfig.addCollection("sortedTags", function (collection) {
 		let tagSet = new Set();
 		collection
@@ -97,6 +139,18 @@ export default async function(eleventyConfig) {
 		return [...coll].reverse();
 	});
 
+	eleventyConfig.addCollection("books", function (collection) {
+		const books = collection
+			.getAll()
+			.filter(function (item) {
+				return item.data.content_type == "book";
+			})
+			.sort(function (a, b) {
+					return a.date - b.date;
+				});
+		return [...books].reverse();
+	});
+
 	eleventyConfig.addCollection("films", function (collection) {
 		const films = collection
 			.getAll()
@@ -109,16 +163,30 @@ export default async function(eleventyConfig) {
 		return [...films].reverse();
 	});
 
-	eleventyConfig.addCollection("books", function (collection) {
-		const books = collection
+	eleventyConfig.addCollection("booksByYear", function (collection) {
+		const coll = collection
 			.getAll()
 			.filter(function (item) {
 				return item.data.content_type == "book";
 			})
 			.sort(function (a, b) {
-					return a.date - b.date;
-				});
-		return [...books].reverse();
+				return a.date - b.date;
+			});
+
+		return contentsByYear(coll);
+	});
+
+	eleventyConfig.addCollection("filmsByYear", function (collection) {
+		const coll = collection
+			.getAll()
+			.filter(function (item) {
+				return item.data.content_type == "film";
+			})
+			.sort(function (a, b) {
+				return a.date - b.date;
+			});
+
+		return contentsByYear(coll);
 	});
 
 	// Official plugins
@@ -144,7 +212,11 @@ export default async function(eleventyConfig) {
 			width,
 			format,
 		}) {
-			return `/.netlify/images?url=${src.replace("content","")}?w=${width}&fit=contain`;
+			// if (process.env.ELEVENTY_RUN_MODE === "serve") {
+			// 	return `<img src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
+			// } else {
+				return `/.netlify/images?url=${src.replace("content","")}?w=${width}&fit=contain`;
+			// }
 		},
 
 		defaultAttributes: {
@@ -225,32 +297,20 @@ export default async function(eleventyConfig) {
 		return (new Date());
 	});
 
+	// Map from Object filter, for Year-based custom collections
+	eleventyConfig.addNunjucksFilter("createReverseYearsMapFromObject", function (obj) {
+		const yearCollection = obj;
+		let yearCollectionDescending = new Map();
+		const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});
+		keysSorted.forEach((key) => {
+			yearCollectionDescending.set(key, yearCollection[key]);
+		});
+		return yearCollectionDescending;
+	});
+
 	// Shortcodes
 
 	eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
-// 		let metadata = await Image(src, {
-// 			widths: [200, 300],
-// 			formats: ["avif", "jpeg"],
-// 			transformOnRequest: true,
-// 			urlFormat: function ({
-// 				hash, // not included for `statsOnly` images
-// 				src,
-// 				width,
-// 				format,
-// 			}) {
-// 				return `/.netlify/images?url=${src.replace("content","")}?w=${width}&fit=contain`;
-// 			},
-// 		});
-//
-// 		let imageAttributes = {
-// 			alt,
-// 			sizes: '(min-width: 45em) 200px,(min-width: 60em) 300px,100vw',
-// 			loading: "lazy",
-// 			decoding: "async",
-// 		};
-// 		// You bet we throw an error on a missing alt (alt="" works okay)
-// 		const imageMarkup = Image.generateHTML(metadata, imageAttributes);
-// 		dbg(imageMarkup);
 		return `<img src="${src}" alt="${alt}" />`;
 	});
 
