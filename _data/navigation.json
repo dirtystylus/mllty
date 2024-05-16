@@ -26,10 +26,6 @@
 			"title": "Mastodon",
 			"url": "https://mastodon.social/@markllobrera",
 			"rel": "me"
-		},
-		{
-			"text": "Twitter",
-			"url": "https://twitter.com/dirtystylus"
 		}
 	]
 }

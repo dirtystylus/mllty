@@ -3,7 +3,7 @@ export default {
 	"url": "https://www.markllobrera.com/",
 	"domain": "markllobrera.com",
 	"language": "en",
-	"description": "This is the online home for Mark Llobrera, housing his blog and reading log.",
+	"description": "This is the online home for Mark Llobrera, housing his blog, reading log, and film log.",
 	"profile_image": "https://www.markllobrera.com/img/meta/mark-llobrera-thumb.jpg",
 	"feed": {
 		"subtitle": "This is the online home for Mark Llobrera, housing his blog and reading log.",

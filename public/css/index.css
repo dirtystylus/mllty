@@ -383,7 +383,7 @@ figcaption {
 		grid-column: content-gutter-start / content-gutter-end;
 	}
 
-	.home--bio > figure {
+	.home--bio > img {
 		float: left;
 		margin: 0 1em 0 0;
 		width: 50%;
@@ -447,6 +447,7 @@ figcaption {
 	font-size: 0.9em;
 }
 
+.tmpl-home .postlist .postlist-link,
 .tmpl-tag-detail .postlist-link,
 .tmpl-posts-list .postlist-link {
 	font-weight: 600;

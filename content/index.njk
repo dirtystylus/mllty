@@ -1,27 +1,39 @@
 ---
-eleventyNavigation:
-  key: Home
-  order: 1
 numberOfLatestPostsToShow: 3
+templateClass: tmpl-home
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+{{ latestPostsCount }}
+<div class="content-main container">
+<h1>Welcome.</h1>
+<div class="home--bio">
+{% image "/img/mark-portrait-202108.jpg", "Portrait headshot of the author" %}
+Hi, I’m Mark. I’m a developer and writer currently living just outside Philadelphia, PA. I’ve been building things for the web for over 22 years, and I particularly love the intersection of content strategy, design, and implementation. This site houses my <a href="{{ posts.njk }}">blog posts</a>, my <a href="{{ books.njk }}">reading log</a>, and <a href="{{ films.njk }}">film log</a>.
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
+At work I’m the Head of Technology for <a href="https://bluecadet.com">Bluecadet</a>, where we build experiences in online and physical spaces.
+
+Thanks for being here.
+</div>
+<hr>
+<h2>A Few Recent Posts</h2>
+
+{% set postslist = collections.posts | head(latestPostsCount) %}
 {% include "postslist.njk" %}
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
-{% endif %}
+<hr>
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+<h2>Books I’ve Read Recently</h2>
+
+{% set bookslist = collections.books | head(latestPostsCount) %}
+{% include "bookslist.njk" %}
+
+<hr>
+
+<h2>Films I’ve Watched Recently</h2>
+
+{% set filmslist = collections.films | head(latestPostsCount) %}
+{% include "filmslist.njk" %}
+
+
+</div>
