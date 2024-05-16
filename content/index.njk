@@ -4,7 +4,6 @@ templateClass: tmpl-home
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-{{ latestPostsCount }}
 <div class="content-main container">
 <h1>Welcome.</h1>
 <div class="home--bio">
