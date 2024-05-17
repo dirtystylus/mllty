@@ -12,14 +12,6 @@ export default {
 		"url": "https://www.markllobrera.com/feed/feed.xml",
 		"id": "https://www.markllobrera.com/"
 	},
-	"feed_reading": {
-		"subtitle": "This is the online home for Mark Llobrera, housing his blog and reading log.",
-		"filename": "reading.xml",
-		"path": "/feed/reading.xml",
-		"url": "https://www.markllobrera.com/feed/reading.xml",
-		"img_base_url": "https://www.markllobrera.com",
-		"id": "https://www.markllobrera.com/"
-	},
 	"author": {
 		"name": "Mark Llobrera",
 		"email": "mark@dirtystylus.com"
