@@ -10,7 +10,9 @@
 		"start-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/ --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+		"start-film": "letterboxd diary dirtystylus && npx @11ty/eleventy --serve --quiet",
+		"build-film": "letterboxd diary dirtystylus && npx @11ty/eleventy"
 	},
 	"repository": {
 		"type": "git",
