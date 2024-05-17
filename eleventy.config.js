@@ -31,6 +31,9 @@ export default async function(eleventyConfig) {
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
 		.addPassthroughCopy("content/posts/**/*.jpg")
+		.addPassthroughCopy("content/posts/**/*.png")
+		.addPassthroughCopy("content/posts/**/*.gif")
+		.addPassthroughCopy("content/posts/**/*.jpeg")
 		.addPassthroughCopy("content/posts/**/*.mp4")
 		.addPassthroughCopy("content/watching/**/*.jpg")
 		.addPassthroughCopy("content/reading/**/*.jpg");
