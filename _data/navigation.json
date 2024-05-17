@@ -15,7 +15,7 @@
 	],
 	"footer_items": [
 		{
-			"title": "RSS (Everything)",
+			"title": "RSS",
 			"url": "/feed/feed.xml"
 		},
 		{
