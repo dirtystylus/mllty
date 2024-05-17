@@ -19,10 +19,6 @@
 			"url": "/feed/feed.xml"
 		},
 		{
-			"title": "RSS (Reading)",
-			"url": "/feed/reading.xml"
-		},
-		{
 			"title": "Mastodon",
 			"url": "https://mastodon.social/@markllobrera",
 			"rel": "me"
