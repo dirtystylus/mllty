@@ -1,6 +1,6 @@
 ---
 # Metadata comes from _data/metadata.js
-permalink: /feed/feed.xml
+permalink: /feed/reading.xml
 eleventyNavigation:
   key: Feed
   order: 3
@@ -12,28 +12,21 @@ eleventyNavigation:
 	<subtitle>{{ metadata.description }}</subtitle>
 	<link href="{{ permalink | htmlBaseUrl(metadata.url) }}" rel="self"/>
 	<link href="{{ metadata.url | addPathPrefixToFullUrl }}"/>
-	<updated>{{ collections.combined | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>{{ metadata.url }}</id>
 	<author>
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
-	{%- for post in collections.combined | head(20) %}
+	{%- for post in collections.books | head(20) %}
 	{%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>
 		<updated>{{ post.date | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
-		{% if post.data.content_type == "book" %}
 		{% set book_metadata %}<p><img src="{{metadata.feed_reading.img_base_url}}{{post.data.cover_image}}" alt="Cover image for {{post.data.title}}"/></p><p>Started Reading: {{post.data.start_date | readableDate }}</p><p>Finished Reading: {{post.data.end_date | readableDate }}</p>{% endset %}
 		<content type="html">{{book_metadata | transformWithHtmlBase(absolutePostUrl, post.url)}}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}</content>
-		{% elif post.data.content_type == "film" %}
-		{% set film_metadata %}<p><img src="{{metadata.feed_reading.img_base_url}}{{post.data.cover_image}}" alt="Cover image for {{post.data.title}}"/><p>Watched: {{post.data.watched_date | readableDate }}</p>{% endset %}
-		<content type="html">{{film_metadata}}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}</content>
-		{% else %}
-		<content type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}</content>
-		{% endif %}
 	</entry>
 	{%- endfor %}
 </feed>
