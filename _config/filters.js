@@ -1,15 +1,15 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
-	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+	eleventyConfig.addFilter("readableDate", (dateObj, format = "LLL dd, yyyy", zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		if (typeof dateObj === 'string') {
 			return DateTime.fromISO(dateObj, { zone: "utc" }).toFormat(
-				"LLL dd, yyyy"
+				format
 			);
 		} else {
 			return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-				"LLL dd, yyyy"
+				format
 			);
 		}
 	});
