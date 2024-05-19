@@ -1,3 +1,8 @@
+[[redirects]]
+	from = "/:year/:month/:date/:slug"
+	to = "/posts/:slug"
+	status = 301
+
 [build]
 	publish = "_site"
 	command = "npm run build"
@@ -22,8 +27,3 @@
 
 	[plugins.inputs]
 		output_path = "reports/lighthouse/index.html"
-
-[[redirects]]
-		from = "/:year/:month/:date/:slug"
-		to = "/posts/:slug"
-		status = 301
