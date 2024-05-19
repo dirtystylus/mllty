@@ -1,6 +1,10 @@
 {
 	"items": [
 		{
+			"title": "Work",
+			"url": "/work/"
+		},
+		{
 			"title": "Posts",
 			"url": "/posts/"
 		},
