@@ -54,6 +54,9 @@ h1,h2,h3,h4,h5,p {
 	word-break: break-word;
 }
 
+a[href].header-anchor {
+	color: var(--lightpink);
+}
 
 .visually-hidden {
 	clip: rect(0 0 0 0) !important;
