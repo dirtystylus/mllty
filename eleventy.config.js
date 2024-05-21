@@ -36,7 +36,8 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy("content/posts/**/*.jpeg")
 		.addPassthroughCopy("content/posts/**/*.mp4")
 		.addPassthroughCopy("content/watching/**/*.jpg")
-		.addPassthroughCopy("content/reading/**/*.jpg");
+		.addPassthroughCopy("content/reading/**/*.jpg")
+		.addPassthroughCopy("content/work/**/*.pdf");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets

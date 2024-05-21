@@ -3,7 +3,7 @@ title: Selected Work
 layout: layouts/post
 ---
 
-Jump to: [Publications and Podcast Appearances](#publications-and-podcast-appearances) | [Talks](#talks) 
+[Résumé](mark-llobrera-resume.pdf) | [Publications and Podcast Appearances](#publications-and-podcast-appearances) | [Talks](#talks)
 
 ## Nike: The LeBron James Innovation Center
 
@@ -78,9 +78,9 @@ Jump to: [Publications and Podcast Appearances](#publications-and-podcast-appear
 - [WHYY](https://responsivewebdesign.com/podcast/whyy/), Responsive Web Design Podcast Episode 149
 - [“Prototyping Your Workflow”](https://alistapart.com/article/prototyping-your-workflow), A List Apart Issue 396
 - [_Professional Amateurs_](https://alistapart.com/author/mllobrera), A List Apart Column (2015)
-- “Build Modular Content Systems in WordPress”, net magazine April 2014. [Article](http://www.creativebloq.com/web-design/build-modular-content-systems-wordpress-41514680) | [Video](https://www.youtube.com/watch?v=Sz1ytN0ZClk)
-- “Planning the Perfect Site”, net magazine cover feature May 2015
 - [Science Friday](https://responsivewebdesign.com/podcast/science-friday/), Responsive Web Design Podcast Episode 62
+- “Build Modular Content Systems in WordPress”, net magazine April 2014. [Article](http://www.creativebloq.com/web-design/build-modular-content-systems-wordpress-41514680)
+- “Planning the Perfect Site”, net magazine cover feature [May 2015](https://www.creativebloq.com/web-design/build-perfect-website-new-issue-net-11513971)
 
 ## Talks
 
@@ -93,4 +93,5 @@ Jump to: [Publications and Podcast Appearances](#publications-and-podcast-appear
 - WordCamp US 2015: “Decoupled Development with WordPress JSON APIs”. [Video](https://wordpress.tv/2015/12/11/matt-cheney-and-mark-llobrera-decoupled-development-with-wordpress-json-apis/) | [Slides](https://speakerdeck.com/mllobrera/decoupled-development-with-wordpress-json-apis) | [Notes](http://dirtystylus.com/2015/12/04/decoupled-wordpress/)
 - Drupaldelphia 2014: “Progressive Enhancement in Drupal 7, Using Ajax-Include Patterns”. [Slides](https://speakerdeck.com/mllobrera/drupaldelphia-2014-progressive-enhancement-in-drupal-7-using-ajax-include-patterns)
 - Drupaldelphia 2013: “Tyler School of Art: A Case Study in User-Centered Decision Making”. [Slides](https://speakerdeck.com/mllobrera/drupaldelphia-2013-tyler-school-of-art-a-case-study-in-user-centered-decision-making)
+- MCN: “Experiential Design for an Unknown Future”. [Video](https://www.youtube.com/watch?v=R3D9kw8ye_g) | [Q&A](https://www.youtube.com/watch?v=U4dnSInZ6Hc)
 
