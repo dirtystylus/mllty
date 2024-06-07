@@ -390,6 +390,7 @@ export default async function(eleventyConfig) {
 			const dirPath = this.page.filePathStem.slice(0, this.page.filePathStem.length-5);
 			$('img').each((i, el) => {
 				const imgUrl = $(el).attr('src');
+				const imgGallery = $(el).attr('data-gallery');
 				let imgCaption = "";
 				if ($(el).next().length > 0 && $(el).next().prop("tagName").toLowerCase() == 'figcaption') {
 					imgCaption = $(el).next().html();
@@ -397,7 +398,15 @@ export default async function(eleventyConfig) {
 				}
 				$(el).wrap('<a></a>');
 				const parent = $(el).parent();
-				parent.attr("href", `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
+				if (process.env.ELEVENTY_RUN_MODE === 'serve') {
+					parent.attr("href", imgUrl);
+				}
+				else {
+					parent.attr("href", `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
+				}
+				if (imgGallery) {
+					parent.attr("data-gallery", imgGallery);
+				}
 				if (imgCaption !== "") {
 					parent.attr("data-title", imgCaption);
 				}

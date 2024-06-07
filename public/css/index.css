@@ -235,8 +235,8 @@ pre code {
 }
 
 .highlight-line {
-	display: block;
-	padding: 0.125em 1em;
+	/* display: block; */
+	/* padding: 0.125em 1em; */
 	text-decoration: none; /* override del, ins, mark defaults */
 	color: inherit; /* override del, ins, mark defaults */
 }
