@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
+{%- css %}{% include "public/css/prism-a11y-dark.css" %}{%- endcss %}
+{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <link rel="stylesheet" href="/css/glightbox.css">
 <div class="content-main container">
 <h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
@@ -27,5 +29,4 @@ const lightbox = GLightbox({
 		selector: 'a:has(> .glightbox)'
 });
 lightbox.init();
-console.log('lightbox init');
 </script>

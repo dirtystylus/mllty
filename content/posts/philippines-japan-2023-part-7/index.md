@@ -47,10 +47,10 @@ Our Airbnb was located in Shinjuku, not too far from the Shin-Ōkubo JR station.
 
 {% gallery %}
 
-* ![A pair of sports cars in a small garage: a blue one on the left, a red one on the right.](phl-jpn-tokyo-6.jpg "Sports car duo"){.glightbox}
-* ![A cat perches on the fender of a red sports car.](phl-jpn-tokyo-96.jpg "Cat calling shotgun"){.glightbox}
-* ![A bar called “Hangover”.](phl-jpn-tokyo-7.jpg "Truth in advertising"){.glightbox}
-* ![A banner hanging from a lamppost featuring a cartoon angel bearing a small Philippine flag. The angel has a speech bubble above it reading “Mabuhay”.](phl-jpn-tokyo-8.jpg "Kabayan!"){.glightbox}
+* ![A pair of sports cars in a small garage: a blue one on the left, a red one on the right.](phl-jpn-tokyo-6.jpg "Sports car duo"){.glightbox data-gallery=gallery1}
+* ![A cat perches on the fender of a red sports car.](phl-jpn-tokyo-96.jpg "Cat calling shotgun"){.glightbox data-gallery=gallery1}
+* ![A bar called “Hangover”.](phl-jpn-tokyo-7.jpg "Truth in advertising"){.glightbox data-gallery=gallery1}
+* ![A banner hanging from a lamppost featuring a cartoon angel bearing a small Philippine flag. The angel has a speech bubble above it reading “Mabuhay”.](phl-jpn-tokyo-8.jpg "Kabayan!"){.glightbox data-gallery=gallery1}
 
 {% endgallery %}
 
