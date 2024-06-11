@@ -30,4 +30,4 @@ We took some time to check out the Loeb art museum on campus, including the scul
 
 ![A bronze sculpture of a nude woman with cloth draped about her head and shoulders, mounted on a brick wall. Light streaming over the wall is creating a lens flare shaped like an eye.](vassar-reunion-2024-6.jpg "Gaston Lachaise’s *Nude with Drapery*")
 
-More photos are on [Flickr](https://www.flickr.com/photos/dirtystylus/albums/72177720317827503).
+[More photos on Flickr](https://www.flickr.com/photos/dirtystylus/albums/72177720317827503).

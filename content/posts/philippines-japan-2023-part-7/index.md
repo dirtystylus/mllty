@@ -6,7 +6,7 @@ date: '2023-12-30T16:02:16.050-05:00'
 layout: layouts/post-gallery
 tags:
   - cameras
-  - personal
+  - family
   - photography
   - photos
   - travel
@@ -281,7 +281,7 @@ The museum occupies two main areas—the first floor has an exhibition on the hi
 
 The basement housed a two-story area filled with recreations of ramen stalls from various eras of Japan’s history. Each stall served a different variety of ramen tied to that era. It’s all very reminiscent of a Disney theme park but despite the kitsch I really enjoyed the experience.
 
-![A series of ramen shops whose facades recreate different historical eras of Japan.](phl-jpn-tokyo-86.jpg){.cinemascope}  
+![A series of ramen shops whose facades recreate different historical eras of Japan.](phl-jpn-tokyo-86.jpg){.cinemascope}
 
 {% gallery %}
 

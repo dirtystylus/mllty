@@ -6,7 +6,7 @@ date: '2023-11-11T14:41:13.768-05:00'
 layout: layouts/post-gallery
 tags:
   - cameras
-  - personal
+  - family
   - photography
   - photos
   - travel
@@ -50,7 +50,7 @@ We decided on two planned excursions over the next couple of days, one to check 
 
 ## Inland
 
-The next morning we piled into a van and drove along the Loay Interior Road. We elected to drive straight to the Chocolate Hills in Batuan and then stop at a few places on the way back. 
+The next morning we piled into a van and drove along the Loay Interior Road. We elected to drive straight to the Chocolate Hills in Batuan and then stop at a few places on the way back.
 
 ### Chocolate Hills
 
@@ -126,7 +126,7 @@ Panglao’s restaurant scene was interesting—it turns out that Panglao is a po
 
 We walked into a small town square and happened upon a performance by a troupe of fire twirlers.
 
-![A woman on stage twirls fire, creating two intersecting arcs in front of her.](phl-jpn-bohol-26.jpg) 
+![A woman on stage twirls fire, creating two intersecting arcs in front of her.](phl-jpn-bohol-26.jpg)
 
 ![A man twirls fire, creating a pillar of fire several feet above his head.](phl-jpn-bohol-27.jpg){.cinemascope}
 
