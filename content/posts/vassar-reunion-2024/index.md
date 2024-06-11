@@ -24,7 +24,7 @@ The usual schedule held: fireworks on Friday night, the class parade on Saturday
 
 ![A long exposure of fireworks, with a red smoke trail leading back to where they were launched. In the foreground tree branches are lit up.](vassar-reunion-2024-3.jpg)
 
-![Two men wearing kilts play bagpipes in front of students holding up a banner reading “Class of 1974”.](vassar-reunion-2024-4.jpg "1974 celebrates their 50th year since graduation.")
+![Two men wearing kilts play bagpipes in front of students holding up a banner reading “Class of 1974”.](vassar-reunion-2024-4.jpg "The class of 1974 celebrates their 50th year since graduation.")
 
 We took some time to check out the Loeb art museum on campus, including the sculpture garden. I particularly loved the afternoon light casting a rainbow flare on my phone’s camera.
 
