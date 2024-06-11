@@ -6,7 +6,7 @@ date: '2023-10-23T15:57:56.132-04:00'
 layout: layouts/post-gallery
 tags:
   - cameras
-  - personal
+  - family
   - photography
   - photos
   - travel
@@ -34,7 +34,7 @@ We were back to a smaller propeller plane for our flight from Iloilo.
 
 ## Alegre Guitars
 
-We first stopped in at the Alegre Guitar factory to get a tour of their operation. All of their guitars are handmade, and we got to take a peek at some of the craftspeople working on guitars and ukeleles at varying stages of the process. 
+We first stopped in at the Alegre Guitar factory to get a tour of their operation. All of their guitars are handmade, and we got to take a peek at some of the craftspeople working on guitars and ukeleles at varying stages of the process.
 
 ![A man assembles a guitar.](phl-jpn-cebu-3.jpg){.cinemascope}
 

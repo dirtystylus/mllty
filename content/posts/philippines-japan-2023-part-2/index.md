@@ -6,7 +6,7 @@ date: '2023-09-17T15:05:27.982-04:00'
 layout: layouts/post-gallery
 tags:
   - cameras
-  - personal
+  - family
   - photography
   - photos
   - travel
@@ -40,11 +40,11 @@ Entering Big Lagoon (no audio). [*Full version on Flickr*](https://flic.kr/p/2p3
 
 {% endvideoloop %}
 
-The water was extremely clear and in the shallower parts it sometimes looked like the kayaks were levitating above the water, because you could see the kayaks’ shadows on the bottom of the lagoon. 
+The water was extremely clear and in the shallower parts it sometimes looked like the kayaks were levitating above the water, because you could see the kayaks’ shadows on the bottom of the lagoon.
 
 ![Four kayaks in a lagoon with clear teal water.](phl-jpn-elnido-5.jpg "Kayaking on the Big Lagoon"){.cinemascope}
 
-The island cliffs were very interesting—apparently they’re limestone, and you could see the erosion at the water line as we paddled past. 
+The island cliffs were very interesting—apparently they’re limestone, and you could see the erosion at the water line as we paddled past.
 
 ![Four kayaks lined up in line with the horizon, with island cliffs in the background.](phl-jpn-elnido-16.jpg "It took a minute to get us all lined up for this shot"){.cinemascope}
 
@@ -54,7 +54,7 @@ Eventually our guides took us to a shallower end and tied up the kayaks, and we 
 
 ## Entalula Island
 
-After the Big Lagoon we hopped back on the boat and went to a beach on Entalula Island. There were small beachside bars where you could get fresh buko (young coconut) juice—they slice up the top and drop in a straw for you, or you can do like my daughter and sip straight from the top. 
+After the Big Lagoon we hopped back on the boat and went to a beach on Entalula Island. There were small beachside bars where you could get fresh buko (young coconut) juice—they slice up the top and drop in a straw for you, or you can do like my daughter and sip straight from the top.
 
 ![A woman sips from a young coconut.](phl-jpn-elnido-7.jpg)
 
@@ -114,7 +114,7 @@ Some other shots from this leg (click to enlarge):
 - ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){.glightbox}
 - ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){.glightbox}
 - ![An ice cream cart with a color wheel umbrella stops in the middle of a dirt road lined with shops.](phl-jpn-elnido-13.jpg "Ice cream cart"){.glightbox}
-- ![An Italian/Japanese restaurant named “Chef Mark Style”.](phl-jpn-elnido-14.jpg "I’m not sure I trust my namesake here given the food combination"){.glightbox} 
+- ![An Italian/Japanese restaurant named “Chef Mark Style”.](phl-jpn-elnido-14.jpg "I’m not sure I trust my namesake here given the food combination"){.glightbox}
 {% endgallery %}
 
 [More photos on Flickr](https://flic.kr/s/aHBqjAV99V).

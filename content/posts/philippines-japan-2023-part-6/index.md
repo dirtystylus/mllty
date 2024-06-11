@@ -6,7 +6,7 @@ date: '2023-12-17T12:08:06.450-05:00'
 layout: layouts/post-gallery
 tags:
   - cameras
-  - personal
+  - family
   - photography
   - photos
   - travel
