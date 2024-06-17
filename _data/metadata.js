@@ -10,7 +10,8 @@ export default {
 		"filename": "feed.xml",
 		"path": "/feed/feed.xml",
 		"url": "https://www.markllobrera.com/feed/feed.xml",
-		"id": "https://www.markllobrera.com/"
+		"id": "https://www.markllobrera.com/",
+		"img_base_url": "https://www.markllobrera.com",
 	},
 	"author": {
 		"name": "Mark Llobrera",
