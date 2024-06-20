@@ -21,10 +21,10 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="{{ ogUrl }}" />
 		<meta property="og:title" content="{{ title or metadata.title }}" />
-		{% if content_type == "book" %}
-		{% set bookThumbnail = metadata.feed_reading.img_base_url + cover_image %}
-		<meta property="og:image" content="{{ bookThumbnail }}" />
-		<meta property="og:description" content="by {{ author }}" />
+		{% if content_type == "book" or content_type == "film" %}
+		{% set thumbnail = metadata.feed.img_base_url + cover_image %}
+		<meta property="og:image" content="{{ thumbnail }}" />
+		<meta property="og:description" content="My notes on {{ title }}" />
 		{% else %}
 		<meta property="og:image" content="{{ metadata.profile_image }}" />
 		<meta property="og:description" content="{{ description or metadata.description }}" />
