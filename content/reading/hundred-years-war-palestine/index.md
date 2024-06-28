@@ -13,5 +13,6 @@ print_type: BOOK
 date: '2024-06-28T09:40:33.986-04:00'
 start_date: '2024-06-19'
 end_date: '2024-06-28'
+draft: true
 ---
 
