@@ -10,9 +10,8 @@ page_count: 336
 publication_date: '2021-01-26'
 publisher: Metropolitan Books
 print_type: BOOK
-date: '2024-06-28T09:40:33.986-04:00'
+date: '2024-07-16T04:00:00.000-04:00'
 start_date: '2024-06-19'
-end_date: '2024-06-28'
-draft: true
+end_date: '2024-07-16'
 ---
 
