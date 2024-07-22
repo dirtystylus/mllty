@@ -15,3 +15,4 @@ start_date: '2024-06-19'
 end_date: '2024-07-16'
 ---
 
+Reading this at the same time as [Everything for Everyone](/reading/everything-for-everyone) was an exercise in cultivating hope for peace and justice in Palestine for all its people.
