@@ -15,3 +15,4 @@ start_date: '2024-07-10'
 end_date: '2024-07-12'
 ---
 
+I was really worried about Michael Mann revisiting his masterpiece *Heat*, but what he and Meg Gardiner have done here is really compelling—yes, it’s partly a prequel, but also a leap into the future that feels more thematically linked to *Public Enemies*,^[That film’s look at how old-school bank robbers are rendered obsolete by technology is echoed by Chris Shiherlis’ story in the modern day sections.] *Miami Vice*, and especially *Blackhat*: a glimpse at how technology renders most borders porous or nonexistent for business, crime, or both. Mann’s usual obsessions with romance, time, and tragedy are woven throughout. I can’t wait to see this onscreen.
