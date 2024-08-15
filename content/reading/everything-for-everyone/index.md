@@ -1,6 +1,6 @@
 ---
-title: An Oral History of the New York Commune
-display_title: An Oral History of the New York Commune
+title: 'Everything for Everyone: An Oral History of the New York Commune'
+display_title: 'Everything for Everyone: An Oral History of the New York Commune'
 author: M. E. O'Brien and Eman Abdelhadi
 isbn: 194217358X
 cover_image: /reading/everything-for-everyone/everything-for-everyone.jpg
