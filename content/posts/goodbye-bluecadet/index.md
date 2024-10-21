@@ -2,7 +2,7 @@
 title: 'Goodbye, Bluecadet'
 display_title: 'Goodbye, Bluecadet'
 description: Closing out (almost) 12 years.
-date: '2024-10-20T14:58:27.603-04:00'
+date: '2024-10-21T09:31:20.598-04:00'
 tags:
   - bluecadet
   - work
