@@ -28,7 +28,7 @@ I had to leave before the final day, but on my last day I took a short sunrise w
 
 ![A riverbank with a mountain in the distance the trees and sky are reflected in the river.](hello-upstatement-4.jpg)
 
-Bonus: flying out of Albany meant a rare chance to see my college roommate Ben, who lives in the areas. It’s probably been over twenty years since I’ve seen him in person, and I had a great time catching up over coffee in downtown Troy.
+Bonus: flying out of Albany meant a rare chance to see my college roommate Ben, who lives in the area. It’s probably been over twenty years since I’ve seen him in person, and I had a great time catching up over coffee in downtown Troy.
 
 ![Two men smile in a coffee shop selfie.](hello-upstatement-5.jpg)
 
