@@ -8,7 +8,6 @@ tags:
   - links
   - notetaking
   - tech-culture
-draft: true
 ---
 
 Brandon Taylor’s latest post on his Sweater Weather newsletter^[God, I love how that rhymes]—[“how i'm taking notes (for now)”](https://blgtylr.substack.com/p/how-im-taking-notes-for-now)—starts as an examination of his personal process for note-taking, and then proceeds to carve away at one of the core truisms around AI and productivity—that speed is a self-justifying virtue:
