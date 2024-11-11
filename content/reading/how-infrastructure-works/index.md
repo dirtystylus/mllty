@@ -19,7 +19,7 @@ I had been super-excited for this book, pre-ordered it, and then it languished i
 
 I really had to sit with this line post-election:
 
-> It's why good infrastructure is strongly correlated with not only access to resources, but with equitable, stable political systems.^[page 121]
+> It's why good infrastructure is strongly correlated with not only access to resources, but with equitable, stable political systems.^[page 121.]
 
 \[lolsob\]
 
@@ -27,9 +27,9 @@ This may be the most impactful book I’ve read this year—it crystallized many
 
 There’s too many ideas swirling in my head, but I recently started a new job so I’ll focus on that. I often have to think about the balance of humans and the work that has to be done, and I really appreciated how Deb Chachra illustrated the tension between optimization and resilience:
 
-> Making systems resilient is fundamentally at odds with optimization, because optimizing a system means taking out any slack. A truly optimized, and thus efficient, system is only possible with near-perfect knowledge about the system, together with the ability to observe and implement a response. For a system to be reliable, on the other hand, there have to be some unused resources to draw on when the unexpected happens, which, well, happens predictably.^[page 209]
+> Making systems resilient is fundamentally at odds with optimization, because optimizing a system means taking out any slack. A truly optimized, and thus efficient, system is only possible with near-perfect knowledge about the system, together with the ability to observe and implement a response. For a system to be reliable, on the other hand, there have to be some unused resources to draw on when the unexpected happens, which, well, happens predictably.^[page 209.]
 
-> To capitalism, sustainability always looks like underutilization.^[page 257]
+> To capitalism, sustainability always looks like underutilization.^[page 257.]
 
 Of all the lessons that I drew from this book, the biggest one is familiar: capitalism and profit-seeking are such deficient ways to guide our investments in the systems that we all rely on. 
 
