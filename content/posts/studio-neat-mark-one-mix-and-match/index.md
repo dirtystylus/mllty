@@ -3,6 +3,7 @@ title: 'Studio Neat Mark One: Mix and Match'
 display_title: 'Studio Neat Mark One: Mix and Match'
 description: Frankenpen.
 date: '2024-11-13T11:24:02.433-05:00'
+cover_image: /posts/studio-neat-mark-one-mix-and-match/frankenpen-2.jpg
 tags:
   - notetaking
 ---

@@ -21,7 +21,7 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="{{ ogUrl }}" />
 		<meta property="og:title" content="{{ title or metadata.title }}" />
-		{% if content_type == "book" or content_type == "film" %}
+		{% if cover_image %}
 		{% set thumbnail = metadata.feed.img_base_url + cover_image %}
 		<meta property="og:image" content="{{ thumbnail }}" />
 		<meta property="og:description" content="My notes on {{ title }}" />
