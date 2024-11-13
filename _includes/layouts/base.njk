@@ -24,9 +24,12 @@
 		{% if cover_image %}
 		{% set thumbnail = metadata.feed.img_base_url + cover_image %}
 		<meta property="og:image" content="{{ thumbnail }}" />
-		<meta property="og:description" content="My notes on {{ title }}" />
 		{% else %}
 		<meta property="og:image" content="{{ metadata.profile_image }}" />
+		{% endif %}
+		{% if content_type == "book" or content_type == "film" %}
+		<meta property="og:description" content="My notes on {{ title }}" />
+		{% else %}
 		<meta property="og:description" content="{{ description or metadata.description }}" />
 		{% endif %}
 
