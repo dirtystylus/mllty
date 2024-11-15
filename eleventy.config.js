@@ -427,6 +427,15 @@ export default async function(eleventyConfig) {
 	);
 
 	eleventyConfig.addPairedShortcode(
+		"video", (content, data, alt) => {
+			const videoURL = mdLib.renderInline(data.trim());
+			const altText = mdLib.renderInline(alt.trim());
+			const divContent = mdLib.renderInline(content.trim());
+			return `<div class="video"><video controls playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+		}
+	);
+
+	eleventyConfig.addPairedShortcode(
 		"vimeo", (data) => {
 			const videoURL = mdLib.renderInline(data.trim());
 			return `<figure class="cinemascope video"><div class="video-embed"><div><iframe src="${videoURL}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></figure>`;
