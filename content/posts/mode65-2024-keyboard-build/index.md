@@ -7,7 +7,6 @@ cover_image: /posts/mode65-2024-keyboard-build/mode65-29.jpg
 tags:
   - keyboards
   - photos
-draft: true
 ---
 
 ![A 65% keyboard with a polycarbonate body and green and cream keycaps.](mode65-29.jpg "Mode SixtyFive with polycarbonate body, fluted copper accent, and Drop MT3 Jasmine keycaps"){.cinemascope}
