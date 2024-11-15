@@ -2,7 +2,7 @@
 title: Mode SixtyFive (2024) Keyboard Build
 display_title: Mode SixtyFive (2024) Keyboard Build
 description: Assembling Mode’s refreshed SixtyFive keyboard.
-date: '2024-11-14T22:13:18.491-05:00'
+date: '2024-11-15T16:59:04.589-05:00'
 cover_image: /posts/mode65-2024-keyboard-build/mode65-29.jpg
 tags:
   - keyboards
