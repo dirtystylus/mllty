@@ -41,7 +41,7 @@ Assembling the PCB,^[Printed circuit board] plate, and switches took up the most
 
 ![Polycarbonate plate seated over a keyboard PCB. Switches are mounted at the stabilizers for tuning.](mode65-15.jpg "I tested the stabilizers at this point, and ended up re-lubing the one for the Return key because it was scratchy.")
 
-I installed Gateron Milky Yellow switches that I had on hand, except for the Caps Lock and Mute macro button where I used Kailh Box Whites for distinct, clicky feedback.
+I installed Gateron X switches that I had on hand, except for the Caps Lock and Mute macro button where I used Kailh Box Whites for distinct, clicky feedback.
 
 ![Switches fully mounted on the plate.](mode65-17.jpg)
 
