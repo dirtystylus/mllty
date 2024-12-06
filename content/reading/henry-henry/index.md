@@ -10,9 +10,9 @@ page_count: 336
 publication_date: '2024-04-02'
 publisher: Unnamed Press
 print_type: BOOK
-date: '2024-11-18T10:52:52.152-05:00'
+date: '2024-12-06T16:01:40.668-05:00'
 start_date: '2024-11-08'
 end_date: '2024-11-18'
-draft: true
 ---
 
+I imagine if I had read the Henriad I would have an extra layer of appreciation for Allen Bratton’s novel, but what’s here is plenty enough. Some absolutely beautiful prose, even when what’s being revealed is ghastly.
