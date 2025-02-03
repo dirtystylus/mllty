@@ -2,6 +2,7 @@
 title: 'Haverford College Pond, Winter 2025'
 display_title: 'Haverford College Pond, Winter 2025'
 description: Snowy pond.
+cover_image: /posts/haverford-college-pond-winter-2025/haverford-college-pond-202501.jpg
 date: '2025-01-19T16:15:17.982-05:00'
 tags:
   - photos

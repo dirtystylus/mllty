@@ -12,7 +12,7 @@ publisher: Farrar, Straus and Giroux
 print_type: BOOK
 date: '2024-12-25T17:21:43.685-05:00'
 start_date: '2024-12-24'
-end_date: '2024-12-25'
-draft: true
+end_date: '2025-02-01'
 ---
 
+I read this slowly over the course of a month. Some of that is because I kept getting angry—pretty much all the things that Butler warns about have escalated with the incoming government, especially anti-trans executive orders. The other factor was the language—it’s quite dry, and sometimes refers to theory that I’m not familiar with. So: a tough one on a couple of fronts, but I’m glad that I kept reading.
