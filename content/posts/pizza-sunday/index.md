@@ -1,7 +1,7 @@
 ---
 title: Pizza Sunday
 display_title: Pizza Sunday
-description: replace
+description: Process shots from a Sunday tradition.
 cover_image: /posts/pizza-sunday/pizza-sunday-8-thumb.jpg
 layout: layouts/post-gallery
 date: '2025-02-06T11:29:08.223-05:00'
