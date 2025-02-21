@@ -40,6 +40,10 @@ body {
 	height: 100vh;
 }
 
+@view-transition {
+	navigation: auto;
+}
+
 main {
 	view-transition-name: main;
 }
