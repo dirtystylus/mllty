@@ -4,11 +4,11 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj, format = "LLL dd, yyyy", zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		if (typeof dateObj === 'string') {
-			return DateTime.fromISO(dateObj, { zone: "utc" }).toFormat(
+			return DateTime.fromISO(dateObj, { zone: "America/New_York" }).toFormat(
 				format
 			);
 		} else {
-			return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+			return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
 				format
 			);
 		}
@@ -16,7 +16,7 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+		return DateTime.fromJSDate(dateObj, {zone: 'America/New_York'}).toFormat('yyyy-LL-dd');
 	});
 
 	// Get the first `n` elements of a collection.
