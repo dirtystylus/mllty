@@ -13,7 +13,7 @@ tags:
 
 ![Two black and silver cameras side-by-side.](goodbye-x100s-hello-x100vi-1.jpg "Fujifilm X100VI and X100S, holding hands"){.cinemascope}
 
-Last week I packed up my Fujifilm X100S and sent it off to a new owner. I’d had the camera just shy of ten years, the longest of any digital camera I’ve owned. I put up with its slow and inaccurate autofocus, its weird noise reduction at high ISO, and a broken power switch courtesy of a spilled cocktail. It’s been the closest thing I’ve shot to a digital Canonet, as I [wrote](/posts/fuji-x100s/):
+Last week I packed up my Fujifilm X100S and sent it off to a new owner. I’d had the camera just shy of ten years, the longest of any digital camera I’ve owned. I put up with its slow and inaccurate autofocus, its weird noise reduction at high ISO, and a broken power switch courtesy of a spilled cocktail. I will miss it—it’s been the closest thing I’ve shot to a digital Canonet, as I [wrote](/posts/fuji-x100s/) when I first got it:
 
 > When I stopped shooting film I kept wishing for something very specific—basically a digital version of my Canonet QL17: small body, small lens with a fast aperture, built-in viewfinder.
 
