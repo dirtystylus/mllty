@@ -2,7 +2,7 @@
 title: 'Goodbye Fujifilm X100S, Hello X100VI'
 display_title: 'Goodbye Fujifilm X100S, Hello X100VI'
 description: A new sidekick.
-date: '2025-03-02T10:13:57.569-05:00'
+date: '2025-03-02T21:35:33.878-05:00'
 layout: layouts/post-gallery
 cover_image: /posts/goodbye-x100s-hello-x100vi/goodbye-x100s-hello-x100vi-1-thumb.jpg
 tags:
