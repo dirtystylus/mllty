@@ -3,6 +3,7 @@ title: Elgato Cam Link 4K
 display_title: Elgato Cam Link 4K
 description: Plugging memory leaks.
 date: '2025-03-06T10:06:41.302-05:00'
+cover_image: /posts/elgato-cam-link-4k/elgato-cam-link-4k-3-thumb.jpg
 tags:
   - cameras
   - remote-work
