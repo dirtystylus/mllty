@@ -11,14 +11,14 @@ This came out in 2015 but is so 90s in so many ways, can’t believe the Wachows
 
 This is _soooo_ many movies in one:
 
-\* A Cinderella story  
-\* A remix of _The Matrix_  
-\* A rom-com about meeting a wolf-man from the wrong side of the tracks  
-\* A bureaucratic comedy  
-\* A psychosexual drama about wanting to fuck your mom  
-\* A dystopian drama about capitalism’s final boss form and what happens when you let billionaires colonize space  
-\* A mecha anime  
-\* A Bee Movie™
+* A Cinderella story  
+* A remix of _The Matrix_  
+* A rom-com about meeting a wolf-man from the wrong side of the tracks  
+* A bureaucratic comedy  
+* A psychosexual drama about wanting to fuck your mom  
+* A dystopian drama about capitalism’s final boss form and what happens when you let billionaires colonize space  
+* A mecha anime  
+* A Bee Movie™
 
 I feel like the Wachowskis’ action sequences work better at a closer scale — I miss the legibility of the first two Matrix movies — it seems like the larger the canvas and the more things are onscreen, the harder it was for my eyes to follow.
 
