@@ -17,7 +17,7 @@ In the meantime my brother had been exploring fully-electric vehicles and got a 
 
 Used EV prices ended up being in the same ballpark as conventional gasoline cars, so we started focusing on EVs and in January we found a 2020 Bolt with fewer than 25,000 miles on it. We had our electrician hook up a level 2 charger in our driveway,^[A Grizzl-E Ultimate 48A model. I figured the Canadians would know something about building a weatherproof charger.] and we joined the ranks of EV drivers.
 
-A few notes/observations:
+A few notes/observations after 6+ months of use:
 
 * We use the Bolt for most of our driving now. The van is used for long trips, hauling lots of people/stuff, or the rare occasion when both Jordan and I both need to drive at the same time.
 * We gas up the van about once every 4 – 6 weeks now. Our electrical bill has increased slightly in response, although I haven’t done the math on how much we’re saving per mile switching from gas to electric.
