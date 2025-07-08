@@ -19,7 +19,6 @@
 	--grid--wide: calc(50vw - 31.25rem) [content-bleed-start] 1fr [content-gutter-start] 100px [content-start] repeat(6, [col-start] 1fr) [content-end] 100px [content-gutter-end] 1fr [content-bleed-end] calc(50vw - 31.25rem);
 	--grid--books--list--narrow: repeat(auto-fit, minmax(110px, 1fr));
 	--grid--books--list--wide: repeat(auto-fit, minmax(160px, 1fr));
-	--sidenote-highlight-background: rgba(0,0,0,.05);
 }
 
 /* Global stylesheet */
@@ -1498,6 +1497,41 @@ blockquote {
 		object-position: unset;
 	}
 }
+
+/* Diptych */
+.switcher {
+	--s1: 1rem; /* For switcher gap */
+	--threshold: 40rem;
+	grid-column: 1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--s1);
+}
+
+@media (min-width: 45rem) {
+	.switcher {
+		grid-column: content-gutter-start / content-gutter-end;
+	}
+}
+
+.switcher > ul > li {
+	list-style: none;
+}
+
+.switcher > * {
+	flex-grow: 1;
+	flex-basis: calc(( var(--threshold) - 100%) * 999);
+}
+
+.switcher > * > * {
+	max-inline-size: 100%;
+}
+
+/* Use number of items per row plus one */
+.switcher > :nth-last-child(n+3),
+.switcher > :nth-last-child(n+3) ~ * {
+	flex-basis: 100%;
+} 
 
 /* transitions */
 

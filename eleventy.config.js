@@ -330,7 +330,6 @@ export default async function(eleventyConfig) {
 
 
 
-
 	// Filters
 
 	// this does not seem to work within njk files!
@@ -416,6 +415,14 @@ export default async function(eleventyConfig) {
 			return `<div class="gallery">${$.html()}</div>`;
 		}
 	);
+
+	eleventyConfig.addPairedShortcode(
+		"switcher", function (data) {
+			const switcherContent = mdLib.render(data.trim());
+			return `<div class="switcher">${switcherContent}</div>`;
+		}
+	);
+
 
 	eleventyConfig.addPairedShortcode(
 		"videoloop", (content, data, alt) => {
