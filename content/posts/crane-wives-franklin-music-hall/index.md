@@ -1,7 +1,7 @@
 ---
 title: The Crane Wives @ Franklin Music Hall
 display_title: The Crane Wives @ Franklin Music Hall
-description: replace
+description: Going to see Em’s favorite band.
 date: '2025-07-08T11:46:58.567-04:00'
 cover_image: /posts/crane-wives-franklin-music-hall/crane-wives-franklin-music-hall-1-thumb.jpg
 tags:
