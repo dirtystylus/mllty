@@ -417,12 +417,12 @@ export default async function(eleventyConfig) {
 	);
 
 	eleventyConfig.addPairedShortcode(
-		"switcher", function (data) {
+		"imagegroup", function (data) {
 			const switcherContent = mdLib.render(data.trim());
 			return `<div class="switcher">${switcherContent}</div>`;
 		}
 	);
-
+	
 
 	eleventyConfig.addPairedShortcode(
 		"videoloop", (content, data, alt) => {

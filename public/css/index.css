@@ -1510,7 +1510,7 @@ blockquote {
 
 @media (min-width: 45rem) {
 	.switcher {
-		grid-column: content-gutter-start / content-gutter-end;
+		grid-column: content-bleed-start / content-bleed-end;
 	}
 }
 
