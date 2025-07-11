@@ -7,6 +7,8 @@ cover_image: /posts/crane-wives-franklin-music-hall/crane-wives-franklin-music-h
 tags:
   - family
   - music
+  - photos
+  - photography
 ---
 
 Backfilling from the spring: we went to see Em’s favorite band, The Crane Wives, during their tour stop on May 9 at Philadelphia’s Franklin Music Hall (FKA Electric Factory).
