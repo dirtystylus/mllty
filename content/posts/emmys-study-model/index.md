@@ -52,7 +52,7 @@ In the model, as in real life, we had more books than available shelving.
 ![A father and daughter smile in front of their completed model.](emmys-study-model-12.jpg "Team Tiny Library")
 
 
-
+More photos [on Flickr](https://flickr.com/photos/dirtystylus/albums/72177720327497455/).
 
 
 
