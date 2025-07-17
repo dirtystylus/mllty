@@ -85,7 +85,7 @@ After the beach we went for lobster at [Five Islands Lobster Co.](https://fiveis
 
 {% endimagegroup %}
 
-## Sandglass Hunting
+## Seaglass Hunting
 
 During low tide we’d walk down to the shore and pick seaglass, everyone trying to find the rarer blue/pink varieties.
 
