@@ -51,7 +51,7 @@ The big visual theme: fog. In past years we would often get some early in the mo
 
 ![A small lighthouse at dusk.](maine-2025-8.jpg "Bug Light Park in South Portland. Shot using a modified [Fuji Pro 400H film sim](https://frameandgrain.com/film-recipes/fuji-pro-400h-recipe)."){.cinemascope}
 
-Two views of my favorite osprey tree. In the second you can see the fog revealing a peak of the far coast.
+Two views of my favorite osprey tree. In the second you can see the fog revealing *just* a peek of the far coast.
 
 {% imagegroup %}
 
