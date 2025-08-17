@@ -16,3 +16,5 @@ end_date: '2025-08-16'
 ---
 
 First time reading this, athough I was familiar with some of the story beats because I’ve seen it adapted onscreen for *The Handmaiden* (I haven’t seen the miniseries with Sally Hawkins). A story about a long con that is deeper than any of the players imagine.
+
+The Booker Prize website had a feature on *Fingersmith* for its [20th anniversary](https://thebookerprizes.com/the-booker-library/features/fingersmith-at-20-inside-the-archive-with-sarah-waters).
