@@ -77,7 +77,7 @@ After the beach we went for lobster at [Five Islands Lobster Co.](https://fiveis
 
 ![A seagull flows low over boats and islands shrouded in fog.](maine-2025-16.jpg "You have to trust that there are islands in the frame"){.cinemascope}
 
-{% imagegroup %}
+{% imagegroup "vertical-horizontal" %}
 
 ![A young woman in a rust-colored cardigan and jeans looks out on a foggy bay.](maine-2025-18.jpg "Em looking out on the water")
 
