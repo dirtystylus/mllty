@@ -33,7 +33,7 @@ Jordan and I ended up taking a few walks when it wasn’t raining, and we saw th
 
 We had a good meal at [Scales](https://www.scalesrestaurant.com) in downtown Portland.
 
-{% imagegroup %}
+{% imagegroup "double-horizontal" %}
 
 ![Oyster bar.](maine-2025-7.jpg)
 
@@ -53,7 +53,7 @@ The big visual theme: fog. In past years we would often get some early in the mo
 
 Two views of my favorite osprey tree. In the second you can see the fog revealing *just* a peek of the far coast.
 
-{% imagegroup %}
+{% imagegroup "double-horizontal" %}
 
 ![Black and white photo of a tree silhouetted against dense fog on the water.](maine-2025-11.jpg)
 
@@ -65,7 +65,7 @@ Two views of my favorite osprey tree. In the second you can see the fog revealin
 
 We spent one afternoon on the beach at Reid State Park. I messed up the white balance on the second shot but I kept it — it makes me think of the Fremen of *Dune*, waiting to snag a sandworm.
 
-{% imagegroup %}
+{% imagegroup "double-horizontal" %}
 
 ![Young women in the surf with a backdrop of fog.](maine-2025-14.jpg)
 
@@ -89,7 +89,7 @@ After the beach we went for lobster at [Five Islands Lobster Co.](https://fiveis
 
 During low tide we’d walk down to the shore and pick seaglass, everyone trying to find the rarer blue/pink varieties.
 
-{% imagegroup %}
+{% imagegroup "double-horizontal" %}
 
 ![Two women comb for seaglass on a coastline covered in yellow seaweed.](maine-2025-19.jpg "Goldenrod seaweed coastline")
 
@@ -105,7 +105,7 @@ Em is a rising junior, so in our last few days we squeezed in a campus tour of B
 
 Afterwards we stopped in at Maine Beer Company for pizza and to pick up some beer-infused mustard for home.
 
-{% imagegroup %}
+{% imagegroup "double-horizontal" %}
 
 ![Entryway to Maine Beer Company.](maine-2025-21.jpg)
 

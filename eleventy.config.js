@@ -1,9 +1,9 @@
 import { DateTime } from "luxon";
 import markdownItAnchor from "markdown-it-anchor";
-import markdownItAttrs from 'markdown-it-attrs';
-import markdownItFootnote from 'markdown-it-footnote';
-import markdownItImageFigures from 'markdown-it-image-figures';
-import markdownIt from 'markdown-it';
+import markdownItAttrs from "markdown-it-attrs";
+import markdownItFootnote from "markdown-it-footnote";
+import markdownItImageFigures from "markdown-it-image-figures";
+import markdownIt from "markdown-it";
 
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import pluginRss from "@11ty/eleventy-plugin-rss";
@@ -15,19 +15,18 @@ import path from "path";
 
 import pluginFilters from "./_config/filters.js";
 
-import * as cheerio from 'cheerio';
+import * as cheerio from "cheerio";
 
 import debug from "debug";
 const dbg = debug("mllty");
 
-
-/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-export default async function(eleventyConfig) {
+/** @param {import("@11ty/eleventy=").UserConfig} eleventyConfig */
+export default async function (eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
 		.addPassthroughCopy({
-			"./public/": "/"
+			"./public/": "/",
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
 		.addPassthroughCopy("content/posts/**/*.jpg")
@@ -90,7 +89,7 @@ export default async function(eleventyConfig) {
 	};
 
 	const contentsByYear = (collection) => {
-		return contentByDateString(collection, makeDateFormatter('yyyy'));
+		return contentByDateString(collection, makeDateFormatter("yyyy"));
 	};
 
 	eleventyConfig.addCollection("sortedTags", function (collection) {
@@ -150,8 +149,8 @@ export default async function(eleventyConfig) {
 				return item.data.content_type == "book";
 			})
 			.sort(function (a, b) {
-					return a.date - b.date;
-				});
+				return a.date - b.date;
+			});
 		return [...books].reverse();
 	});
 
@@ -162,8 +161,8 @@ export default async function(eleventyConfig) {
 				return item.data.content_type == "film";
 			})
 			.sort(function (a, b) {
-					return a.date - b.date;
-				});
+				return a.date - b.date;
+			});
 		return [...films].reverse();
 	});
 
@@ -212,7 +211,9 @@ export default async function(eleventyConfig) {
 			.getAll()
 			.filter(function (item) {
 				return (
-					item.data.content_type == "book" || item.data.content_type == "post" || item.data.content_type == "film"
+					item.data.content_type == "book" ||
+					item.data.content_type == "post" ||
+					item.data.content_type == "film"
 				);
 			})
 			.sort(function (a, b) {
@@ -225,19 +226,19 @@ export default async function(eleventyConfig) {
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-		preAttributes: { tabindex: 0 }
+		preAttributes: { tabindex: 0 },
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
 	let imgTransformSettings = {};
-	if (process.env.ELEVENTY_RUN_MODE === 'serve') {
+	if (process.env.ELEVENTY_RUN_MODE === "serve") {
 		imgTransformSettings = {
 			extensions: "html",
 			// Output formats for each image.
 			formats: ["auto"],
-			widths: [320,640,960,1280,1920],
+			widths: [320, 640, 960, 1280, 1920],
 			transformOnRequest: false,
 			urlFormat: function ({
 				hash, // not included for `statsOnly` images
@@ -250,15 +251,15 @@ export default async function(eleventyConfig) {
 			defaultAttributes: {
 				loading: "lazy",
 				decoding: "async",
-				sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw'
+				sizes: "(min-width: 45em) 640px,(min-width: 60em) 960px,100vw",
 			},
-		}
+		};
 	} else {
 		imgTransformSettings = {
 			extensions: "html",
 			// Output formats for each image.
 			formats: ["auto"],
-			widths: [320,640,960,1280,1920],
+			widths: [320, 640, 960, 1280, 1920],
 			transformOnRequest: false,
 			urlFormat: function ({
 				hash, // not included for `statsOnly` images
@@ -266,15 +267,18 @@ export default async function(eleventyConfig) {
 				width,
 				format,
 			}) {
-				return `/.netlify/images?url=${src.replace("content","")}?w=${width}&fit=contain`;
+				return `/.netlify/images?url=${src.replace(
+					"content",
+					""
+				)}?w=${width}&fit=contain`;
 			},
 
 			defaultAttributes: {
 				loading: "lazy",
 				decoding: "async",
-				sizes: '(min-width: 45em) 640px,(min-width: 60em) 960px,100vw'
+				sizes: "(min-width: 45em) 640px,(min-width: 60em) 960px,100vw",
 			},
-		}
+		};
 	}
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
@@ -287,34 +291,41 @@ export default async function(eleventyConfig) {
 		html: true,
 		breaks: true,
 		linkify: false,
-		typographer: true
+		typographer: true,
 	});
 	eleventyConfig.setLibrary("md", mdLib);
 	// Customize Markdown library settings:
-	eleventyConfig.amendLibrary("md", mdLib => {
-		mdLib.use(markdownItAnchor, {
-			permalink: markdownItAnchor.permalink.ariaHidden({
-				placement: "after",
-				class: "header-anchor",
-				symbol: "#",
-				ariaHidden: false,
-			}),
-			level: [1,2,3,4],
-			slugify: eleventyConfig.getFilter("slugify")
-		})
-		.use(markdownItAttrs)
-		.use(markdownItFootnote)
-		.use(markdownItImageFigures, {figcaption: true});
+	eleventyConfig.amendLibrary("md", (mdLib) => {
+		mdLib
+			.use(markdownItAnchor, {
+				permalink: markdownItAnchor.permalink.ariaHidden({
+					placement: "after",
+					class: "header-anchor",
+					symbol: "#",
+					ariaHidden: false,
+				}),
+				level: [1, 2, 3, 4],
+				slugify: eleventyConfig.getFilter("slugify"),
+			})
+			.use(markdownItAttrs)
+			.use(markdownItFootnote)
+			.use(markdownItImageFigures, { figcaption: true });
 
 		mdLib.renderer.rules.footnote_ref = (tokens, idx, options, env, slf) => {
-			const id = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf)
-			const caption = slf.rules.footnote_caption(tokens, idx, options, env, slf)
-			let refid = id
+			const id = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf);
+			const caption = slf.rules.footnote_caption(
+				tokens,
+				idx,
+				options,
+				env,
+				slf
+			);
+			let refid = id;
 
-			if (tokens[idx].meta.subId > 0) refid += `:${tokens[idx].meta.subId}`
+			if (tokens[idx].meta.subId > 0) refid += `:${tokens[idx].meta.subId}`;
 
-			return `<sup class="footnote-ref" id="fn-anchor-${id}"><a href="#fn${id}" id="fnref${refid}">${caption}</a></sup>`
-		}
+			return `<sup class="footnote-ref" id="fn-anchor-${id}"><a href="#fn${id}" id="fnref${refid}">${caption}</a></sup>`;
+		};
 
 		mdLib.renderer.rules.footnote_caption = (tokens, idx) => {
 			let n = Number(tokens[idx].meta.id + 1).toString();
@@ -326,9 +337,6 @@ export default async function(eleventyConfig) {
 			return n;
 		};
 	});
-
-
-
 
 	// Filters
 
@@ -342,19 +350,24 @@ export default async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("currentBuildDate", (data) => {
-		return (new Date());
+		return new Date();
 	});
 
 	// Map from Object filter, for Year-based custom collections
-	eleventyConfig.addNunjucksFilter("createReverseYearsMapFromObject", function (obj) {
-		const yearCollection = obj;
-		let yearCollectionDescending = new Map();
-		const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});
-		keysSorted.forEach((key) => {
-			yearCollectionDescending.set(key, yearCollection[key]);
-		});
-		return yearCollectionDescending;
-	});
+	eleventyConfig.addNunjucksFilter(
+		"createReverseYearsMapFromObject",
+		function (obj) {
+			const yearCollection = obj;
+			let yearCollectionDescending = new Map();
+			const keysSorted = Object.keys(yearCollection).sort(function (a, b) {
+				return Number(b) - Number(a);
+			});
+			keysSorted.forEach((key) => {
+				yearCollectionDescending.set(key, yearCollection[key]);
+			});
+			return yearCollectionDescending;
+		}
+	);
 
 	// Shortcodes
 
@@ -362,92 +375,86 @@ export default async function(eleventyConfig) {
 		return `<img src="${src}" alt="${alt}" />`;
 	});
 
-	eleventyConfig.addPairedShortcode(
-		"aside", (content, aside, alignment) => {
-			const asideText = mdLib.render(aside.trim());
-			const alignmentClass = alignment == 'left' ? 'aside-left-wrap': 'aside-right-wrap';
-			const divContent = mdLib.render(content.trim());
-			return `<div class="${alignmentClass}"><div class="aside-content">${divContent}</div><aside>${asideText}</aside></div>`;
-		}
-	);
+	eleventyConfig.addPairedShortcode("aside", (content, aside, alignment) => {
+		const asideText = mdLib.render(aside.trim());
+		const alignmentClass =
+			alignment == "left" ? "aside-left-wrap" : "aside-right-wrap";
+		const divContent = mdLib.render(content.trim());
+		return `<div class="${alignmentClass}"><div class="aside-content">${divContent}</div><aside>${asideText}</aside></div>`;
+	});
 
-	eleventyConfig.addPairedShortcode(
-		"markdown",
-		(data) => {
-			if (data) {
-				return mdLib.renderInline(data);
-			} else {
-				return "";
+	eleventyConfig.addPairedShortcode("markdown", (data) => {
+		if (data) {
+			return mdLib.renderInline(data);
+		} else {
+			return "";
+		}
+	});
+
+	eleventyConfig.addPairedShortcode("gallery", function (data) {
+		const galleryContent = mdLib.render(data);
+		const $ = cheerio.load(galleryContent);
+		const dirPath = this.page.filePathStem.slice(
+			0,
+			this.page.filePathStem.length - 5
+		);
+		$("img").each((i, el) => {
+			const imgUrl = $(el).attr("src");
+			const imgGallery = $(el).attr("data-gallery");
+			let imgCaption = "";
+			if (
+				$(el).next().length > 0 &&
+				$(el).next().prop("tagName").toLowerCase() == "figcaption"
+			) {
+				imgCaption = $(el).next().html();
+				$(el).next().addClass("visually-hidden");
 			}
-		}
-	);
+			$(el).wrap("<a></a>");
+			const parent = $(el).parent();
+			if (process.env.ELEVENTY_RUN_MODE === "serve") {
+				parent.attr("href", imgUrl);
+			} else {
+				parent.attr(
+					"href",
+					`/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`
+				);
+			}
+			if (imgGallery) {
+				parent.attr("data-gallery", imgGallery);
+			}
+			if (imgCaption !== "") {
+				parent.attr("data-title", imgCaption);
+			}
 
-	eleventyConfig.addPairedShortcode(
-		"gallery", function (data) {
-			const galleryContent = mdLib.render(data);
-			const $ = cheerio.load(galleryContent);
-			const dirPath = this.page.filePathStem.slice(0, this.page.filePathStem.length-5);
-			$('img').each((i, el) => {
-				const imgUrl = $(el).attr('src');
-				const imgGallery = $(el).attr('data-gallery');
-				let imgCaption = "";
-				if ($(el).next().length > 0 && $(el).next().prop("tagName").toLowerCase() == 'figcaption') {
-					imgCaption = $(el).next().html();
-					$(el).next().addClass("visually-hidden");
-				}
-				$(el).wrap('<a></a>');
-				const parent = $(el).parent();
-				if (process.env.ELEVENTY_RUN_MODE === 'serve') {
-					parent.attr("href", imgUrl);
-				}
-				else {
-					parent.attr("href", `/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`);
-				}
-				if (imgGallery) {
-					parent.attr("data-gallery", imgGallery);
-				}
-				if (imgCaption !== "") {
-					parent.attr("data-title", imgCaption);
-				}
+			$(parent).parent().wrapInner("<figure></figure>");
+		});
+		return `<div class="gallery">${$.html()}</div>`;
+	});
 
-				$(parent).parent().wrapInner("<figure></figure>");
-			});
-			return `<div class="gallery">${$.html()}</div>`;
-		}
-	);
+	eleventyConfig.addPairedShortcode("imagegroup", (content, data) => {
+		const switcherContent = mdLib.render(content.trim());
+		const classes = "switcher" + (data ? " " + data : "");
+		return `<div class="${classes}">${switcherContent}</div>`;
+	});
 
-	eleventyConfig.addPairedShortcode(
-		"imagegroup", function (data) {
-			const switcherContent = mdLib.render(data.trim());
-			return `<div class="switcher">${switcherContent}</div>`;
-		}
-	);
-	
+	eleventyConfig.addPairedShortcode("videoloop", (content, data, alt) => {
+		const videoURL = mdLib.renderInline(data.trim());
+		const altText = mdLib.renderInline(alt.trim());
+		const divContent = mdLib.renderInline(content.trim());
+		return `<div class="video"><video controls loop autoplay muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+	});
 
-	eleventyConfig.addPairedShortcode(
-		"videoloop", (content, data, alt) => {
-			const videoURL = mdLib.renderInline(data.trim());
-			const altText = mdLib.renderInline(alt.trim());
-			const divContent = mdLib.renderInline(content.trim());
-			return `<div class="video"><video controls loop autoplay muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
-		}
-	);
+	eleventyConfig.addPairedShortcode("video", (content, data, alt) => {
+		const videoURL = mdLib.renderInline(data.trim());
+		const altText = mdLib.renderInline(alt.trim());
+		const divContent = mdLib.renderInline(content.trim());
+		return `<div class="video"><video controls playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+	});
 
-	eleventyConfig.addPairedShortcode(
-		"video", (content, data, alt) => {
-			const videoURL = mdLib.renderInline(data.trim());
-			const altText = mdLib.renderInline(alt.trim());
-			const divContent = mdLib.renderInline(content.trim());
-			return `<div class="video"><video controls playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
-		}
-	);
-
-	eleventyConfig.addPairedShortcode(
-		"vimeo", (data) => {
-			const videoURL = mdLib.renderInline(data.trim());
-			return `<figure class="cinemascope video"><div class="video-embed"><div><iframe src="${videoURL}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></figure>`;
-		}
-	);
+	eleventyConfig.addPairedShortcode("vimeo", (data) => {
+		const videoURL = mdLib.renderInline(data.trim());
+		return `<figure class="cinemascope video"><div class="video-embed"><div><iframe src="${videoURL}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></figure>`;
+	});
 
 	// Features to make your build faster (when you need them)
 
@@ -456,17 +463,12 @@ export default async function(eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
-};
+}
 
 export const config = {
 	// Control which files Eleventy will process
 	// e.g.: *.md, *.njk, *.html, *.liquid
-	templateFormats: [
-		"md",
-		"njk",
-		"html",
-		"liquid",
-	],
+	templateFormats: ["md", "njk", "html", "liquid"],
 
 	// Pre-process *.md files with: (default: `liquid`)
 	markdownTemplateEngine: "njk",
@@ -476,10 +478,10 @@ export const config = {
 
 	// These are all optional:
 	dir: {
-		input: "content",          // default: "."
-		includes: "../_includes",  // default: "_includes" (`input` relative)
-		data: "../_data",          // default: "_data" (`input` relative)
-		output: "_site"
+		input: "content", // default: "."
+		includes: "../_includes", // default: "_includes" (`input` relative)
+		data: "../_data", // default: "_data" (`input` relative)
+		output: "_site",
 	},
 
 	// -----------------------------------------------------------------
