@@ -309,6 +309,7 @@ figcaption {
 	font-family: sans-serif;
 	font-size: 0.8em;
 	color: var(--darkgray);
+	justify-self: center;
 }
 
 /* Header */
@@ -716,9 +717,9 @@ body {
 	.tmpl-post .cinemascope {
 		grid-column: 1 / 13;
 	}
-	.tmpl-post figure:has(> img.cinemascope) figcaption {
+	/* .tmpl-post figure:has(> img.cinemascope) figcaption {
 		justify-self: center;
-	}
+	} */
 }
 
 .tmpl-post .normal {
@@ -1522,19 +1523,28 @@ blockquote {
 @media (min-width: 45rem) {
 	.switcher {
 		grid-column: content-bleed-start / content-bleed-end;
+		justify-content: center;
 	}
-	.switcher.double-horizontal,
-	.switcher.vertical-horizontal {
+	.switcher.horizontal-double,
+	.switcher.vertical-horizontal,
+	.switcher.vertical-triple {
 		grid-column: 1 / 13;
 	}
 
-	.switcher.vertical-horizontal {
+	.switcher.vertical-horizontal,
+	.switcher.vertical-multiple {
 		justify-content: center;
 	}
 
-	.switcher.vertical-horizontal > * {
+	.switcher.vertical-horizontal > *,
+	.switcher.vertical-triple > * {
 		flex-grow: 0;
 		flex-basis: auto;
+		max-width: 50%;
+	}
+
+	.switcher.vertical-triple > * {
+		max-width: 30%;
 	}
 }
 
@@ -1545,15 +1555,19 @@ blockquote {
 .switcher > * {
 	flex-grow: 1;
 	flex-basis: calc((var(--threshold) - 100%) * 999);
+	/* display: flex;
+	justify-content: center;
+	align-items: start; */
 }
 
 .switcher > * > * {
 	max-inline-size: 100%;
+	/* object-fit: contain; */
 }
 
 /* Use number of items per row plus one */
-.switcher > :nth-last-child(n + 3),
-.switcher > :nth-last-child(n + 3) ~ * {
+.switcher > :nth-last-child(n + 5),
+.switcher > :nth-last-child(n + 5) ~ * {
 	flex-basis: 100%;
 }
 
