@@ -13,7 +13,7 @@ tags:
 
 ![Sunset along the canals of Manahawkin, NJ. The clouds are lit up from the setting sun in hues of purple, yellow, and orange.](manahawkin-2025-8.jpg){.cinemascope}
 
-Took our yearly trip to Manahawkin, NJ (and neighboring Long Beach Island) for our late summer family reunion and birthday celebration. This was a special year, with my older brother Joseph celebrating his 50th birthday. My sister-in-law and I also celebrated our non-milestone birthdays.
+In August we took our yearly trip to Manahawkin, NJ (and neighboring Long Beach Island) for our late summer Llobrera family reunion and birthday celebration. This was a special year, with my older brother Joseph celebrating his 50th birthday. My sister-in-law and I also celebrated our non-milestone birthdays.
 
 {% imagegroup "horizontal-double" %}
 ![Three women roll lumpia in a kitchen.](manahawkin-2025-1.jpg "Lumpia assembly")
