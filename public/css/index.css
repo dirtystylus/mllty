@@ -310,6 +310,7 @@ figcaption {
 	font-size: 0.8em;
 	color: var(--darkgray);
 	justify-self: center;
+	text-align: center;
 }
 
 /* Header */
