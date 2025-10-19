@@ -9,7 +9,7 @@ tags:
   - walking
 ---
 
-{% imagegroup "double-horizontal" %}
+{% imagegroup "horizontal-double" %}
 
 ![A clear blue sky reflected on the surface of a pond. Left side of a photo diptych.](haverford-college-walk-6-1.jpg)
 

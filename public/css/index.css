@@ -1530,6 +1530,7 @@ blockquote {
 	.switcher.vertical-horizontal,
 	.switcher.vertical-triple {
 		grid-column: 1 / 13;
+		flex-wrap: nowrap;
 	}
 
 	.switcher.vertical-horizontal,
@@ -1541,11 +1542,6 @@ blockquote {
 	.switcher.vertical-triple > * {
 		flex-grow: 0;
 		flex-basis: auto;
-		max-width: 50%;
-	}
-
-	.switcher.vertical-triple > * {
-		max-width: 30%;
 	}
 }
 
