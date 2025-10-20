@@ -270,7 +270,7 @@ export default async function (eleventyConfig) {
 				return `/.netlify/images?url=${src.replace(
 					"content",
 					""
-				)}?w=${width}&fit=contain`;
+				)}&w=${width}&fit=contain`;
 			},
 
 			defaultAttributes: {
