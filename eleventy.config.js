@@ -251,7 +251,7 @@ export default async function (eleventyConfig) {
 			defaultAttributes: {
 				loading: "lazy",
 				decoding: "async",
-				sizes: "(max-width: 45em) 640px, 100vw",
+				sizes: "(width <= 45em) 640px, 100vw",
 			},
 		};
 	} else {
@@ -276,7 +276,7 @@ export default async function (eleventyConfig) {
 			defaultAttributes: {
 				loading: "lazy",
 				decoding: "async",
-				sizes: "(max-width: 45em) 640px, 100vw",
+				sizes: "(width <= 45em) 640px, 100vw",
 			},
 		};
 	}
