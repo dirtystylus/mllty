@@ -259,7 +259,7 @@ export default async function (eleventyConfig) {
 			extensions: "html",
 			// Output formats for each image.
 			formats: ["auto"],
-			widths: [320, 640, 960, 1280, 1920],
+			widths: [320, 640, 960, 1280, 1920, 3000, 4000],
 			transformOnRequest: false,
 			urlFormat: function ({
 				hash, // not included for `statsOnly` images
@@ -276,7 +276,7 @@ export default async function (eleventyConfig) {
 			defaultAttributes: {
 				loading: "lazy",
 				decoding: "async",
-				sizes: "(min-width: 45em) 640px,(min-width: 60em) 960px,100vw",
+				sizes: "(max-width: 45em) 640px, 100vw",
 			},
 		};
 	}
