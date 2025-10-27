@@ -7,7 +7,6 @@ cover_image: /posts/longwood-gardens-september-2025/longwood-gardens-september-2
 tags:
   - family
   - photos
-draft: true
 ---
 
 ![Fountains blown by the wind in an expansive outdoor plaza at Longwood Gardens in Pennsylvania.](longwood-gardens-september-2025-20.jpg){.cinemascope}
