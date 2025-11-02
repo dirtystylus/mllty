@@ -32,7 +32,7 @@ The train ride with the [Lehigh Gorge Scenic Railway](https://www.lgsry.com)^[Jo
 
 {% endimagegroup %}
 
-After the train we stayed a few more hours in the town, stopping in some of our favorite shops
+After the train we stayed a few more hours in the town, grabbing lunch and stopping in some of our favorite shops.
 
 {% imagegroup "vertical-horizontal" %}
 
