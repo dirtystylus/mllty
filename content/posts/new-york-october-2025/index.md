@@ -1,7 +1,7 @@
 ---
 title: 'New York, October 2025'
 display_title: 'New York, October 2025'
-description: Hamilten and a college tour.
+description: '*Hamilten* and a college tour.'
 cover_image: /posts/new-york-october-2025/new-york-october-2025-1-thumb.jpg
 date: '2025-11-07T11:35:30.785-05:00'
 tags:
