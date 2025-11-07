@@ -10,7 +10,7 @@ tags:
   - photos
 ---
 
-We adopted a cat. Her name is Cora.
+We adopted a cat. Her name is Cora.^[A different [Cat Cora](https://catcora.com).]
 
 {% imagegroup "vertical-horizontal" %}
 ![An alert cat in front of a tv console.](cora-1.jpg)
