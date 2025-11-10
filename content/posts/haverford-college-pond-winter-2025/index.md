@@ -6,6 +6,7 @@ cover_image: /posts/haverford-college-pond-winter-2025/haverford-college-pond-20
 date: '2025-01-19T16:15:17.982-05:00'
 tags:
   - photos
+  - walking
 ---
 
 ![A snowy winter day at the pond on the campus of Haverford College. The pond is covered with snow.](haverford-college-pond-202501.jpg "Haverford College Pond on January 19, 2025."){.cinemascope}
