@@ -12,7 +12,7 @@ publisher: Del Rey
 print_type: BOOK
 date: '2025-11-03T14:24:25.798-05:00'
 start_date: '2025-11-03'
-end_date: '2025-11-03'
+end_date: '2025-11-09'
 ---
 
 I’d bounced off of Robert Jackson Bennett’s *Foundryside* series, but this one is more my speed. I thought of *Pacific Rim*, *Shogun*, and *Columbo* (a friend also referenced *Knives Out*). Mostly I enjoy a setup where competent bureaucrats get to work.
