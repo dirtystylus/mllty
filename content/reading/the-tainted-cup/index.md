@@ -10,7 +10,7 @@ page_count: 432
 publication_date: '2024-02-06'
 publisher: Del Rey
 print_type: BOOK
-date: '2025-11-03T14:24:25.798-05:00'
+date: '2025-11-10T12:34:43.634-05:00'
 start_date: '2025-11-03'
 end_date: '2025-11-09'
 ---
