@@ -2,3 +2,9 @@
 from = "/:year/:month/:date/:slug"
 to = "/posts/:slug"
 status = 301
+
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [ ".cache" ]
