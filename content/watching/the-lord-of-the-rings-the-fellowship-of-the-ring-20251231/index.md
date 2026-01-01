@@ -4,7 +4,7 @@ display_title: 'The Lord of the Rings: The Fellowship of the Ring'
 release_year: '2001'
 cover_image: >-
   /watching/the-lord-of-the-rings-the-fellowship-of-the-ring-20251231/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg
-watched_date: 2025-12-31T16:00:00.000Z
+watched_date: 2025-12-31T00:00:00.000Z
 date: 2026-01-01T01:59:30.000Z
 rewatch: true
 ---

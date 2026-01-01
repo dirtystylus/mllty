@@ -1,30 +1,33 @@
 import { DateTime } from "luxon";
 
-export default function(eleventyConfig) {
-	eleventyConfig.addFilter("readableDate", (dateObj, format = "LLL dd, yyyy", zone) => {
-		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		if (typeof dateObj === 'string') {
-			return DateTime.fromISO(dateObj, { zone: "America/New_York" }).toFormat(
-				format
-			);
-		} else {
-			return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
-				format
-			);
+export default function (eleventyConfig) {
+	eleventyConfig.addFilter(
+		"readableDate",
+		(dateObj, format = "LLL dd, yyyy", zone = "America/New_York") => {
+			// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+			if (typeof dateObj === "string") {
+				return DateTime.fromISO(dateObj, { zone: zone }).toFormat(format);
+			} else {
+				return DateTime.fromJSDate(dateObj, {
+					zone: zone,
+				}).toFormat(format);
+			}
 		}
-	});
+	);
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'America/New_York'}).toFormat('yyyy-LL-dd');
+		return DateTime.fromJSDate(dateObj, { zone: "America/New_York" }).toFormat(
+			"yyyy-LL-dd"
+		);
 	});
 
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
-		if(!Array.isArray(array) || array.length === 0) {
+		if (!Array.isArray(array) || array.length === 0) {
 			return [];
 		}
-		if( n < 0 ) {
+		if (n < 0) {
 			return array.slice(n);
 		}
 
@@ -37,13 +40,14 @@ export default function(eleventyConfig) {
 	});
 
 	// Return the keys used in an object
-	eleventyConfig.addFilter("getKeys", target => {
+	eleventyConfig.addFilter("getKeys", (target) => {
 		return Object.keys(target);
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		const tagsSorted = [...tags].sort();
-		return (tagsSorted || []).filter(tag => ["all", "posts"].indexOf(tag) === -1);
+		return (tagsSorted || []).filter(
+			(tag) => ["all", "posts"].indexOf(tag) === -1
+		);
 	});
-
-};
+}

@@ -9,7 +9,7 @@
 			</div>
 			<div class="book-meta">
 				<h2 class="book-meta-title">{% markdown %}{{ film.data.display_title or film.data.title }}{% endmarkdown %}</h2>
-				<div class="book-meta-finished">Watched {{ film.data.watched_date | readableDate }}</div>
+				<div class="book-meta-finished">Watched {{ film.data.watched_date | readableDate("LLL dd, yyyy", "utc") }}</div>
 			</div>
 		</div>
 	</a>

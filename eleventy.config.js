@@ -200,7 +200,7 @@ export default async function (eleventyConfig) {
 				return item.data.content_type == "film";
 			})
 			.sort(function (a, b) {
-				return a.date - b.date;
+				return a.watched_date - b.watched_date;
 			});
 
 		return contentsByYear(coll);
