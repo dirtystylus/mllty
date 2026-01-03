@@ -13,7 +13,7 @@ templateClass: tmpl-book
 			<dt>Year</dt>
 			<dd>{{ release_year }}</dd>
 			<dt>Watched</dt>
-			<dd>{{ watched_date | readableDate }}</dd>
+			<dd>{{ watched_date | readableDate("LLL dd, yyyy", "utc") }}</dd>
 			<dt>Rewatch?</dt>
 			<dd>{{ rewatch | isRewatch }}</dd>
 		</dl>
