@@ -54,25 +54,41 @@ export default async function (eleventyConfig) {
 	function makeDateFormatter(dateFormat) {
 		return function (date) {
 			// return moment(date).format(datePattern);
-			return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(dateFormat);
+			if (typeof date === "string") {
+				return DateTime.fromISO(date).toFormat(dateFormat);
+			} else {
+				return DateTime.fromJSDate(date).toFormat(dateFormat);
+			}
+			// return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(dateFormat);
 		};
 	}
 
-	function generateItemsDateSet(items, dateFormatter) {
+	function generateItemsDateSet(items, dateFormatter, dateKey = "date") {
+		console.log("generateItemsDateSet", dateKey);
 		const formattedDates = items.map((item) => {
-			return dateFormatter(item.data.page.date);
+			// if (item.data.page[dateKey]) {
+			// 	return dateFormatter(item.data.page[dateKey]);
+			// } else {
+			// 	return dateFormatter(item.data[dateKey]);
+			// }
+			return dateFormatter(item.data[dateKey]);
 		});
 		return [...new Set(formattedDates)];
 	}
 
-	function getItemsByDate(items, date, dateFormatter) {
+	function getItemsByDate(items, date, dateFormatter, dateKey = "date") {
 		return items.filter((item) => {
-			return dateFormatter(item.data.page.date) === date;
+			// if (item.data.page[dateKey]) {
+			// 	return dateFormatter(item.data.page[dateKey]) === date;
+			// } else {
+			// 	return dateFormatter(item.data[dateKey]) === date;
+			// }
+			return dateFormatter(item.data[dateKey]) === date;
 		});
 	}
 
-	const contentByDateString = (items, dateFormatter) => {
-		return generateItemsDateSet(items, dateFormatter).reduce(function (
+	const contentByDateString = (items, dateFormatter, dateKey = "date") => {
+		return generateItemsDateSet(items, dateFormatter, dateKey).reduce(function (
 			collected,
 			formattedDate
 		) {
@@ -81,15 +97,16 @@ export default async function (eleventyConfig) {
 				[formattedDate.toLowerCase()]: getItemsByDate(
 					items,
 					formattedDate,
-					dateFormatter
+					dateFormatter,
+					dateKey
 				),
 			});
 		},
 		{});
 	};
 
-	const contentsByYear = (collection) => {
-		return contentByDateString(collection, makeDateFormatter("yyyy"));
+	const contentsByYear = (collection, dateKey = "date") => {
+		return contentByDateString(collection, makeDateFormatter("yyyy"), dateKey);
 	};
 
 	eleventyConfig.addCollection("sortedTags", function (collection) {
@@ -200,10 +217,12 @@ export default async function (eleventyConfig) {
 				return item.data.content_type == "film";
 			})
 			.sort(function (a, b) {
-				return a.watched_date - b.watched_date;
+				return a.date - b.date;
 			});
-
-		return contentsByYear(coll);
+		// We sort by date because things are typically created in the order they are logged
+		// But we pass in watched_date as the data key for date we want because
+		// sometimes the movie is logged in a different year from when it is watched
+		return contentsByYear(coll, "watched_date");
 	});
 
 	eleventyConfig.addCollection("combined", function (collection) {
