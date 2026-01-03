@@ -64,13 +64,7 @@ export default async function (eleventyConfig) {
 	}
 
 	function generateItemsDateSet(items, dateFormatter, dateKey = "date") {
-		console.log("generateItemsDateSet", dateKey);
 		const formattedDates = items.map((item) => {
-			// if (item.data.page[dateKey]) {
-			// 	return dateFormatter(item.data.page[dateKey]);
-			// } else {
-			// 	return dateFormatter(item.data[dateKey]);
-			// }
 			return dateFormatter(item.data[dateKey]);
 		});
 		return [...new Set(formattedDates)];
@@ -78,11 +72,6 @@ export default async function (eleventyConfig) {
 
 	function getItemsByDate(items, date, dateFormatter, dateKey = "date") {
 		return items.filter((item) => {
-			// if (item.data.page[dateKey]) {
-			// 	return dateFormatter(item.data.page[dateKey]) === date;
-			// } else {
-			// 	return dateFormatter(item.data[dateKey]) === date;
-			// }
 			return dateFormatter(item.data[dateKey]) === date;
 		});
 	}
