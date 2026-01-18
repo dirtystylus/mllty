@@ -9,7 +9,7 @@ tags:
   - walking
 ---
 
-Late October.
+Late October, 2025.
 
 {% imagegroup "vertical-horizontal" %}
 

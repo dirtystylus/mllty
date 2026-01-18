@@ -9,7 +9,7 @@ tags:
   - walking
 ---
 
-From mid-October.
+From mid-October, 2025.
 
 {% imagegroup %}
 
