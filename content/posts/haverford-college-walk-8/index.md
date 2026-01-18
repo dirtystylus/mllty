@@ -9,6 +9,8 @@ tags:
   - walking
 ---
 
+From mid-October.
+
 {% imagegroup %}
 
 ![Leaves turning from green to orange](haverford-college-walk-8-1.jpg)
