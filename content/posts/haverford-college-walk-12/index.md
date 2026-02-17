@@ -16,46 +16,46 @@ January 18, 2026. I love days like this because even if you take photos in color
 
 (Made a small change to how I handle photos in posts: they should now be clickable and open in a lightbox.)
 
-![](haverford-college-walk-12-1.jpg){.cinemascope}
+![A young woman takes photos of a snow-covered hydrangea bush.](haverford-college-walk-12-1.jpg){.cinemascope}
 
 {% imagegroup "vertical-horizontal" %}
 
-![](haverford-college-walk-12-2.jpg "
+![Snow-covered trees.](haverford-college-walk-12-2.jpg "
 Photo © Jordan Llobrera")
 
-![](haverford-college-walk-12-3.jpg)
+![A fallen tree branch covered in snow.](haverford-college-walk-12-3.jpg)
 
 {% endimagegroup %}
 
 {% imagegroup "vertical-horizontal" %}
 
-![](haverford-college-walk-12-5.jpg)
+![Leaves covered in snow.](haverford-college-walk-12-5.jpg)
 
-![](haverford-college-walk-12-4.jpg)
+![A tree trunk that looks like a face.](haverford-college-walk-12-4.jpg "Eyebrows/mustache")
 
 {% endimagegroup %}
 
 {% imagegroup "horizontal-double" %}
 
-![](haverford-college-walk-12-6.jpg)
+![Haverford College pond, with the trees on the far bank dusted in snow.](haverford-college-walk-12-6.jpg)
 
-![](haverford-college-walk-12-7.jpg)
+![Haverford College pond, with the trees on the far bank dusted in snow.](haverford-college-walk-12-7.jpg)
 
 {% endimagegroup %}
 
-![](haverford-college-walk-12-9.jpg){.cinemascope}
+![Two young women pose with a snowman.](haverford-college-walk-12-9.jpg){.cinemascope}
 
 {% imagegroup "horizontal-double" %}
 
-![](haverford-college-walk-12-8.jpg)
+![A sign by a pond saying "Thin Ice No Skating"](haverford-college-walk-12-8.jpg)
 
-![](haverford-college-walk-12-10.jpg)
+![Snow covered intersecting road name markers.](haverford-college-walk-12-10.jpg)
 
 {% endimagegroup %}
 
-![](haverford-college-walk-12-11.jpg)
+![A read-leafed tree with a leaning cylindrical evergreen in the background.](haverford-college-walk-12-11.jpg)
 
-![](haverford-college-walk-12-12.jpg)
+![A snow covered fir tree.](haverford-college-walk-12-12.jpg)
 
 More photos and video [on Flickr](https://www.flickr.com/photos/dirtystylus/albums/72177720330243866/).
 

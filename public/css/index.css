@@ -1527,6 +1527,7 @@ blockquote {
 		justify-content: center;
 	}
 	.switcher.horizontal-double,
+	.switcher.horizontal-triple,
 	.switcher.vertical-horizontal,
 	.switcher.vertical-triple {
 		grid-column: 1 / 13;
@@ -1539,6 +1540,7 @@ blockquote {
 	}
 
 	.switcher.horizontal-double > *,
+	.switcher.horizontal-triple > *,
 	.switcher.vertical-horizontal > *,
 	.switcher.vertical-triple > * {
 		flex-grow: 0;
