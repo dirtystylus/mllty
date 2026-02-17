@@ -700,7 +700,7 @@ body {
 	}
 }
 
-.tmpl-post figure:has(> img.cinemascope) {
+.tmpl-post figure:has(> .cinemascope) {
 	grid-column: 1;
 	justify-self: center;
 	@media (min-width: 45em) {
