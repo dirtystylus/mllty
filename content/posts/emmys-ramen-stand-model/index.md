@@ -14,7 +14,7 @@ tags:
 
 ![Scale model of a ramen stand with two place settings and colorful signage.](emmys-ramen-stand-model-1.jpg){.cinemascope}
 
-One small thing we brought home from our [2023 trip to Japan](/posts/philippines-japan-2023-part-7/#day-two) was a miniature ramen stand model. Building it was not quite as drawn out as the [miniature study model](/posts/emmys-study-model/), with all its books and furniture, but a challenge nonetheless due to the Japanese instructions.
+One small thing Em brought home from our [2023 trip to Japan](/posts/philippines-japan-2023-part-7/#day-two) was a miniature ramen stand model. Building it was not quite as drawn out as the [miniature study model](/posts/emmys-study-model/), with all its books and furniture, but a challenge nonetheless due to the Japanese instructions.
 
 {% imagegroup "horizontal-double" %}
 
