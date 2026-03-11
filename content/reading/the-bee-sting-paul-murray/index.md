@@ -10,9 +10,10 @@ page_count: 645
 publication_date: '2023'
 publisher: 'Farrar, Straus & Giroux'
 print_type: BOOK
-date: '2026-03-09T09:16:40.083-04:00'
+date: '2026-03-11T12:23:58.700-04:00'
 start_date: '2026-03-01'
 end_date: '2026-03-09'
-draft: true
 ---
+
+A tragicomic mullet: comedy up front, tragedy in the back. Did not read like 600+ pages, at all.
 
