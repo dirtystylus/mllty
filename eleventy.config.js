@@ -467,7 +467,7 @@ export default async function (eleventyConfig) {
 			} else {
 				parent.attr(
 					"href",
-					`/.netlify/images?url=${dirPath}${imgUrl}&fit=contain`
+					`/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`
 				);
 			}
 			if (imgGallery) {
