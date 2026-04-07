@@ -4,6 +4,7 @@ display_title: 'Barnes Foundation, February 2026'
 description: Museum time.
 cover_image: /posts/barnes-foundation-february-2026/barnes-foundation-february-2026-1-thumb.jpg
 date: '2026-04-07T17:33:33.311-04:00'
+layout: layouts/post-gallery
 tags:
   - photos
 ---
