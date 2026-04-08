@@ -4,7 +4,9 @@ templateClass: tmpl-post
 ---
 {%- css %}{% include "public/css/prism-a11y-dark.css" %}{%- endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+{% if content | hasImages %}
 <link rel="stylesheet" href="/css/glightbox.css">
+{% endif %}
 <div class="content-main container">
 <h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
 <div class="post--meta">Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
@@ -21,6 +23,7 @@ templateClass: tmpl-post
 </div>
 <script src="{{ '/js/sidenotes.js' }}" defer></script>
 <script src="{{ '/js/videoloop.js' }}" defer></script>
+{% if content | hasImages %}
 <script src="{{ '/js/glightbox.min.js' }}" defer></script>
 <script type="module">
 const lightbox = GLightbox({
@@ -31,3 +34,4 @@ const lightbox = GLightbox({
 });
 lightbox.init();
 </script>
+{% endif %}

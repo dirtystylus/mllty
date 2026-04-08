@@ -372,6 +372,10 @@ export default async function (eleventyConfig) {
 		return new Date();
 	});
 
+	eleventyConfig.addFilter("hasImages", (content) => {
+		return /<img[\s>]/i.test(content);
+	});
+
 	// Map from Object filter, for Year-based custom collections
 	eleventyConfig.addNunjucksFilter(
 		"createReverseYearsMapFromObject",
@@ -389,6 +393,21 @@ export default async function (eleventyConfig) {
 	);
 
 	// Shortcodes
+
+	/**
+	 * Allows step debugging introspection at the Nunjucks template later.
+	 * Pass in an object (or array of objects) and set a breakpoint on the log
+	 * For ex. `{% breakpoint [page, content] %}`
+	 *
+	 * @param object
+	 */
+	eleventyConfig.addNunjucksShortcode( "breakpoint", function ( object ) {
+		if ( object ) {
+			if (object[0].inputPath === './content/posts/new-york-march-2024/index.md') {
+				console.log( object );
+			}
+		}
+	} );
 
 	eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
 		return `<img src="${src}" alt="${alt}" />`;
@@ -442,6 +461,8 @@ export default async function (eleventyConfig) {
 	// Transforms
 	eleventyConfig.addTransform('prepareGallery', async function (content) {
 		if (!this.page.outputPath.endsWith('.html')) return content;
+		const path = this.page.inputPath;
+		// if (!this.page.inputPath === './content/posts/new-york-march-2024/index.md') return content;
 		const data = pageDataMap.get(this.page.inputPath);
 		if (data?.content_type && data?.content_type === 'post') {
 			const $ = cheerio.load(content);
@@ -452,6 +473,7 @@ export default async function (eleventyConfig) {
 			// If there are images, decorate with a wrapper <a> tag,
 			// and pull classes from the image up to that wrapper
 			$("img").each((i, el) => {
+				const page = this.page;
 				const imgUrl = $(el).attr("src");
 				const imgGallery = $(el).attr("data-gallery");
 				const classes = $(el).attr("class");
