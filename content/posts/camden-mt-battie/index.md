@@ -2,7 +2,6 @@
 title: Camden and Mt. Battie
 display_title: Camden and Mt. Battie
 description: Looking down on Camden.
-layout: layouts/post-gallery
 date: '2021-07-01T10:56:03.366-04:00'
 tags:
   - family

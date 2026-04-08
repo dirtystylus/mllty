@@ -411,86 +411,7 @@ export default async function (eleventyConfig) {
 	});
 
 	eleventyConfig.addPairedShortcode("gallery", function (data) {
-		const galleryContent = mdLib.render(data);
-		const $ = cheerio.load(galleryContent);
-		const dirPath = this.page.filePathStem.slice(
-			0,
-			this.page.filePathStem.length - 5
-		);
-		$("img").each((i, el) => {
-			const imgUrl = $(el).attr("src");
-			const imgGallery = $(el).attr("data-gallery");
-			let imgCaption = "";
-			if (
-				$(el).next().length > 0 &&
-				$(el).next().prop("tagName").toLowerCase() == "figcaption"
-			) {
-				imgCaption = $(el).next().html();
-				$(el).next().addClass("visually-hidden");
-			}
-			$(el).wrap("<a></a>");
-			const parent = $(el).parent();
-			parent.addClass("glightbox");
-			if (process.env.ELEVENTY_RUN_MODE === "serve") {
-				parent.attr("href", imgUrl);
-			} else {
-				parent.attr(
-					"href",
-					`/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`
-				);
-			}
-			if (imgGallery) {
-				parent.attr("data-gallery", imgGallery);
-			}
-			if (imgCaption !== "") {
-				parent.attr("data-title", imgCaption);
-			}
-
-			$(parent).parent().wrapInner("<figure></figure>");
-		});
-		return `<div class="gallery">${$.html()}</div>`;
-	});
-
-	eleventyConfig.addPairedShortcode("galleryglobal", function (data) {
-		const galleryContent = mdLib.render(data);
-		const $ = cheerio.load(galleryContent);
-		const dirPath = this.page.filePathStem.slice(
-			0,
-			this.page.filePathStem.length - 5
-		);
-		$("img").each((i, el) => {
-			const imgUrl = $(el).attr("src");
-			const imgGallery = $(el).attr("data-gallery");
-			const classes = $(el).attr("class");
-			let imgCaption = "";
-			if (
-				$(el).next().length > 0 &&
-				$(el).next().prop("tagName").toLowerCase() == "figcaption"
-			) {
-				imgCaption = $(el).next().html();
-			}
-			$(el).wrap("<a></a>");
-			const parent = $(el).parent();
-			if (classes) parent.addClass(classes);
-			parent.addClass("glightbox");
-			if (process.env.ELEVENTY_RUN_MODE === "serve") {
-				parent.attr("href", imgUrl);
-			} else {
-				parent.attr(
-					"href",
-					`/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`
-				);
-			}
-			if (imgGallery) {
-				parent.attr("data-gallery", imgGallery);
-			}
-			if (imgCaption !== "") {
-				parent.attr("data-title", imgCaption);
-			}
-
-			// $(parent).parent().wrapInner("<figure></figure>");
-		});
-		return `${$.html()}`;
+		return `<div class="gallery">${data}</div>`;
 	});
 
 	eleventyConfig.addPairedShortcode("imagegroup", (content, data) => {
@@ -522,14 +443,14 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addTransform('prepareGallery', async function (content) {
 		if (!this.page.outputPath.endsWith('.html')) return content;
 		const data = pageDataMap.get(this.page.inputPath);
-		if (data?.layout && data?.layout === 'layouts/post.njk') {
-			// Check if there is an image in content
-			if (!this.page.inputPath === './content/posts/barnes-foundation-february-2026/index.md') return content;
+		if (data?.content_type && data?.content_type === 'post') {
 			const $ = cheerio.load(content);
 			const dirPath = this.page.filePathStem.slice(
 				0,
 				this.page.filePathStem.length - 5
 			);
+			// If there are images, decorate with a wrapper <a> tag,
+			// and pull classes from the image up to that wrapper
 			$("img").each((i, el) => {
 				const imgUrl = $(el).attr("src");
 				const imgGallery = $(el).attr("data-gallery");
@@ -544,7 +465,9 @@ export default async function (eleventyConfig) {
 				$(el).wrap("<a></a>");
 				const parent = $(el).parent();
 				if (classes) parent.addClass(classes);
-				parent.addClass("glightbox");
+				if (!$(el).hasClass('glightbox')) {
+				parent.addClass('glightbox');
+				}
 				if (process.env.ELEVENTY_RUN_MODE === "serve") {
 					parent.attr("href", imgUrl);
 				} else {
@@ -559,8 +482,6 @@ export default async function (eleventyConfig) {
 				if (imgCaption !== "") {
 					parent.attr("data-title", imgCaption);
 				}
-
-				// $(parent).parent().wrapInner("<figure></figure>");
 			});
 			return `${$.html()}`;
 		}

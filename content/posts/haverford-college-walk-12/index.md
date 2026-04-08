@@ -3,15 +3,11 @@ title: Haverford College Walk 12
 display_title: Haverford College Walk 12
 description: Big snow.
 cover_image: /posts/haverford-college-walk-12/haverford-college-walk-12-12-thumb.jpg
-layout: layouts/post-gallery
 date: '2026-02-16T16:29:51.278-05:00'
 tags:
   - photos
   - walking
 ---
-
-{% galleryglobal %}
-
 January 18, 2026. I love days like this because even if you take photos in color (as many of these are) they look more like black & white.
 
 (Made a small change to how I handle photos in posts: they should now be clickable and open in a lightbox.)
@@ -58,5 +54,3 @@ Photo © Jordan Llobrera")
 ![A snow covered fir tree.](haverford-college-walk-12-12.jpg)
 
 More photos and video [on Flickr](https://www.flickr.com/photos/dirtystylus/albums/72177720330243866/).
-
-{% endgalleryglobal %}

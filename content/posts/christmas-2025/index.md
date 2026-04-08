@@ -4,7 +4,6 @@ display_title: Christmas 2025
 description: Feasting in Bethesda.
 cover_image: /posts/christmas-2025/christmas-2025-8-thumb.jpg
 date: '2026-02-15T14:00:35.432-05:00'
-layout: layouts/post-gallery
 tags:
   - family
   - food

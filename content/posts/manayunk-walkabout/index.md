@@ -3,7 +3,6 @@ title: Manayunk Walkabout
 display_title: Manayunk Walkabout
 description: A day in Manayunk.
 date: '2018-04-29T20:34:40-04:00'
-layout: layouts/post-gallery
 tags:
   - photos
 ---

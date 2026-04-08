@@ -3,7 +3,6 @@ title: Wildwood Lake, December 2020
 display_title: Wildwood Lake, December 2020
 description: A post-Christmas walk in Harrisburg, PA.
 date: 2021-01-13T14:00:00-05:00
-layout: layouts/post-gallery
 tags:
   - photos
 ---

@@ -3,7 +3,6 @@ title: Bakeneko 65
 display_title: Bakeneko 65
 description: New keyboard.
 date: 2022-09-23T11:26:36.822-04:00
-layout: layouts/post-gallery
 tags:
   - keyboards
   - photos

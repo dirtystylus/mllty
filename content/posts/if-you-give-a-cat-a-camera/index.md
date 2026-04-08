@@ -3,7 +3,6 @@ title: If you give a cat a camera…
 display_title: If you give a cat a camera…
 description: Sophie’s photos from Clover Market
 date: '2018-11-08T22:00:10-05:00'
-layout: layouts/post-gallery
 tags:
   - cameras
   - family

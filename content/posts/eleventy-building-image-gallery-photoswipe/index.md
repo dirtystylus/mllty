@@ -3,7 +3,6 @@ title: "Eleventy: Building an Image Gallery with CSS Grid and PhotoSwipe"
 display_title: "Eleventy: Building an Image Gallery with CSS Grid and PhotoSwipe"
 description: Trying out CSS Grid’s new Masonry Layout, with a PhotoSwipe lightbox
 date: 2021-01-22T14:00:00-05:00
-layout: layouts/post-gallery
 tags:
   - eleventy
   - personal-sites
@@ -38,7 +37,7 @@ I’ve broken this up into three big areas of concern:
 
 * Markup for the gallery items
 * The PhotoSwipe setup code to process the gallery items
-* Eleventy-specific template notes 
+* Eleventy-specific template notes
 
 I have a few dependencies that may not match your setup: I use Nicolas Hoizey’s [Images Responsiver](https://github.com/nhoizey/images-responsiver/tree/main/packages/eleventy-plugin-images-responsiver) plugin,[^3] and [I use Netlify Large Media](/posts/netlify-large-media-and-eleventy/) to scale images on the server side, instead of pre-processing images as a build step.
 
@@ -99,14 +98,14 @@ results in this markup:
 ```html
 <figure class="gallery-3x2">
   <a href="wildwood-lake-3.jpg" data-size="gallery-3x2">
-  <img 
-    src="wildwood-lake-3.jpg?nf_resize=fit&amp;w=400" 
-    alt="Broken stump" 
-    title="This one looks like a ruined tower" 
-    class="" 
-    srcset="wildwood-lake-3.jpg?nf_resize=fit&amp;w=240 240w, wildwood-lake-3.jpg?nf_resize=fit&amp;w=320 320w, wildwood-lake-3.jpg?nf_resize=fit&amp;w=400 400w" 
-    sizes="(min-width: 45em) 400px, 100vw" 
-    data-pristine="wildwood-lake-3.jpg" 
+  <img
+    src="wildwood-lake-3.jpg?nf_resize=fit&amp;w=400"
+    alt="Broken stump"
+    title="This one looks like a ruined tower"
+    class=""
+    srcset="wildwood-lake-3.jpg?nf_resize=fit&amp;w=240 240w, wildwood-lake-3.jpg?nf_resize=fit&amp;w=320 320w, wildwood-lake-3.jpg?nf_resize=fit&amp;w=400 400w"
+    sizes="(min-width: 45em) 400px, 100vw"
+    data-pristine="wildwood-lake-3.jpg"
     loading="lazy">
   </a>
   <figcaption class="visually-hidden">This one looks like a ruined tower</figcaption>
@@ -137,24 +136,24 @@ const runAfterHookGallery = (image, document) => {
 		if (caption !== null) {
 			caption = md.renderInline(caption.trim());
 		}
-		
+
 	const figure = document.createElement("figure");
 		figure.classList.add(...image.classList);
 		// TODO: decide whether classes should be removed from the image or not
 		image.classList.remove(...image.classList);
-		
+
 		const link = document.createElement("a");
 		link.setAttribute("href", imageUrl);
 		link.setAttribute("data-size", figure.classList[0]);
 		link.appendChild(image.cloneNode(true));
-		
+
 		figure.appendChild(link);
 		if (caption) {
 		let figCaption = document.createElement("figcaption");
 		figCaption.innerHTML =
 			(caption ? caption : "");
 		figure.appendChild(figCaption);
-			
+
 		}
 
 		// Parent node of the image is a <p> because image is an inline element,
@@ -167,7 +166,7 @@ const runAfterHookGallery = (image, document) => {
 };
 ```
 
-That’s a pretty dense chunk of code, but here’s what it does: it finds the image created from the initial Markdown rendering pass, wraps it in figure and link markup, injects the appropriate classes/attributes from the Images Responsiver config declaration, and then replaces the original image with the new markup. 
+That’s a pretty dense chunk of code, but here’s what it does: it finds the image created from the initial Markdown rendering pass, wraps it in figure and link markup, injects the appropriate classes/attributes from the Images Responsiver config declaration, and then replaces the original image with the new markup.
 
 ## PhotoSwipe configuration
 
@@ -195,9 +194,9 @@ const imageSizes = {
           height: 800
       }
   },
-  
+
   // more presets here
-  
+
 }
 ```
 
@@ -236,17 +235,17 @@ gallery.listen('beforeResize', function() {
         if (imageSize != "small") {
             imageSize = "small"
             imageSrcWillChange = true;
-        } 
+        }
     } else if (realViewportWidth > 720 && realViewportWidth <= 1040) {
         if (imageSize != "medium") {
             imageSize = "medium"
             imageSrcWillChange = true;
-        } 
+        }
     } else {
         if (imageSize != "large") {
             imageSize = "large"
             imageSrcWillChange = true;
-        } 
+        }
     }
 
 …
@@ -265,9 +264,9 @@ gallery.listen('gettingData', function(index, item) {
     item.w = item[imageSize].width;
     item.h = item[imageSize].height;
 
-    // It doesn't really matter what will you do here, 
+    // It doesn't really matter what will you do here,
     // as long as item.src, item.w and item.h have valid values.
-    // 
+    //
     // Just avoid http requests in this listener, as it fires quite often
 
 });
@@ -330,7 +329,7 @@ And for the browsers who have masonry:
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: masonry;
   }
-  
+
   // Unset any properties that constrain the grid elements
 }
 ```
@@ -344,7 +343,7 @@ Which gives us a slightly more dynamic layout:
 After my first implementation I decided that I didn’t want to have the PhotoSwipe lightbox markup and JavaScript on every page, so I broke out a sub-template of my core **`post.njk`** Nunjucks template. I created a **`post-gallery.njk`** variant, and in that template the lightbox markup, plus the three JavaScript files (**`photoswipe.min.js`**, **`photoswipe-ui-default.min.js`**, and **`photoswipe-dom.js`**), are rendered after all the post content. In my YAML front matter for the post I specify to use this template instead of the default:
 
 ```yaml
-layout: layouts/post-gallery
+
 ```
 
 Since the PhotoSwipe CSS files are linked in the `<head>`, in my **`base.njk`** Nunjucks file I check for that layout type and include the PhotoSwipe CSS files:
@@ -381,9 +380,9 @@ The example gallery that closes out this post has this Markdown snippet to gener
 - ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){.glightbox}
 {% endgallery %}
 {% endraw %}
-```   
+```
 
-## What’s left? 
+## What’s left?
 
 The lightbox modal is keyboard-friendly but could use some screen reader improvements. Whether I can do that without hacking core PhotoSwipe code is to be determined. (If you know your way around ARIA enhancements and have some time to look at code with me, I’d appreciate it.)
 

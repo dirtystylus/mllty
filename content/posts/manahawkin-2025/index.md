@@ -4,7 +4,6 @@ display_title: Manahawkin 2025
 description: Birthdays at the beach.
 date: '2025-10-17T14:40:58.515-04:00'
 cover_image: /posts/manahawkin-2025/manahawkin-2025-8-thumb.jpg
-layout: layouts/post-gallery
 tags:
   - family
   - photos

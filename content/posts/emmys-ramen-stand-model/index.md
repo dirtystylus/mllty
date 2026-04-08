@@ -4,13 +4,10 @@ display_title: Emmy’s Ramen Stand Model
 description: Closing the loop on an artifact from our trip to Japan in 2023.
 cover_image: /posts/emmys-ramen-stand-model/emmys-ramen-stand-model-1-thumb.jpg
 date: '2026-02-17T13:05:34.248-05:00'
-layout: layouts/post-gallery
 tags:
   - family
   - photos
 ---
-
-{% galleryglobal %}
 
 ![Scale model of a ramen stand with two place settings and colorful signage.](emmys-ramen-stand-model-1.jpg){.cinemascope}
 
@@ -65,6 +62,3 @@ One small thing Em brought home from our [2023 trip to Japan](/posts/philippines
 ![Completed ramen stand model.](emmys-ramen-stand-model-15.jpg){.cinemascope}
 
 More photos [on Flickr](https://www.flickr.com/photos/dirtystylus/albums/72177720332085468/).
-
-{% endgalleryglobal %}
-

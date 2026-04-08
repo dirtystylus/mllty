@@ -3,7 +3,6 @@ title: 'Philippines & Japan 2023, Part Five: Bohol'
 display_title: 'Philippines & Japan 2023, Part Five: Bohol'
 description: Bohol, land and sea.
 date: '2023-11-11T14:41:13.768-05:00'
-layout: layouts/post-gallery
 tags:
   - cameras
   - family

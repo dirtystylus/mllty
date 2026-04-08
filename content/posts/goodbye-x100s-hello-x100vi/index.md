@@ -3,7 +3,6 @@ title: 'Goodbye Fujifilm X100S, Hello X100VI'
 display_title: 'Goodbye Fujifilm X100S, Hello X100VI'
 description: A new sidekick.
 date: '2025-03-02T21:35:33.878-05:00'
-layout: layouts/post-gallery
 cover_image: /posts/goodbye-x100s-hello-x100vi/goodbye-x100s-hello-x100vi-1-thumb.jpg
 tags:
   - cameras
@@ -59,9 +58,11 @@ This is probably the film recipe I’ve used the most—it’s got a warm tone a
 
 ![Two girls hold hands while walking.](goodbye-x100s-hello-x100vi-3.jpg){.cinemascope}
 
+{% imagegroup "vertical-horizontal" %}
 ![Three walkers in a field under a sky full of clouds.](goodbye-x100s-hello-x100vi-4.jpg)
 
 ![A fence in the foreground of a stand of trees.](goodbye-x100s-hello-x100vi-6.jpg)
+{% endimagegroup %}
 
 ![Two girls pose in front of a tree trunk.](goodbye-x100s-hello-x100vi-8.jpg){.cinemascope}
 
@@ -72,12 +73,13 @@ I’ve been reaching for this when I feel the need for some B&W—the grain emul
 
 ![A tree trunk stretches over a path.](goodbye-x100s-hello-x100vi-7.jpg){.cinemascope}
 
-{% gallery %}
+{% imagegroup "horizontal-double" %}
 
-* ![A split tree trunk.](goodbye-x100s-hello-x100vi-2.jpg){.glightbox data-gallery=gallery2}
-* ![Dramatic clouds.](goodbye-x100s-hello-x100vi-5.jpg){.glightbox data-gallery=gallery2}
+![A split tree trunk.](goodbye-x100s-hello-x100vi-2.jpg){.glightbox}
 
-{% endgallery %}
+![Dramatic clouds.](goodbye-x100s-hello-x100vi-5.jpg){.glightbox}
+
+{% endimagegroup %}
 
 ### Pro Negative 160C
 
@@ -87,14 +89,14 @@ This one might have too much of a reddish cast, especially indoors, so I’m sti
 
 {% gallery %}
 
-* ![A red convertible in the foreground dwarfed by a large pickup truck behind it.](goodbye-x100s-hello-x100vi-11.jpg){.glightbox data-gallery=gallery3}
-* ![A wall full of yarn in different colors.](goodbye-x100s-hello-x100vi-12.jpg){.glightbox data-gallery=gallery3}
-* ![A chalk sidewalk sign for a knitting store.](goodbye-x100s-hello-x100vi-13.jpg){.glightbox data-gallery=gallery3}
-* ![A wall with an arrangement of framed pictures and photos.](goodbye-x100s-hello-x100vi-14.jpg){.glightbox data-gallery=gallery3}
-* ![Paper flowers in a vase in front of shelves with books, candles, and other goods.](goodbye-x100s-hello-x100vi-15.jpg){.glightbox data-gallery=gallery3}
-* ![Coin purses with different slogans.](goodbye-x100s-hello-x100vi-16.jpg){.glightbox data-gallery=gallery3}
-* ![A carved Totoro character.](goodbye-x100s-hello-x100vi-17.jpg){.glightbox data-gallery=gallery3}
-* ![A transit poster of stops for the Media trolley.](goodbye-x100s-hello-x100vi-18.jpg){.glightbox data-gallery=gallery3}
+* ![A red convertible in the foreground dwarfed by a large pickup truck behind it.](goodbye-x100s-hello-x100vi-11.jpg){.glightbox}
+* ![A wall full of yarn in different colors.](goodbye-x100s-hello-x100vi-12.jpg){.glightbox}
+* ![A chalk sidewalk sign for a knitting store.](goodbye-x100s-hello-x100vi-13.jpg){.glightbox}
+* ![A wall with an arrangement of framed pictures and photos.](goodbye-x100s-hello-x100vi-14.jpg){.glightbox}
+* ![Paper flowers in a vase in front of shelves with books, candles, and other goods.](goodbye-x100s-hello-x100vi-15.jpg){.glightbox}
+* ![Coin purses with different slogans.](goodbye-x100s-hello-x100vi-16.jpg){.glightbox}
+* ![A carved Totoro character.](goodbye-x100s-hello-x100vi-17.jpg){.glightbox}
+* ![A transit poster of stops for the Media trolley.](goodbye-x100s-hello-x100vi-18.jpg){.glightbox}
 
 {% endgallery %}
 

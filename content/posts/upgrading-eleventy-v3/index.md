@@ -66,7 +66,7 @@ Eleventy v3’s image plugin can be used in a number of related ways to optimize
 
 The Eleventy Transform method is especially handy if you write your posts in Markdown and don’t want to mix in shortcodes for your images.
 
-For context, I use two markdown-it plugins that affect my image markup: 
+For context, I use two markdown-it plugins that affect my image markup:
 
 * [markdown-it-image-figures](https://github.com/Antonio-Laguna/markdown-it-image-figures)
 * [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs)
@@ -221,8 +221,8 @@ This all feels pretty clunky but the end result works fairly well. If you have m
 ```twig
 {% gallery %}
 
-- ![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?"){.glightbox data-gallery=gallery1}
-- ![A man and a woman in sunglasses and hats, on a boat, smile with islands in the distance.](phl-jpn-elnido-3.jpg "Mom and Dad on the way to the Big Lagoon"){.glightbox data-gallery=gallery1}
+- ![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?"){.glightbox}
+- ![A man and a woman in sunglasses and hats, on a boat, smile with islands in the distance.](phl-jpn-elnido-3.jpg "Mom and Dad on the way to the Big Lagoon"){.glightbox}
 …
 {% endgallery %}
 ```

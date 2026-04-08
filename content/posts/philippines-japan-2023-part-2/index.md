@@ -3,7 +3,6 @@ title: 'Philippines & Japan 2023, Part Two: El Nido'
 display_title: 'Philippines & Japan 2023, Part Two: El Nido'
 description: Kayaks and phenomenal sunsets.
 date: '2023-09-17T15:05:27.982-04:00'
-layout: layouts/post-gallery
 tags:
   - cameras
   - family
