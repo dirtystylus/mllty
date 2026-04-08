@@ -507,6 +507,7 @@ export default async function (eleventyConfig) {
 			});
 			return `${$.html()}`;
 		}
+		return content;
 	});
 
 	// Features to make your build faster (when you need them)
