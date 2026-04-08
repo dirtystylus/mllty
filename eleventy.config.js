@@ -22,6 +22,7 @@ const dbg = debug("mllty");
 
 /** @param {import("@11ty/eleventy=").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
+	const pageDataMap = new Map();
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
@@ -97,6 +98,16 @@ export default async function (eleventyConfig) {
 	const contentsByYear = (collection, dateKey = "date") => {
 		return contentByDateString(collection, makeDateFormatter("yyyy"), dateKey);
 	};
+
+	eleventyConfig.addCollection("_pageDataCollector", function (collection) {
+		const coll = collection
+			.getAll()
+			.forEach(function (item) {
+				pageDataMap.set(item.inputPath, item.data);
+			});
+
+		return [];
+	});
 
 	eleventyConfig.addCollection("sortedTags", function (collection) {
 		let tagSet = new Set();
@@ -505,6 +516,54 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPairedShortcode("vimeo", (data) => {
 		const videoURL = mdLib.renderInline(data.trim());
 		return `<figure class="cinemascope video"><div class="video-embed"><div><iframe src="${videoURL}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></figure>`;
+	});
+
+	// Transforms
+	eleventyConfig.addTransform('prepareGallery', async function (content) {
+		if (!this.page.outputPath.endsWith('.html')) return content;
+		const data = pageDataMap.get(this.page.inputPath);
+		if (data?.layout && data?.layout === 'layouts/post.njk') {
+			// Check if there is an image in content
+			if (!this.page.inputPath === './content/posts/barnes-foundation-february-2026/index.md') return content;
+			const $ = cheerio.load(content);
+			const dirPath = this.page.filePathStem.slice(
+				0,
+				this.page.filePathStem.length - 5
+			);
+			$("img").each((i, el) => {
+				const imgUrl = $(el).attr("src");
+				const imgGallery = $(el).attr("data-gallery");
+				const classes = $(el).attr("class");
+				let imgCaption = "";
+				if (
+					$(el).next().length > 0 &&
+					$(el).next().prop("tagName").toLowerCase() == "figcaption"
+				) {
+					imgCaption = $(el).next().html();
+				}
+				$(el).wrap("<a></a>");
+				const parent = $(el).parent();
+				if (classes) parent.addClass(classes);
+				parent.addClass("glightbox");
+				if (process.env.ELEVENTY_RUN_MODE === "serve") {
+					parent.attr("href", imgUrl);
+				} else {
+					parent.attr(
+						"href",
+						`/.netlify/images?url=${dirPath}${imgUrl}?fit=contain`
+					);
+				}
+				if (imgGallery) {
+					parent.attr("data-gallery", imgGallery);
+				}
+				if (imgCaption !== "") {
+					parent.attr("data-title", imgCaption);
+				}
+
+				// $(parent).parent().wrapInner("<figure></figure>");
+			});
+			return `${$.html()}`;
+		}
 	});
 
 	// Features to make your build faster (when you need them)
