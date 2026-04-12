@@ -460,7 +460,16 @@ export default async function (eleventyConfig) {
 
 	// Transforms
 	eleventyConfig.addTransform('prepareGallery', async function (content) {
-		if (!this.page.outputPath.endsWith('.html')) return content;
+		const pageOutputPath = this && this.page && this.page.outputPath;
+		if (typeof pageOutputPath !== "string") {
+			return content;
+		}
+
+		// now it's safe to call .endsWith
+		if (!pageOutputPath.endsWith(".html")) {
+			return content;
+		}
+
 		const path = this.page.inputPath;
 		// if (!this.page.inputPath === './content/posts/new-york-march-2024/index.md') return content;
 		const data = pageDataMap.get(this.page.inputPath);
