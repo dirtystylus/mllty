@@ -483,7 +483,9 @@ export default async function (eleventyConfig) {
 			// and pull classes from the image up to that wrapper
 			$("img").each((i, el) => {
 				const page = this.page;
-				const imgUrl = $(el).attr("src");
+				let imgUrl = $(el).attr("src");
+				const imgWidth = $(el).attr("width");
+				imgUrl = imgUrl.replace(/w=[0-9]+/, `w=${imgWidth}`);
 				const imgGallery = $(el).attr("data-gallery");
 				const classes = $(el).attr("class");
 				let imgCaption = "";
@@ -500,14 +502,6 @@ export default async function (eleventyConfig) {
 				parent.addClass('glightbox');
 				}
 				parent.attr("href", imgUrl);
-				// if (process.env.ELEVENTY_RUN_MODE === "serve") {
-				// 	parent.attr("href", imgUrl);
-				// } else {
-				// 	parent.attr(
-				// 		"href",
-				// 		imgUrl
-				// 	);
-				// }
 				if (imgGallery) {
 					parent.attr("data-gallery", imgGallery);
 				}
