@@ -499,14 +499,15 @@ export default async function (eleventyConfig) {
 				if (!$(el).hasClass('glightbox')) {
 				parent.addClass('glightbox');
 				}
-				if (process.env.ELEVENTY_RUN_MODE === "serve") {
-					parent.attr("href", imgUrl);
-				} else {
-					parent.attr(
-						"href",
-						`/.netlify/images?url=${dirPath}${imgUrl}`
-					);
-				}
+				parent.attr("href", imgUrl);
+				// if (process.env.ELEVENTY_RUN_MODE === "serve") {
+				// 	parent.attr("href", imgUrl);
+				// } else {
+				// 	parent.attr(
+				// 		"href",
+				// 		imgUrl
+				// 	);
+				// }
 				if (imgGallery) {
 					parent.attr("data-gallery", imgGallery);
 				}
