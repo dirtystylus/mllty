@@ -12,31 +12,31 @@ tags:
 
 We celebrated Jordan’s March birthday a few days early at [Baby’s Philadelphia](https://babysphl.com).
 
-![](jordans-birthday-2026-2.jpg){.cinemascope}
+![A mother and two children squeeze into a couch in a restaurant waiting area.](jordans-birthday-2026-2.jpg){.cinemascope}
 
 {% imagegroup "vertical-horizontal" %}
-![](jordans-birthday-2026-1.jpg)
+![Lights and red paper lanterns hung from a ceiling.](jordans-birthday-2026-1.jpg)
 
-![](jordans-birthday-2026-3.jpg)
+![Restaurant menu for Baby’s Philadelphia.](jordans-birthday-2026-3.jpg)
 {% endimagegroup %}
 
-![](jordans-birthday-2026-4.jpg){.cinemascope}
+![A father and child smiling at a dinner table.](jordans-birthday-2026-4.jpg){.cinemascope}
 
-![](jordans-birthday-2026-5.jpg "Pinakbet/kinilaw na kampachi"){.cinemascope}
+![A duo of appetizers: pinakbet and kinilaw na kampachi](jordans-birthday-2026-5.jpg "Pinakbet/kinilaw na kampachi"){.cinemascope}
 
 {% imagegroup "horizontal-double" %}
-![](jordans-birthday-2026-6.jpg "Bulalo croquettes")
+![Plate of five croquettes.](jordans-birthday-2026-6.jpg "Bulalo croquettes")
 
-![](jordans-birthday-2026-7.jpg "Bicol Express")
+![Scallops in a bright yellow soup.](jordans-birthday-2026-7.jpg "Bicol Express")
 {% endimagegroup %}
 
 {% imagegroup "horizontal-double" %}
-![](jordans-birthday-2026-8.jpg "Sinigang")
+![Fish sinigang soup.](jordans-birthday-2026-8.jpg "Sinigang")
 
-![](jordans-birthday-2026-9.jpg "Sizzling pork sisig")
+![Cast iron platter with sizzling pork sisig.](jordans-birthday-2026-9.jpg "Sizzling pork sisig")
 {% endimagegroup %}
 
-![](jordans-birthday-2026-10.jpg){.cinemascope}
+![Banana/bread pudding dessert.](jordans-birthday-2026-10.jpg){.cinemascope}
 
 More photos [on Flickr](https://www.flickr.com/photos/dirtystylus/albums/72177720333265798/).
 
