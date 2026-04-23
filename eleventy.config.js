@@ -488,6 +488,8 @@ export default async function (eleventyConfig) {
 				imgUrl = imgUrl.replace(/w=[0-9]+/, `w=${imgWidth}`);
 				const imgGallery = $(el).attr("data-gallery");
 				const classes = $(el).attr("class");
+				const imgSizes = $(el).attr("sizes");
+				const imgSrcset = $(el).attr("srcset");
 				let imgCaption = "";
 				if (
 					$(el).next().length > 0 &&
@@ -499,9 +501,15 @@ export default async function (eleventyConfig) {
 				const parent = $(el).parent();
 				if (classes) parent.addClass(classes);
 				if (!$(el).hasClass('glightbox')) {
-				parent.addClass('glightbox');
+					parent.addClass('glightbox');
 				}
 				parent.attr("href", imgUrl);
+				if (imgSizes) {
+					parent.attr("data-sizes", imgSizes);
+				}
+				if (imgSrcset) {
+					parent.attr("data-srcset", imgSrcset);
+				}
 				if (imgGallery) {
 					parent.attr("data-gallery", imgGallery);
 				}
