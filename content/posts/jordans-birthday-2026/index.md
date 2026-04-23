@@ -10,7 +10,7 @@ tags:
   - photos
 ---
 
-We celebrated Jordan’s birthday in March at [Baby’s Philadelphia](https://babysphl.com).
+We celebrated Jordan’s March birthday a few days early at [Baby’s Philadelphia](https://babysphl.com).
 
 ![](jordans-birthday-2026-2.jpg){.cinemascope}
 
