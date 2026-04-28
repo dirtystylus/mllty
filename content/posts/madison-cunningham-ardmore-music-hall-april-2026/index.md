@@ -11,6 +11,10 @@ tags:
   - photos
 ---
 
+Em and I got into Madison Cunningham through her [Cunningham Bird](https://cunninghambird.com) project covering the rare [Buckingham Nicks](https://buckinghamnicks.com) album. I happened to glance at the regular emails from Ardmore Music Hall and her name jumped out for a show a few days later.
+
+Ardmore Music Hall is a great venue to catch acts on the way up (or down, sometimes) — it’s close enough to Philadelphia that some peformers make it their Philly stop. I imagine it’s a little bit easier to get booked there than in some of the downtown venues.
+
 ![Marquee reading "Ardmore Music Hall: Madison Cunninham"](madison-cunningham-ardmore-music-hall-april-2026-1.jpg)
 
 ![A woman sings while playing guiter, lit from behind by blue and yellow spots.](madison-cunningham-ardmore-music-hall-april-2026-2.jpg "Opening act Annika Bennett")
@@ -20,6 +24,8 @@ tags:
 
 ![Projected graphics for Madison Cunningham’s Ace tour.](madison-cunningham-ardmore-music-hall-april-2026-4.jpg)
 {% endimagegroup %}
+
+Madison Cunningham took the stage solo at the piano before her bandmate Jesse Chandler joined her — Chandler juggling multiple instruments including a bass clarinet, flute, and a keyboard, occasionally looping things with a foot controller.
 
 {% imagegroup "horizontal-double" %}
 ![A singer and bandmate onstage.](madison-cunningham-ardmore-music-hall-april-2026-5.jpg)
