@@ -2,7 +2,7 @@
 title: 'Madison Cunningham @ Ardmore Music Hall, April 2026'
 display_title: 'Madison Cunningham @ Ardmore Music Hall, April 2026'
 description: The Ace tour stops in Ardmore.
-cover_image: /posts/madison-cunningham-ardmore-music-hall-april-2026/madison-cunningham-ardmore-music-hall-april-2026-1-thumb.jpg
+cover_image: /posts/madison-cunningham-ardmore-music-hall-april-2026/madison-cunningham-ardmore-music-hall-april-2026-10-thumb.jpg
 date: '2026-04-28T16:20:42.000-04:00'
 tags:
   - ardmore
