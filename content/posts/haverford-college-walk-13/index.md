@@ -1,7 +1,7 @@
 ---
 title: Haverford College Walk 13
 display_title: Haverford College Walk 13
-description: Cherry blossom season
+description: Cherry blossom season.
 cover_image: /posts/haverford-college-walk-13/haverford-college-walk-13-1-thumb.jpg
 date: '2026-04-28T15:57:22.760-04:00'
 tags:
