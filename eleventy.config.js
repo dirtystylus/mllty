@@ -301,7 +301,7 @@ export default async function (eleventyConfig) {
 	}
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, imgTransformSettings);
+	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, imgTransformSettings);
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
@@ -459,62 +459,127 @@ export default async function (eleventyConfig) {
 	});
 
 	// Transforms
-	eleventyConfig.addTransform('prepareGallery', async function (content) {
+
+
+	const WIDTHS = [320, 960, 1400, 1920, 4000];
+	const SIZES = "(max-width: 45em) 640px, 100vm";
+
+	eleventyConfig.addTransform("prepareImages", function(content) {
 		const pageOutputPath = this?.page?.outputPath;
 		if (typeof pageOutputPath !== "string") return content;
+		if (!this.page.outputPath?.endsWith(".html")) return content;
+		if (!content.includes("<img")) return content;
 
-		// now it's safe to call .endsWith
-		if (!pageOutputPath.endsWith(".html")) return content;
-
-		// if (!this.page.inputPath === './content/posts/new-york-march-2024/index.md') return content;
 		const data = pageDataMap.get(this.page.inputPath);
-		if (data?.content_type !== 'post') return content;
-		if (!content.includes('<img')) return content;
+		if (data?.content_type !== "post") return content;
+
 		const $ = cheerio.load(content);
-		const dirPath = this.page.filePathStem.slice(
-			0,
-			this.page.filePathStem.length - 5
-		);
-		// If there are images, decorate with a wrapper <a> tag,
-		// and pull classes from the image up to that wrapper
 		$("img").each((i, el) => {
-			const page = this.page;
-			let imgUrl = $(el).attr("src");
-			const imgWidth = $(el).attr("width");
-			imgUrl = imgUrl.replace(/w=[0-9]+/, `w=${imgWidth}`);
+			const imgSrc = $(el).attr("src");
 			const imgGallery = $(el).attr("data-gallery");
 			const classes = $(el).attr("class");
-			const imgSizes = $(el).attr("sizes");
-			const imgSrcset = $(el).attr("srcset");
+
 			let imgCaption = "";
 			if (
 				$(el).next().length > 0 &&
-				$(el).next().prop("tagName").toLowerCase() == "figcaption"
+				$(el).next().prop("tagName").toLowerCase() === "figcaption"
 			) {
 				imgCaption = $(el).next().html();
 			}
-			$(el).wrap("<a></a>");
-			const parent = $(el).parent();
-			if (classes) parent.addClass(classes);
-			if (!$(el).hasClass('glightbox')) {
-				parent.addClass('glightbox');
-			}
-			parent.attr("href", imgUrl);
-			if (imgSizes) {
-				parent.attr("data-sizes", imgSizes);
-			}
-			if (imgSrcset) {
-				parent.attr("data-srcset", imgSrcset);
-			}
-			if (imgGallery) {
-				parent.attr("data-gallery", imgGallery);
-			}
-			if (imgCaption !== "") {
-				parent.attr("data-title", imgCaption);
+
+			if (process.env.ELEVENTY_RUN_MODE === "serve") {
+				$(el).wrap("<a></a>");
+				const parent = $(el).parent();
+				if (classes) parent.addClass(classes);
+				parent.addClass("glightbox");
+				parent.attr("href", imgSrc);
+			} else {
+				// Build Netlify URLs
+				const filePathStem = data.page.filePathStem;
+				const filePathTrimmed = filePathStem.replace(/\/index$/, "");
+				const imgUrl = `${filePathTrimmed}/${imgSrc}`;
+				const cdnUrl = (w) => `/.netlify/images?url=${imgUrl}&w=${w}&fit=contain`;
+				const srcset = WIDTHS.map(w => `${cdnUrl(w)} ${w}w`).join(", ");
+
+				// Update img attributes
+				$(el).attr("src", cdnUrl(WIDTHS[0]));
+				$(el).attr("srcset", srcset);
+				$(el).attr("sizes", SIZES);
+				$(el).removeAttr("width");
+				$(el).removeAttr("height");
+
+				// Wrap with glightbox anchor
+				$(el).wrap("<a></a>");
+				const parent = $(el).parent();
+				if (classes) parent.addClass(classes);
+				parent.addClass("glightbox");
+				parent.attr("href", cdnUrl(WIDTHS[WIDTHS.length - 1]));
+				parent.attr("data-srcset", srcset);
+				parent.attr("data-sizes", SIZES);
+				if (imgGallery) parent.attr("data-gallery", imgGallery);
+				if (imgCaption !== "") parent.attr("data-title", imgCaption);
 			}
 		});
-		return `${$.html()}`;
+		return $.html();
 	});
+
+
+// 	eleventyConfig.addTransform('prepareGallery', async function (content) {
+// 		const pageOutputPath = this?.page?.outputPath;
+// 		if (typeof pageOutputPath !== "string") return content;
+//
+// 		// now it's safe to call .endsWith
+// 		if (!pageOutputPath.endsWith(".html")) return content;
+//
+// 		// if (!this.page.inputPath === './content/posts/new-york-march-2024/index.md') return content;
+// 		const data = pageDataMap.get(this.page.inputPath);
+// 		if (data?.content_type !== 'post') return content;
+// 		if (!content.includes('<img')) return content;
+// 		const $ = cheerio.load(content);
+// 		const dirPath = this.page.filePathStem.slice(
+// 			0,
+// 			this.page.filePathStem.length - 5
+// 		);
+// 		// If there are images, decorate with a wrapper <a> tag,
+// 		// and pull classes from the image up to that wrapper
+// 		$("img").each((i, el) => {
+// 			const page = this.page;
+// 			let imgUrl = $(el).attr("src");
+// 			const imgWidth = $(el).attr("width");
+// 			imgUrl = imgUrl.replace(/w=[0-9]+/, `w=${imgWidth}`);
+// 			const imgGallery = $(el).attr("data-gallery");
+// 			const classes = $(el).attr("class");
+// 			const imgSizes = $(el).attr("sizes");
+// 			const imgSrcset = $(el).attr("srcset");
+// 			let imgCaption = "";
+// 			if (
+// 				$(el).next().length > 0 &&
+// 				$(el).next().prop("tagName").toLowerCase() == "figcaption"
+// 			) {
+// 				imgCaption = $(el).next().html();
+// 			}
+// 			$(el).wrap("<a></a>");
+// 			const parent = $(el).parent();
+// 			if (classes) parent.addClass(classes);
+// 			if (!$(el).hasClass('glightbox')) {
+// 				parent.addClass('glightbox');
+// 			}
+// 			parent.attr("href", imgUrl);
+// 			if (imgSizes) {
+// 				parent.attr("data-sizes", imgSizes);
+// 			}
+// 			if (imgSrcset) {
+// 				parent.attr("data-srcset", imgSrcset);
+// 			}
+// 			if (imgGallery) {
+// 				parent.attr("data-gallery", imgGallery);
+// 			}
+// 			if (imgCaption !== "") {
+// 				parent.attr("data-title", imgCaption);
+// 			}
+// 		});
+// 		return `${$.html()}`;
+// 	});
 
 	// Features to make your build faster (when you need them)
 
