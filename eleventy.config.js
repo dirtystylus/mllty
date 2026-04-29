@@ -460,66 +460,60 @@ export default async function (eleventyConfig) {
 
 	// Transforms
 	eleventyConfig.addTransform('prepareGallery', async function (content) {
-		const pageOutputPath = this && this.page && this.page.outputPath;
-		if (typeof pageOutputPath !== "string") {
-			return content;
-		}
+		const pageOutputPath = this?.page?.outputPath;
+		if (typeof pageOutputPath !== "string") return content;
 
 		// now it's safe to call .endsWith
-		if (!pageOutputPath.endsWith(".html")) {
-			return content;
-		}
+		if (!pageOutputPath.endsWith(".html")) return content;
 
-		const path = this.page.inputPath;
 		// if (!this.page.inputPath === './content/posts/new-york-march-2024/index.md') return content;
 		const data = pageDataMap.get(this.page.inputPath);
-		if (data?.content_type && data?.content_type === 'post') {
-			const $ = cheerio.load(content);
-			const dirPath = this.page.filePathStem.slice(
-				0,
-				this.page.filePathStem.length - 5
-			);
-			// If there are images, decorate with a wrapper <a> tag,
-			// and pull classes from the image up to that wrapper
-			$("img").each((i, el) => {
-				const page = this.page;
-				let imgUrl = $(el).attr("src");
-				const imgWidth = $(el).attr("width");
-				imgUrl = imgUrl.replace(/w=[0-9]+/, `w=${imgWidth}`);
-				const imgGallery = $(el).attr("data-gallery");
-				const classes = $(el).attr("class");
-				const imgSizes = $(el).attr("sizes");
-				const imgSrcset = $(el).attr("srcset");
-				let imgCaption = "";
-				if (
-					$(el).next().length > 0 &&
-					$(el).next().prop("tagName").toLowerCase() == "figcaption"
-				) {
-					imgCaption = $(el).next().html();
-				}
-				$(el).wrap("<a></a>");
-				const parent = $(el).parent();
-				if (classes) parent.addClass(classes);
-				if (!$(el).hasClass('glightbox')) {
-					parent.addClass('glightbox');
-				}
-				parent.attr("href", imgUrl);
-				if (imgSizes) {
-					parent.attr("data-sizes", imgSizes);
-				}
-				if (imgSrcset) {
-					parent.attr("data-srcset", imgSrcset);
-				}
-				if (imgGallery) {
-					parent.attr("data-gallery", imgGallery);
-				}
-				if (imgCaption !== "") {
-					parent.attr("data-title", imgCaption);
-				}
-			});
-			return `${$.html()}`;
-		}
-		return content;
+		if (data?.content_type !== 'post') return content;
+		if (!content.includes('<img')) return content;
+		const $ = cheerio.load(content);
+		const dirPath = this.page.filePathStem.slice(
+			0,
+			this.page.filePathStem.length - 5
+		);
+		// If there are images, decorate with a wrapper <a> tag,
+		// and pull classes from the image up to that wrapper
+		$("img").each((i, el) => {
+			const page = this.page;
+			let imgUrl = $(el).attr("src");
+			const imgWidth = $(el).attr("width");
+			imgUrl = imgUrl.replace(/w=[0-9]+/, `w=${imgWidth}`);
+			const imgGallery = $(el).attr("data-gallery");
+			const classes = $(el).attr("class");
+			const imgSizes = $(el).attr("sizes");
+			const imgSrcset = $(el).attr("srcset");
+			let imgCaption = "";
+			if (
+				$(el).next().length > 0 &&
+				$(el).next().prop("tagName").toLowerCase() == "figcaption"
+			) {
+				imgCaption = $(el).next().html();
+			}
+			$(el).wrap("<a></a>");
+			const parent = $(el).parent();
+			if (classes) parent.addClass(classes);
+			if (!$(el).hasClass('glightbox')) {
+				parent.addClass('glightbox');
+			}
+			parent.attr("href", imgUrl);
+			if (imgSizes) {
+				parent.attr("data-sizes", imgSizes);
+			}
+			if (imgSrcset) {
+				parent.attr("data-srcset", imgSrcset);
+			}
+			if (imgGallery) {
+				parent.attr("data-gallery", imgGallery);
+			}
+			if (imgCaption !== "") {
+				parent.attr("data-title", imgCaption);
+			}
+		});
+		return `${$.html()}`;
 	});
 
 	// Features to make your build faster (when you need them)
