@@ -464,30 +464,36 @@ export default async function (eleventyConfig) {
 	const WIDTHS = [320, 960, 1400, 1920, 4000];
 	const SIZES = "(max-width: 45em) 640px, 100vm";
 
-	// if (process.env.ELEVENTY_RUN_MODE !== "serve") {
-		 eleventyConfig.addTransform("prepareImages", function(content) {
-			const pageOutputPath = this?.page?.outputPath;
-			if (typeof pageOutputPath !== "string") return content;
-			if (!this.page.outputPath?.endsWith(".html")) return content;
-			if (!content.includes("<img")) return content;
+	eleventyConfig.addTransform("prepareImages", function(content) {
+		const pageOutputPath = this?.page?.outputPath;
+		if (typeof pageOutputPath !== "string") return content;
+		if (!this.page.outputPath?.endsWith(".html")) return content;
+		if (!content.includes("<img")) return content;
 
-			const data = pageDataMap.get(this.page.inputPath);
-			if (data?.content_type !== "post") return content;
+		const data = pageDataMap.get(this.page.inputPath);
+		if (data?.content_type !== "post") return content;
 
-			const $ = cheerio.load(content);
-			$("img").each((i, el) => {
-				const imgSrc = $(el).attr("src");
-				const imgGallery = $(el).attr("data-gallery");
-				const classes = $(el).attr("class");
+		const $ = cheerio.load(content);
+		$("img").each((i, el) => {
+			const imgSrc = $(el).attr("src");
+			const imgGallery = $(el).attr("data-gallery");
+			const classes = $(el).attr("class");
 
-				let imgCaption = "";
-				if (
-					$(el).next().length > 0 &&
-					$(el).next().prop("tagName").toLowerCase() === "figcaption"
-				) {
-					imgCaption = $(el).next().html();
-				}
+			let imgCaption = "";
+			if (
+				$(el).next().length > 0 &&
+				$(el).next().prop("tagName").toLowerCase() === "figcaption"
+			) {
+				imgCaption = $(el).next().html();
+			}
 
+			if (process.env.ELEVENTY_RUN_MODE === "serve") {
+				$(el).wrap("<a></a>");
+				const parent = $(el).parent();
+				if (classes) parent.addClass(classes);
+				parent.addClass("glightbox");
+				parent.attr("href", imgSrc);
+			} else {
 				// Build Netlify URLs
 				const filePathStem = data.page.filePathStem;
 				const filePathTrimmed = filePathStem.replace(/\/index$/, "");
@@ -512,10 +518,10 @@ export default async function (eleventyConfig) {
 				parent.attr("data-sizes", SIZES);
 				if (imgGallery) parent.attr("data-gallery", imgGallery);
 				if (imgCaption !== "") parent.attr("data-title", imgCaption);
-			});
-			return $.html();
+			}
 		});
-	// }
+		return $.html();
+	});
 
 
 // 	eleventyConfig.addTransform('prepareGallery', async function (content) {
