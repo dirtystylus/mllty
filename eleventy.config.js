@@ -466,7 +466,7 @@ export default async function (eleventyConfig) {
 
 	if (process.env.ELEVENTY_RUN_MODE !== "serve") {
 		eleventyConfig.addTransform("prepareImages", async function(content) {
-			const pageOutputPath = this?.page.?.outputPath;
+			const pageOutputPath = this?.page?.outputPath;
 			if (typeof pageOutputPath !== "string") return content;
 			if (!this.page.outputPath?.endsWith(".html")) return content;
 			if (!content.includes("<img")) return content;
