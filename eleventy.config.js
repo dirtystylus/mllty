@@ -464,8 +464,8 @@ export default async function (eleventyConfig) {
 	const WIDTHS = [320, 960, 1400, 1920, 4000];
 	const SIZES = "(max-width: 45em) 640px, 100vm";
 
-	if (process.env.ELEVENTY_RUN_MODE !== "serve") {
-		eleventyConfig.addTransform("prepareImages", async function(content) {
+	// if (process.env.ELEVENTY_RUN_MODE !== "serve") {
+		 eleventyConfig.addTransform("prepareImages", function(content) {
 			const pageOutputPath = this?.page?.outputPath;
 			if (typeof pageOutputPath !== "string") return content;
 			if (!this.page.outputPath?.endsWith(".html")) return content;
@@ -476,7 +476,7 @@ export default async function (eleventyConfig) {
 
 			const $ = cheerio.load(content);
 			$("img").each((i, el) => {
-				const imgUrl = $(el).attr("src");
+				const imgSrc = $(el).attr("src");
 				const imgGallery = $(el).attr("data-gallery");
 				const classes = $(el).attr("class");
 
@@ -489,6 +489,9 @@ export default async function (eleventyConfig) {
 				}
 
 				// Build Netlify URLs
+				const filePathStem = data.page.filePathStem;
+				const filePathTrimmed = filePathStem.replace(/\/index$/, "");
+				const imgUrl = `${filePathTrimmed}/${imgSrc}`;
 				const cdnUrl = (w) => `/.netlify/images?url=${imgUrl}&w=${w}&fit=contain`;
 				const srcset = WIDTHS.map(w => `${cdnUrl(w)} ${w}w`).join(", ");
 
@@ -512,7 +515,7 @@ export default async function (eleventyConfig) {
 			});
 			return $.html();
 		});
-	}
+	// }
 
 
 // 	eleventyConfig.addTransform('prepareGallery', async function (content) {
