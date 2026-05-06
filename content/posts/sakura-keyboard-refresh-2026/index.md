@@ -30,7 +30,7 @@ In addition to the switch swap I dusted off my [Polycaps Octopus](/posts/polycap
 {% imagegroup "horizontal-double" %}
 ![](sakura-keyboard-refresh-2026-5.jpg)
 
-![](sakura-keyboard-refresh-2026-7.jpg "Princess Monono-key artisan on my dedicated mic toggle button")
+![](sakura-keyboard-refresh-2026-7.jpg "*Princess Monono*-key artisan on my dedicated mic toggle button")
 {% endimagegroup %}
 
 The new switches are really light, and a little bit scratchier than the [Keylin switches](/posts/mode65-2024-switch-swap/) in my Mode 65. Overall it’s a bit clackier/poppier than my Mode — I wish the whole board sounded a little bit deeper, but overall it’s an interesting change from the Mode. I plan to rotate keyboards every two weeks.
