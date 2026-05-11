@@ -251,58 +251,6 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
-	let imgTransformSettings = {};
-	if (process.env.ELEVENTY_RUN_MODE === "serve") {
-		imgTransformSettings = {
-			extensions: "html",
-			// Output formats for each image.
-			formats: ["auto"],
-			widths: [320, 960, 1400, 1920, 4000],
-			transformOnRequest: false,
-			urlFormat: function ({
-				hash, // not included for `statsOnly` images
-				src,
-				width,
-				format,
-			}) {
-				return src.replace("content", "");
-			},
-			defaultAttributes: {
-				loading: "lazy",
-				decoding: "async",
-				sizes: "(max-width: 45em) 640px, 100vw",
-			},
-		};
-	} else {
-		imgTransformSettings = {
-			extensions: "html",
-			// Output formats for each image.
-			formats: ["auto"],
-			widths: [320, 960, 1400, 1920, 4000],
-			transformOnRequest: false,
-			urlFormat: function ({
-				hash, // not included for `statsOnly` images
-				src,
-				width,
-				format,
-			}) {
-				return `/.netlify/images?url=${src.replace(
-					"content",
-					""
-				)}&w=${width}&fit=contain`;
-			},
-
-			defaultAttributes: {
-				loading: "lazy",
-				decoding: "async",
-				sizes: "(max-width: 45em) 640px, 100vw",
-			},
-		};
-	}
-
-	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, imgTransformSettings);
-
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
@@ -459,8 +407,6 @@ export default async function (eleventyConfig) {
 	});
 
 	// Transforms
-
-
 	const WIDTHS = [320, 960, 1400, 1920, 4000];
 	const SIZES = "(max-width: 45em) 640px, 100vm";
 
@@ -522,64 +468,6 @@ export default async function (eleventyConfig) {
 		});
 		return $.html();
 	});
-
-
-// 	eleventyConfig.addTransform('prepareGallery', async function (content) {
-// 		const pageOutputPath = this?.page?.outputPath;
-// 		if (typeof pageOutputPath !== "string") return content;
-//
-// 		// now it's safe to call .endsWith
-// 		if (!pageOutputPath.endsWith(".html")) return content;
-//
-// 		// if (!this.page.inputPath === './content/posts/new-york-march-2024/index.md') return content;
-// 		const data = pageDataMap.get(this.page.inputPath);
-// 		if (data?.content_type !== 'post') return content;
-// 		if (!content.includes('<img')) return content;
-// 		const $ = cheerio.load(content);
-// 		const dirPath = this.page.filePathStem.slice(
-// 			0,
-// 			this.page.filePathStem.length - 5
-// 		);
-// 		// If there are images, decorate with a wrapper <a> tag,
-// 		// and pull classes from the image up to that wrapper
-// 		$("img").each((i, el) => {
-// 			const page = this.page;
-// 			let imgUrl = $(el).attr("src");
-// 			const imgWidth = $(el).attr("width");
-// 			imgUrl = imgUrl.replace(/w=[0-9]+/, `w=${imgWidth}`);
-// 			const imgGallery = $(el).attr("data-gallery");
-// 			const classes = $(el).attr("class");
-// 			const imgSizes = $(el).attr("sizes");
-// 			const imgSrcset = $(el).attr("srcset");
-// 			let imgCaption = "";
-// 			if (
-// 				$(el).next().length > 0 &&
-// 				$(el).next().prop("tagName").toLowerCase() == "figcaption"
-// 			) {
-// 				imgCaption = $(el).next().html();
-// 			}
-// 			$(el).wrap("<a></a>");
-// 			const parent = $(el).parent();
-// 			if (classes) parent.addClass(classes);
-// 			if (!$(el).hasClass('glightbox')) {
-// 				parent.addClass('glightbox');
-// 			}
-// 			parent.attr("href", imgUrl);
-// 			if (imgSizes) {
-// 				parent.attr("data-sizes", imgSizes);
-// 			}
-// 			if (imgSrcset) {
-// 				parent.attr("data-srcset", imgSrcset);
-// 			}
-// 			if (imgGallery) {
-// 				parent.attr("data-gallery", imgGallery);
-// 			}
-// 			if (imgCaption !== "") {
-// 				parent.attr("data-title", imgCaption);
-// 			}
-// 		});
-// 		return `${$.html()}`;
-// 	});
 
 	// Features to make your build faster (when you need them)
 

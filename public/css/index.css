@@ -732,6 +732,7 @@ body {
 	grid-column: 1;
 	hanging-punctuation: first;
 	margin-top: 0;
+	text-wrap: pretty;
 }
 
 @media (min-width: 45em) {
@@ -1000,7 +1001,7 @@ blockquote {
 .footnote-ref a[href]:visited {
 	color: var(--red);
 	font-family: var(--font--sans);
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	margin: 0 0 0 0.1em;
 	text-decoration: none;
 }

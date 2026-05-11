@@ -12,7 +12,8 @@ publisher: Penguin Publishing Group
 print_type: BOOK
 date: '2026-04-23T10:23:30.217-04:00'
 start_date: '2026-04-23'
-end_date: '2026-04-23'
+end_date: '2026-05-08'
 draft: true
 ---
 
+The future these people want to build is just plain, old-fashioned greed. 
