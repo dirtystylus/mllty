@@ -3,6 +3,7 @@ import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItFootnote from "markdown-it-footnote";
 import markdownItImageFigures from "markdown-it-image-figures";
+import imageSizePlugin from "./_config/markdownImageSize.js";
 import markdownIt from "markdown-it";
 
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
@@ -276,7 +277,8 @@ export default async function (eleventyConfig) {
 			})
 			.use(markdownItAttrs)
 			.use(markdownItFootnote)
-			.use(markdownItImageFigures, { figcaption: true });
+			.use(markdownItImageFigures, { figcaption: true })
+			.use(imageSizePlugin);
 
 		mdLib.renderer.rules.footnote_ref = (tokens, idx, options, env, slf) => {
 			const id = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf);
@@ -361,11 +363,11 @@ export default async function (eleventyConfig) {
 		return `<img src="${src}" alt="${alt}" />`;
 	});
 
-	eleventyConfig.addPairedShortcode("aside", (content, aside, alignment) => {
+	eleventyConfig.addPairedShortcode("aside", function (content, aside, alignment) {
 		const asideText = mdLib.render(aside.trim());
 		const alignmentClass =
 			alignment == "left" ? "aside-left-wrap" : "aside-right-wrap";
-		const divContent = mdLib.render(content.trim());
+		const divContent = mdLib.render(content.trim(), { page: this.page });
 		return `<div class="${alignmentClass}"><div class="aside-content">${divContent}</div><aside>${asideText}</aside></div>`;
 	});
 
@@ -381,13 +383,13 @@ export default async function (eleventyConfig) {
 		return `<div class="gallery">${data}</div>`;
 	});
 
-	eleventyConfig.addPairedShortcode("imagegroup", (content, data) => {
-		const switcherContent = mdLib.render(content.trim());
+	eleventyConfig.addPairedShortcode("imagegroup", function (content, data) {
+		const switcherContent = mdLib.render(content.trim(), { page: this.page });
 		const classes = "switcher" + (data ? " " + data : "");
 		return `<div class="${classes}">${switcherContent}</div>`;
 	});
 
-	eleventyConfig.addPairedShortcode("videoloop", (content, data, alt) => {
+	eleventyConfig.addPairedShortcode("videoloop", function (content, data, alt) {
 		const videoURL = mdLib.renderInline(data.trim());
 		const altText = mdLib.renderInline(alt.trim());
 		const divContent = mdLib.renderInline(content.trim());
@@ -451,8 +453,8 @@ export default async function (eleventyConfig) {
 				$(el).attr("src", cdnUrl(WIDTHS[0]));
 				$(el).attr("srcset", srcset);
 				$(el).attr("sizes", SIZES);
-				$(el).removeAttr("width");
-				$(el).removeAttr("height");
+				// $(el).removeAttr("width");
+				// $(el).removeAttr("height");
 
 				// Wrap with glightbox anchor
 				$(el).wrap("<a></a>");
