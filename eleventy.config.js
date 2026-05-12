@@ -410,7 +410,7 @@ export default async function (eleventyConfig) {
 
 	// Transforms
 	const WIDTHS = [320, 960, 1400, 1920, 4000];
-	const SIZES = "(max-width: 45em) 640px, 100vw";
+	const SIZES = "(max-width: 45em) 640px, (max-width: 120em) 1920px, 100vw";
 
 	eleventyConfig.addTransform("prepareImages", function(content) {
 		const pageOutputPath = this?.page?.outputPath;
