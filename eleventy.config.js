@@ -441,6 +441,7 @@ export default async function (eleventyConfig) {
 				if (classes) parent.addClass(classes);
 				parent.addClass("glightbox");
 				parent.attr("href", imgSrc);
+				parent.attr("aria-label", "GLightbox image link");
 			} else {
 				// Build Netlify URLs
 				const filePathStem = data.page.filePathStem;
@@ -453,8 +454,6 @@ export default async function (eleventyConfig) {
 				$(el).attr("src", cdnUrl(WIDTHS[0]));
 				$(el).attr("srcset", srcset);
 				$(el).attr("sizes", SIZES);
-				// $(el).removeAttr("width");
-				// $(el).removeAttr("height");
 
 				// Wrap with glightbox anchor
 				$(el).wrap("<a></a>");
@@ -464,6 +463,7 @@ export default async function (eleventyConfig) {
 				parent.attr("href", cdnUrl(WIDTHS[WIDTHS.length - 1]));
 				parent.attr("data-srcset", srcset);
 				parent.attr("data-sizes", SIZES);
+				parent.attr("aria-label", "GLightbox image link");
 				if (imgGallery) parent.attr("data-gallery", imgGallery);
 				if (imgCaption !== "") parent.attr("data-title", imgCaption);
 			}

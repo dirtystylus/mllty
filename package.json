@@ -7,6 +7,7 @@
 		"build": "npm run cleanup; npx @11ty/eleventy",
 		"cleanup": "rm -rf _site",
 		"start": "npx @11ty/eleventy --serve --quiet --incremental",
+		"serve": "npx @11ty/eleventy --serve",
 		"start-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/ --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
