@@ -8,3 +8,8 @@ package = "netlify-plugin-cache"
 
   [plugins.inputs]
   paths = [ ".cache" ]
+
+[[headers]]
+	for = "/feed/feed.xml"
+	[headers.values]
+		Cache-Control = "public, max-age=0, must-revalidate"
