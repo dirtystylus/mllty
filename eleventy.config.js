@@ -326,6 +326,26 @@ export default async function (eleventyConfig) {
 		return /<img[\s>]/i.test(content);
 	});
 
+	eleventyConfig.addFilter("feedSafeHtml", function(content) {
+		// Figures with captions → <p><img></p>
+		// This is necessary because Markdown transforms images to wrap in <figure>, so we need to unwrap for Atom feed
+		content = content.replace(
+			/<figure[^>]*>\s*(<img[^>]*>)\s*<figcaption[^>]*>[\s\S]*?<\/figcaption>\s*<\/figure>/g,
+			"<p>$1</p>"
+		);
+		// Figures without captions → <p><img></p>
+		content = content.replace(
+			/<figure[^>]*>\s*(<img[^>]*>)\s*<\/figure>/g,
+			"<p>$1</p>"
+		);
+		// Remove .switcher div wrappers, keeping inner content
+		content = content.replace(
+			/<div[^>]*class="[^"]*switcher[^"]*"[^>]*>([\s\S]*?)<\/div>/g,
+			"$1"
+		);
+		return content;
+	});
+
 	// Map from Object filter, for Year-based custom collections
 	eleventyConfig.addNunjucksFilter(
 		"createReverseYearsMapFromObject",
