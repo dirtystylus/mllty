@@ -1128,6 +1128,10 @@ blockquote {
 	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
+.tmpl-book .book-body {
+	text-wrap: pretty;
+}
+
 @media (min-width: 45em) {
 	.tmpl-book .book-body {
 		grid-column: content-start;
