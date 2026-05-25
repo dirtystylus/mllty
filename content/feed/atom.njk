@@ -29,7 +29,7 @@ eleventyNavigation:
 		{% set book_metadata %}<p><img src="{{metadata.feed.img_base_url}}{{post.data.cover_image}}" alt="Cover image for {{post.data.title}}"/></p><p>Started Reading: {{post.data.start_date | readableDate }}</p><p>Finished Reading: {{post.data.end_date | readableDate }}</p>{% endset %}
 		<content type="html">{{book_metadata}}{{ post.content | renderTransforms(post.data.page, metadata.base) | feedSafeHtml }}</content>
 		{% elif post.data.content_type == "film" %}
-		{% set film_metadata %}<p><img src="{{metadata.feed.img_base_url}}{{post.data.cover_image}}" alt="Cover image for {{post.data.title}}"/><p>Watched: {{post.data.watched_date | readableDate }}</p>{% endset %}
+		{% set film_metadata %}<p><img src="{{metadata.feed.img_base_url}}{{post.data.cover_image}}" alt="Cover image for {{post.data.title}}"/></p><p>Watched: {{post.data.watched_date | readableDate }}</p>{% endset %}
 		<content type="html">{{film_metadata}}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | feedSafeHtml }}</content>
 		{% else %}
 		<content type="html">{{ post.content | transformWithHtmlBase(absolutePostUrl, post.url) | feedSafeHtml }}</content>
