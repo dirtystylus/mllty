@@ -12,4 +12,4 @@ package = "netlify-plugin-cache"
 [[headers]]
 	for = "/feed/feed.xml"
 	[headers.values]
-		Cache-Control = "public, max-age=0, must-revalidate"
+		Cache-Control = "public, max-age=3600"
