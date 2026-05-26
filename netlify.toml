@@ -3,6 +3,10 @@ from = "/:year/:month/:date/:slug"
 to = "/posts/:slug"
 status = 301
 
+[[edge_functions]]
+function = "block-bots"
+path = "/*"
+
 [[plugins]]
 package = "netlify-plugin-cache"
 
