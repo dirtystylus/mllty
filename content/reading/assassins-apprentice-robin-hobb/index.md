@@ -13,6 +13,6 @@ print_type: BOOK
 date: '2026-05-26T16:57:43.057-04:00'
 start_date: '2026-05-17'
 end_date: '2026-05-26'
-draft: true
 ---
 
+The best kind of reread: I remembered very little of the plot details, but the characters were familiar, like unexpectedly running into an old childhood friend.

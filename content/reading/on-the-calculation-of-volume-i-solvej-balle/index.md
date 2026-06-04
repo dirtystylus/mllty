@@ -1,12 +1,11 @@
 ---
 title: On the Calculation of Volume (Book I)
 display_title: On the Calculation of Volume (Book I)
-author: ''
+author: Solvej Balle
 isbn: 0811237257
-cover_image: >-
-  /reading/on-the-calculation-of-volume-i-solvej-balle/on-the-calculation-of-volume-i-solvej-balle.jpg
-genre: ''
-format: ''
+cover_image: /reading/on-the-calculation-of-volume-i-solvej-balle/on-the-calculation-of-volume-i-solvej-balle.jpg
+genre: Fiction
+format: Paperback
 page_count: 161
 publication_date: '2024'
 publisher: New Directions Publishing Corporation
@@ -17,3 +16,4 @@ end_date: '2026-05-29'
 draft: true
 ---
 
+What if living the same day over and over was a type of death?
