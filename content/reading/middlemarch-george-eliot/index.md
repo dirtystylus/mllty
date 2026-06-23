@@ -11,7 +11,7 @@ publication_date: 'Apr 26, 2011'
 publisher: Penguin Classics
 print_type: BOOK
 date: '2026-06-22T21:48:03.724-04:00'
-start_date: '2026-06-22'
+start_date: '2026-06-20'
 end_date: '2026-06-22'
 draft: true
 ---
