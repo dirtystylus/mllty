@@ -1,4 +1,16 @@
 [[redirects]]
+from = "https://dirtystylus.com/*"
+to = "https://markllobrera.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.dirtystylus.com/*"
+to = "https://markllobrera.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
 from = "/:year/:month/:date/:slug"
 to = "/posts/:slug"
 status = 301
