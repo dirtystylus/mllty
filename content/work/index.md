@@ -3,7 +3,7 @@ title: Selected Work
 layout: layouts/post
 ---
 
-[Résumé](mark-llobrera-resume.pdf) | [Publications and Podcast Appearances](#publications-and-podcast-appearances) | [Talks](#talks)
+[Publications and Podcast Appearances](#publications-and-podcast-appearances) | [Talks](#talks)
 
 ## Nike: The LeBron James Innovation Center
 
