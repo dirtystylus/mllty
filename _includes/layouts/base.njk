@@ -16,6 +16,9 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon-152x152.png" />
 		<link rel="icon" type="image/png" href="/touchicon-196.png" sizes="196x196" />
 
+		{# Global opt-out — override per page via front matter #}
+		<meta name="robots" content="{{ robots | default('noai, noimageai') }}" />
+
 		<!-- Open Graph tags -->
 		{% set ogUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 		<meta property="og:type" content="website" />

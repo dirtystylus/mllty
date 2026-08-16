@@ -1,0 +1,17 @@
+---
+eleventyExcludeFromCollections: true
+layout: layouts/blank.njk
+eleventyComputed:
+  permalink: "/robots.txt"
+---
+
+User-agent: *
+Disallow:
+Crawl-delay: 10
+
+{% for bot in bots %}
+User-Agent: {{bot}}
+Disallow: /
+{% endfor %}
+
+Sitemap: {{ metadata.url + metadata.sitemap }}

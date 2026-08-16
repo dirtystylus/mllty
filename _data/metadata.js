@@ -16,5 +16,6 @@ export default {
 	"author": {
 		"name": "Mark Llobrera",
 		"email": "mark@dirtystylus.com"
-	}
+	},
+	"sitemap": "sitemap.xml"
 }

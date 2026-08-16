@@ -29,3 +29,9 @@ package = "netlify-plugin-cache"
 	for = "/feed/feed.xml"
 	[headers.values]
 		Cache-Control = "public, max-age=3600"
+
+[[headers]]
+	for = "/*"
+	[headers.values]
+		X-Robots-Tag = "noai, noimageai"
+		X-Content-Type-Options = "nosniff"
