@@ -170,14 +170,28 @@ const botUas = [
 export default async (request, context) => {
 	const ua = request.headers.get('user-agent');
 
-	let isBot = false
+	// Block requests with a missing or empty User-Agent — common for abusive
+	// scrapers, and calling .toLowerCase() on a null UA would throw.
+	if (!ua || ua.trim() === '') {
+		return new Response(null, { status: 401 });
+	}
 
-	botUas.forEach(u => {
-		if (ua.toLowerCase().includes(u.toLowerCase())) {
-			isBot = true
-		}
-	})
+	const lowerUa = ua.toLowerCase();
+	const isBot = botUas.some(u => lowerUa.includes(u.toLowerCase()));
 
 	const response = isBot ? new Response(null, { status: 401 }) : await context.next();
 	return response
+};
+
+// Path declaration lives here (not in netlify.toml) so we can attach a
+// rateLimit rule. This catches abusive traffic regardless of User-Agent:
+// no human requests 60+ pages a minute.
+export const config = {
+	path: "/*",
+	rateLimit: {
+		windowLimit: 60,   // requests...
+		windowSize: 60,    // ...per 60s per IP (max window 180s)
+		aggregateBy: ["ip", "domain"],
+		// action defaults to "block" → HTTP 429
+	},
 };
