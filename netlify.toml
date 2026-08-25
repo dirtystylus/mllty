@@ -11,6 +11,12 @@ status = 301
 force = true
 
 [[redirects]]
+from = "https://mllty.netlify.app/*"
+to = "https://markllobrera.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
 from = "/:year/:month/:date/:slug"
 to = "/posts/:slug"
 status = 301
