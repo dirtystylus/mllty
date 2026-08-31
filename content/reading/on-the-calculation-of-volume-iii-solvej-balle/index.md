@@ -1,7 +1,7 @@
 ---
 title: On the Calculation of Volume (Book III)
 display_title: On the Calculation of Volume (Book III)
-author: Solvej Balle and Barbara J. Haveland
+author: Solvej Balle, translated by Sophia Hersi Smith and Jennifer Russell
 isbn: 0811238393
 cover_image: /reading/on-the-calculation-of-volume-iii-solvej-balle/on-the-calculation-of-volume-iii-solvej-balle.jpg
 genre: Fiction
