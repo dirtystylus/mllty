@@ -11,7 +11,7 @@ page_count: 171
 publication_date: '2026'
 publisher: New Directions Publishing
 print_type: BOOK
-date: '2026-08-31T09:52:47.389-04:00'
+date: '2026-08-31T11:07:33.146-04:00'
 start_date: '2026-08-24'
 end_date: '2026-08-27'
 ---
