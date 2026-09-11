@@ -1,7 +1,7 @@
 ---
 title: Doctor Zhivago
 display_title: Doctor Zhivago
-author: Boris Pasternak, translated by Richard Pevear and Larissa Volokhonsky
+author: 'Boris Pasternak, translated by Richard Pevear and Larissa Volokhonsky'
 isbn: 0307390950
 cover_image: /reading/doctor-zhivago-boris-pasternak/doctor-zhivago-boris-pasternak.jpg
 genre: Fiction
@@ -10,9 +10,10 @@ page_count: 673
 publication_date: '2011'
 publisher: Vintage Books
 print_type: BOOK
-date: '2026-08-31T10:12:01.734-04:00'
+date: '2026-09-11T13:48:30.335-04:00'
 start_date: '2026-08-29'
-end_date: '2026-08-31'
-draft: true
+end_date: '2026-09-11'
 ---
+
+The Russians do sad history better than anyone. Made me think of Kieslowski’s films because of the way Pasternak repeatedly crosses characters’ lives via coincidence.
 
