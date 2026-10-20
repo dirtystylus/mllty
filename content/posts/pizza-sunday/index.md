@@ -19,6 +19,7 @@ We recently retired our pizza stone for a larger FibraMent 20"x15" baking stone,
 (All photos taken with a Fujifilm X100VI, using the [Reggie Portra](https://fujixweekly.com/2022/06/11/fujifilm-x-trans-iv-film-simulation-recipe-reggies-portra/) film sim.)
 
 {% gallery %}
+
 * ![Two bowls of pizza dough left to rise atop a radiator.](pizza-sunday-1.jpg){.glightbox}
 * ![Pizza dough round resting atop a countertop. A big bubble forms on the edge.](pizza-sunday-2.jpg){.glightbox}
 * ![Stretched dough with tomato sauce spread evenly on its surface.](pizza-sunday-3.jpg){.glightbox}
@@ -28,6 +29,7 @@ We recently retired our pizza stone for a larger FibraMent 20"x15" baking stone,
 * ![Tomato sauce being spread on stretched pizza dough.](pizza-sunday-7.jpg){.glightbox}
 * ![A large pizza taking up the entire surface of a peel.](pizza-sunday-9.jpg "This second pie was so big it almost didn’t fit on our 16\" peel"){.glightbox}
 * ![Two pizzas cool on a stovetop.](pizza-sunday-10.jpg){.glightbox}
+
 {% endgallery %}
 
 
